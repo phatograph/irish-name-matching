@@ -30,5 +30,18 @@ module IrishNameMatching
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Disable generators
+    config.generators do |generate|
+      generate.helper false
+      generate.assets false
+      # generate.test_framework :rspec
+      # generate.view_specs false
+      # generate.helper_specs false
+      # generate.model_specs false
+      # generate.controller_specs false
+      # generate.request_specs false
+      # generate.routing_specs false
+    end
   end
 end
