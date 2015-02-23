@@ -170,7 +170,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   awesome_print
-  bootstrap-sass (~> 3.2)
+  bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
   font-awesome-rails
