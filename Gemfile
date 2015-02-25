@@ -4,6 +4,8 @@ ruby '2.2.0'
 gem 'rails', '4.2.0'
 gem 'pg'
 
+gem 'text'
+
 # Assets
 gem 'font-awesome-rails'
 gem 'sass-rails', '~> 5.0'
