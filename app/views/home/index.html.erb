@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="jumbotron hide">
   <h2>Irish Name Matching</h2>
   <p>
   This project is to provide a web service that encodes several of these methods
@@ -7,3 +7,44 @@
   of matching names according to the specified method.
   </p>
 </div>
+<%= form_tag match_path do %>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="form-group">
+        <label>Input 1</label>
+        <textarea name="input1" class="form-control" rows="5"><%= params[:input1] %></textarea>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="form-group">
+        <label>Input 2</label>
+        <textarea name="input2" class="form-control" rows="5"><%= params[:input2] %></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="form-group text-center">
+    <div class="form-inline">
+      <select class="form-control" name="matching_method">
+        <option>Simple</option>
+      </select>
+      <input class="btn btn-primary" type="submit" value="Submit" />
+    </div>
+  </div>
+<% end %>
+<% if @matched_names.present? %>
+  <% @matched_names.each do |matched_name| %>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h4><%= matched_name.name %></h4>
+        <h5><%= matched_name.matching_method %></h5>
+        <% matched_name.to_match_names.each do |tmn| %>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <%= tmn %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+<% end %>
