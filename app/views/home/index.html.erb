@@ -44,8 +44,9 @@ of matching names according to the specified method.
               <div class="panel panel-default">
                 <div class="panel-body">
                   <h5><%= tmn.name %></h5>
-                  <p>Soundex: <%= tmn.soundex %></p>
-                  <p>LD: <%= tmn.ld %></p>
+                  <% tmn.scores.each do |s| %>
+                    <p><%= s.class.name %> = <%= s.value %> (score = <%= s.score %>)</p>
+                  <% end %>
                 </div>
               </div>
             </div>
