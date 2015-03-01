@@ -3,17 +3,17 @@ class HomeController < ApplicationController
   end
 
   def match
-    input2 = params[:input2].lines.map(&:strip)
-    @matched_names = params[:input1].lines.map do |line|
+    file_content1 = params[:file1].present? ? params[:file1].read : params[:input1]
+    file_content2 = params[:file2].present? ? params[:file2].read : params[:input2]
+
+    file_content2 = file_content2.lines.map(&:strip)
+    @matched_names = file_content1.lines.map do |line|
       MatchedName.new(
         :name            => line.strip,
-        :to_match_names  => input2,
+        :to_match_names  => file_content2,
         :matching_method => params[:matching_method]
       )
     end
-
-    uploaded_file = params[:file1]
-    @file_content = uploaded_file.read if uploaded_file.present?
 
     render 'index'
   end
