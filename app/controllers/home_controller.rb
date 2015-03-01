@@ -12,6 +12,9 @@ class HomeController < ApplicationController
       )
     end
 
+    uploaded_file = params[:file1]
+    @file_content = uploaded_file.read if uploaded_file.present?
+
     render 'index'
   end
 end
