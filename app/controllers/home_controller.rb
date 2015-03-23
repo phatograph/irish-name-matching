@@ -9,9 +9,9 @@ class HomeController < ApplicationController
     file_content2 = file_content2.lines.map(&:strip)
     @matched_names = file_content1.lines.map do |line|
       MatchedName.new(
-        :name            => line.strip,
-        :to_match_names  => file_content2,
-        :matching_method => params[:matching_method]
+        :name             => line.strip,
+        :to_match_names   => file_content2,
+        :matching_methods => params[:matching_methods]
       )
     end
 

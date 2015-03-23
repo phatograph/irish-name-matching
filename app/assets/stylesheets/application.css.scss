@@ -9,3 +9,9 @@
 body {
   padding-top: 30px;
 }
+
+.form-group {
+  label + .checkbox {
+    margin-top: 0;
+  }
+}
