@@ -32,16 +32,27 @@ of matching names according to the specified method.
       </div>
     </div>
   </div>
-  <div class="form-group">
-    <label>Matching methods</label>
-    <% MatchedMethod.descendants.each do |mm| %>
-      <div class="checkbox">
-        <label>
-          <%= check_box_tag 'matching_methods[]', mm, params[:matching_methods] && params[:matching_methods].include?(mm.to_s) %>
-          <%= mm %>
-        </label>
+  <hr />
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="form-group">
+        <label>Matching methods</label>
+        <% MatchedMethod.descendants.each do |mm| %>
+          <div class="checkbox">
+            <label>
+              <%= check_box_tag 'matching_methods[]', mm, params[:matching_methods] && params[:matching_methods].include?(mm.to_s) %>
+              <%= mm %>
+            </label>
+          </div>
+        <% end %>
       </div>
-    <% end %>
+    </div>
+    <div class="col-xs-6">
+      <div class="form-group">
+        <%= label_tag 'threshold' %>
+        <%= number_field_tag 'threshold', params[:threshold] || MatchedName::DEFAULT_THRESHOLD, :class => 'form-control', :within => 0.0..1.0, :step => 0.01 %>
+      </div>
+    </div>
   </div>
   <div class="form-group text-center">
     <div class="form-inline">

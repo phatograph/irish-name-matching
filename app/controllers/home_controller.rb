@@ -14,7 +14,8 @@ class HomeController < ApplicationController
       MatchedName.new(
         :name             => line.strip,
         :to_match_names   => file_content2,
-        :matching_methods => params[:matching_methods]
+        :matching_methods => params[:matching_methods],
+        :threshold        => params[:threshold].to_f
       )
     end
 

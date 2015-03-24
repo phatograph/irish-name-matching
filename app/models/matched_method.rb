@@ -18,16 +18,16 @@ end
 class LD < MatchedMethod
   def cal_score
     @value = Text::Levenshtein.distance(@name, @matched_name.name)
-    size = [@name.size, @matched_name.name.size].max
+    size   = [@name.size, @matched_name.name.size].max
     @score = ((size - @value).to_f / size)
   end
 end
 
 class Soundex < MatchedMethod
   def cal_score
-    @value = Text::Soundex.soundex(@name)
+    @value           = Text::Soundex.soundex(@name)
     soundex_distance = Text::Levenshtein.distance(@value, @matched_name.soundex)
-    size = [@value.size, @matched_name.soundex.size].max
-    @score = ((size - soundex_distance).to_f / size)
+    size             = [@value.size, @matched_name.soundex.size].max
+    @score           = ((size - soundex_distance).to_f / size)
   end
 end
