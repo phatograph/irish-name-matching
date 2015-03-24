@@ -37,7 +37,7 @@ of matching names according to the specified method.
     <% MatchedMethod.descendants.each do |mm| %>
       <div class="checkbox">
         <label>
-          <%= check_box_tag 'matching_methods[]', mm, params[:matching_methods].include?(mm.to_s) %>
+          <%= check_box_tag 'matching_methods[]', mm, params[:matching_methods] && params[:matching_methods].include?(mm.to_s) %>
           <%= mm %>
         </label>
       </div>

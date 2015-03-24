@@ -16,7 +16,6 @@ class MatchedName
       )
     end.sort
   end
-
 end
 
 class ToMatchedName
@@ -30,20 +29,24 @@ class ToMatchedName
     :scores
 
   def initialize(params = {})
-    @name = params.fetch(:name)
+    @name         = params.fetch(:name)
     @matched_name = params.fetch(:matched_name)
-    matched_methods = MatchedMethod.descendants.select do |mm|
-      @matched_name.matching_methods.include?(mm.to_s)
-    end
+    @scores       = []
 
-    @scores = matched_methods.map do |mm|
-      mm.new(
-        :name => @name,
-        :matched_name => @matched_name
-      )
-    end
+    if @matched_name.matching_methods.present?
+      matched_methods = MatchedMethod.descendants.select do |mm|
+        @matched_name.matching_methods.include?(mm.to_s)
+      end
 
-    @score = (@scores.inject(0.0) { |sum, el| sum + el.score } / @scores.size).round(3)
+      @scores = matched_methods.map do |mm|
+        mm.new(
+          :name => @name,
+          :matched_name => @matched_name
+        )
+      end
+
+      @score = (@scores.inject(0.0) {|sum, el| sum + el.score } / @scores.size).round(3)
+    end
   end
 
   def <=>(another)
