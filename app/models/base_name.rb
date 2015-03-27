@@ -37,6 +37,7 @@ class ToMatchName
   def initialize(params = {})
     @name      = params.fetch(:name)
     @base_name = params.fetch(:base_name)
+    @score     = 0
     @scores    = []
 
     if @base_name.matching_methods.present?
