@@ -50,7 +50,7 @@ of matching names according to the specified method.
     <div class="col-xs-6">
       <div class="form-group">
         <%= label_tag 'threshold' %>
-        <%= number_field_tag 'threshold', params[:threshold] || MatchedName::DEFAULT_THRESHOLD, :class => 'form-control', :within => 0.0..1.0, :step => 0.01 %>
+        <%= number_field_tag 'threshold', params[:threshold] || BaseName::DEFAULT_THRESHOLD, :class => 'form-control', :within => 0.0..1.0, :step => 0.01 %>
       </div>
     </div>
   </div>

@@ -11,7 +11,7 @@ class HomeController < ApplicationController
     params[:matching_methods] = params[:matching_methods] || []
 
     @matched_names = file_content1.lines.map do |line|
-      MatchedName.new(
+      BaseName.new(
         :name             => line.strip,
         :to_match_names   => file_content2,
         :matching_methods => params[:matching_methods],

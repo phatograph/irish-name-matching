@@ -1,4 +1,4 @@
-class MatchedName
+class BaseName
   DEFAULT_THRESHOLD = 0.3
 
   attr_accessor :name,
