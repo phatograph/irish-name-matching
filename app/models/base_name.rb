@@ -11,11 +11,12 @@ class BaseName
     @soundex          = Text::Soundex.soundex(@name)
     @matching_methods = params.fetch(:matching_methods)
     threshold         = params.fetch(:threshold)
+    @to_match_names   = params.fetch(:to_match_names)
 
-    @to_match_names  = params.fetch(:to_match_names).map do |tmn|
-      ToMatchedName.new(
-        :name => tmn,
-        :matched_name => self
+    @to_match_names = @to_match_names.map do |tmn|
+      ToMatchName.new(
+        :name      => tmn,
+        :base_name => self
       )
     end.keep_if do |tmn|
       tmn.score >= threshold
@@ -23,34 +24,35 @@ class BaseName
   end
 end
 
-class ToMatchedName
+class ToMatchName
   include Comparable
 
   attr_accessor :name,
-    :matched_name,
+    :base_name,
     :soundex,
     :ld,
     :score,
     :scores
 
   def initialize(params = {})
-    @name         = params.fetch(:name)
-    @matched_name = params.fetch(:matched_name)
-    @scores       = []
+    @name      = params.fetch(:name)
+    @base_name = params.fetch(:base_name)
+    @scores    = []
 
-    if @matched_name.matching_methods.present?
+    if @base_name.matching_methods.present?
       matched_methods = MatchingMethod.descendants.select do |mm|
-        @matched_name.matching_methods.include?(mm.to_s)
+        @base_name.matching_methods.include?(mm.to_s)
       end
 
       @scores = matched_methods.map do |mm|
         mm.new(
-          :name         => @name,
-          :matched_name => @matched_name
+          :name      => @name,
+          :base_name => @base_name
         )
       end
 
-      @score = (@scores.inject(0.0) {|sum, s| sum + s.score } / @scores.size).round(3)
+      @score = @scores.inject(0.0){|sum, s| sum + s.score }
+      @score = (@score / @scores.size).round(3)
     end
   end
 
