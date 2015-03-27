@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    params[:matching_methods] = MatchedMethod.descendants.map(&:to_s)
+    params[:matching_methods] = MatchingMethod.descendants.map(&:to_s)
   end
 
   def match

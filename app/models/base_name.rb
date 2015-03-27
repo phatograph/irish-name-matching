@@ -39,7 +39,7 @@ class ToMatchedName
     @scores       = []
 
     if @matched_name.matching_methods.present?
-      matched_methods = MatchedMethod.descendants.select do |mm|
+      matched_methods = MatchingMethod.descendants.select do |mm|
         @matched_name.matching_methods.include?(mm.to_s)
       end
 
