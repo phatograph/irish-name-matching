@@ -21,23 +21,6 @@ class MatchingMethod
   end
 end
 
-class LD < MatchingMethod
-  private
-
-  def cal_score
-    @value = Text::Levenshtein.distance(@name, @base_name.name)
-    size   = [@name.size, @base_name.name.size].max
-    @score = ((size - @value).to_f / size)
-  end
-end
-
-class Soundex < MatchingMethod
-  private
-
-  def cal_score
-    @value           = Text::Soundex.soundex(@name)
-    soundex_distance = Text::Levenshtein.distance(@value, @base_name.soundex)
-    size             = [@value.size, @base_name.soundex.size].max
-    @score           = ((size - soundex_distance).to_f / size)
-  end
+Dir['app/models/matching_method/*.rb'].each do |f|
+   require Pathname.new(f).realpath
 end
