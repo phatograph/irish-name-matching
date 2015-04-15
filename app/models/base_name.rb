@@ -1,5 +1,5 @@
 class BaseName
-  DEFAULT_THRESHOLD = 0.3
+  DEFAULT_THRESHOLD = 0
 
   attr_accessor :name,
     :to_match_names,

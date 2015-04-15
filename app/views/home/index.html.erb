@@ -72,13 +72,24 @@ of matching names according to the specified method.
         <p>Soundex: <%= matched_name.soundex %></p>
         <div class="row">
           <% matched_name.to_match_names.each do |tmn| %>
-            <div class="col-xs-3">
+            <div class="col-xs-4">
               <div class="panel panel-default">
                 <div class="panel-body">
-                  <h5><%= tmn.name %> <small>(<%= tmn.score %>)</small></h5>
-                  <% tmn.scores.each do |s| %>
-                    <p><%= s.class.name %> = <%= s.value %> (score = <%= s.get_score %>)</p>
-                  <% end %>
+                  <h4><%= tmn.name %><span class="label label-primary pull-right"><%= tmn.score %></span></h4>
+                  <table class="table">
+                    <tr>
+                      <th>Method</th>
+                      <th>Value</th>
+                      <th>Score</th>
+                    </tr>
+                    <% tmn.scores.each do |s| %>
+                      <tr>
+                        <td><%= s.class.name.titleize %></td>
+                        <td><span title="<%= s.label %>"><%= s.value %></span></td>
+                        <td><%= s.get_score %></td>
+                      </tr>
+                    <% end %>
+                  </table>
                 </div>
               </div>
             </div>
