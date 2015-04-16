@@ -45,7 +45,7 @@ of matching names according to the specified method.
           <div class="checkbox">
             <label>
               <%= check_box_tag 'matching_methods[]', mm, params[:matching_methods] && params[:matching_methods].include?(mm.to_s) %>
-              <%= mm %>
+              <%= mm.to_s.titleize %>
             </label>
           </div>
         <% end %>
@@ -68,14 +68,16 @@ of matching names according to the specified method.
   <% @matched_names.each do |matched_name| %>
     <div class="panel panel-default">
       <div class="panel-body">
-        <h4><%= matched_name.name %></h4>
-        <p>Soundex: <%= matched_name.soundex %></p>
+        <h4><%= matched_name.name %> <small><%= matched_name.soundex %></small></h4>
         <div class="row">
           <% matched_name.to_match_names.each do |tmn| %>
             <div class="col-xs-4">
               <div class="panel panel-default">
                 <div class="panel-body">
-                  <h4><%= tmn.name %><span class="label label-primary pull-right"><%= tmn.score %></span></h4>
+                  <h4>
+                    <%= tmn.name %>
+                    <span class="label label-success pull-right"><%= tmn.score %></span>
+                  </h4>
                   <table class="table">
                     <tr>
                       <th>Method</th>

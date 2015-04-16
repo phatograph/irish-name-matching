@@ -20,9 +20,17 @@ class MatchingMethod
   def cal_score
     raise NotImplementedError
   end
+
+  def soundex_distance(s1, s2)
+    if s1.first != s2.first
+      s1.size  # Different category, so they suppose to be completely different
+    else
+      Text::Levenshtein.distance(s1[1..3], s2[1..3])
+    end
+  end
 end
 
-class LD < MatchingMethod
+class LevenshteinDistance < MatchingMethod
   private
 
   def cal_score
@@ -36,10 +44,8 @@ class Soundex < MatchingMethod
   private
 
   def cal_score
-    @value = Text::Soundex.soundex(@name)
-
-    # TODO: Upgrade soundex distance
-    soundex_distance = Text::Levenshtein.distance(@value, @base_name.soundex)
+    @value           = Text::Soundex.soundex(@name)
+    soundex_distance = soundex_distance(@value, @base_name.soundex)
     @score           = ((@value.size - soundex_distance).to_f / @value.size)
   end
 end
@@ -93,11 +99,9 @@ class IrishSoundex < MatchingMethod
                result.ljust(4, '0')
              end
 
-    @value = result
-    @label = name
-
-    # TODO: Upgrade soundex distance
-    soundex_distance = Text::Levenshtein.distance(result, @base_name.soundex)
+    @value           = result
+    @label           = name
+    soundex_distance = soundex_distance(result, @base_name.soundex)
     @score           = ((@value.size - soundex_distance).to_f / @value.size)
   end
 
