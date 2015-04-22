@@ -9,6 +9,7 @@ class LookupTableRecordsController < ApplicationController
 
   def create
     @record = LookupTableRecord.new(permitted_params)
+    @record.name = @record.name.upcase
 
     if @record.save
       redirect_to lookup_table_records_path

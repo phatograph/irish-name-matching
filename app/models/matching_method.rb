@@ -34,14 +34,15 @@ class LookupTable < MatchingMethod
   private
 
   def cal_score
-    base = LookupTableRecord.find_by_name(@base_name.name)
-    @value = ''
+    base = LookupTableRecord.where(:name => @base_name.name.upcase)
     @score = if base.nil?
                0
              else
-               refs = LookupTableRecord.where(:ref => base.ref)
-               if refs.map(&:name).include?(@name)
-                 @value = base.ref
+               base = base.map(&:ref)
+               refs = LookupTableRecord.where(:ref => base, :name => @name.upcase)
+
+               if refs.present?
+                 @value = (base & refs.map(&:ref)).join(', ')
                  1
                else
                  0
