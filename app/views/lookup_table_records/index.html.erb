@@ -1,0 +1,17 @@
+<h3 class="section-header">
+Lookup Table Records
+<%= link_to "Add", new_lookup_table_record_path, :class => 'btn btn-primary pull-right' %>
+</h3>
+<table class="table">
+  <% @records.each do |record| %>
+    <tr>
+      <td><%= record.name %></td>
+      <td><%= record.ref %></td>
+      <td>
+        <%= link_to record, :method => :delete, :data => {:confirm => 'Are you sure?' } do %>
+          <i class="fa fa-trash text-danger"></i>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
