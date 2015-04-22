@@ -30,6 +30,26 @@ class MatchingMethod
   end
 end
 
+class LookupTable < MatchingMethod
+  private
+
+  def cal_score
+    base = LookupTableRecord.find_by_name(@base_name.name)
+    @value = ''
+    @score = if base.nil?
+               0
+             else
+               refs = LookupTableRecord.where(:ref => base.ref)
+               if refs.map(&:name).include?(@name)
+                 @value = base.ref
+                 1
+               else
+                 0
+               end
+             end
+  end
+end
+
 class LevenshteinDistance < MatchingMethod
   private
 
