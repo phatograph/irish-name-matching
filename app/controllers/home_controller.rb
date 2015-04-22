@@ -10,14 +10,18 @@ class HomeController < ApplicationController
 
     params[:matching_methods] = params[:matching_methods] || []
 
-    @matched_names = file_content1.lines.map do |line|
-      BaseName.new(
-        :name             => line.strip,
-        :to_match_names   => file_content2,
-        :matching_methods => params[:matching_methods],
-        :threshold        => params[:threshold].to_f
-      )
-    end
+    @matched_names = file_content1.
+      lines.
+      map(&:strip).
+      delete_if {|x| x.size.zero? }.
+      map do |line|
+        BaseName.new(
+          :name             => line,
+          :to_match_names   => file_content2.delete_if {|x| x.size.zero? },
+          :matching_methods => params[:matching_methods],
+          :threshold        => params[:threshold].to_f
+        )
+      end
 
     render 'index'
   end
