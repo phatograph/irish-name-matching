@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  skip_before_filter :verify_authenticity_token, :only => [:match]
+
   def index
     params[:matching_methods] = MatchingMethod.descendants.map(&:to_s)
   end

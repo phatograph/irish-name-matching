@@ -1,0 +1,6 @@
+{
+  "input1":"Smith\r\nJohn",
+  "input2":"Gowan\r\nSmyth\r\nO'Gowan\r\nMacGowan",
+  "matching_methods":["LookupTable", "LevenshteinDistance", "Soundex", "IrishSoundex"],
+  "threshold":"0"
+}

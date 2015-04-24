@@ -9,6 +9,7 @@ class MatchingMethod
     @name      = params.fetch(:name)
     @base_name = params.fetch(:base_name)
     cal_score
+    @score = @score.round(3)
   end
 
   def get_score

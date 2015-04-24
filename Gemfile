@@ -5,6 +5,7 @@ gem 'rails', '4.2.0'
 gem 'pg'
 
 gem 'text'
+gem 'jbuilder'
 
 # Assets
 gem 'font-awesome-rails'

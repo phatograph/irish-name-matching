@@ -2,15 +2,15 @@ class BaseName
   DEFAULT_THRESHOLD = 0
 
   attr_accessor :name,
+    :soundex,
     :to_match_names,
-    :matching_methods,
-    :soundex
+    :matching_methods
 
   def initialize(params = {})
     @name             = params.fetch(:name)
     @soundex          = Text::Soundex.soundex(@name)
     @matching_methods = params.fetch(:matching_methods)
-    threshold         = params.fetch(:threshold)
+    threshold         = params.fetch(:threshold) || DEFAULT_THRESHOLD
     @to_match_names   = params.fetch(:to_match_names)
 
     @to_match_names = @to_match_names.map do |tmn|
@@ -30,7 +30,6 @@ class ToMatchName
   attr_accessor :name,
     :base_name,
     :soundex,
-    :ld,
     :score,
     :scores
 
