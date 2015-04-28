@@ -516,7 +516,7 @@ Branan	155
 Brandon	148
 Brangan	150
 Braniff	155
-Branigan, 150. 	150
+Branigan	150
 Brankin	150
 Brannagh	2027
 Brannan	155
@@ -9924,7 +9924,7 @@ Shepperd	1868
 Shera	1869
 Sherard	1872
 Sherden	1870
-Sherdian, 1870. 	1870
+Sherdian	1870
 Sherdon	1870
 Sheredan	1870
 Shereden	1870
