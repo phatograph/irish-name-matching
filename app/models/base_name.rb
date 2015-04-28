@@ -41,19 +41,18 @@ class ToMatchName
     @scores    = []
 
     if @base_name.matching_methods.present?
-      matched_methods = MatchingMethod.descendants.select do |mm|
-        @base_name.matching_methods.include?(mm.to_s)
-      end
+      MatchingMethod  # Hack to load up MatchingMethod subclasses
 
-      @scores = matched_methods.map do |mm|
-        mm.new(
+      @scores = @base_name.matching_methods.map do |mm|
+        mm[:name].constantize.new(
           :name      => @name,
-          :base_name => @base_name
+          :base_name => @base_name,
+          :weight    => mm[:weight].to_i
         )
       end
 
-      @score = @scores.inject(0.0){|sum, s| sum + s.score }
-      @score = (@score / @scores.size).round(3)
+      @score = @scores.inject(0.0){|sum, s| sum + s.score * s.weight }
+      @score = (@score / @scores.inject(0.0){|sum, s| sum + s.weight}).round(3)
     end
   end
 

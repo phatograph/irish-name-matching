@@ -1,21 +1,21 @@
 class MatchingMethod
+  WEIGHT = 1
+
   attr_accessor :name,
     :base_name,
     :value,
     :label,
-    :score
+    :score,
+    :weight
 
   def initialize(params = {})
     @name           = params.fetch(:name).upcase
     @base_name      = params.fetch(:base_name)
     @base_name.name = @base_name.name.upcase
+    @weight         = params.fetch(:weight)
 
     cal_score
     @score = @score.round(3)
-  end
-
-  def get_score
-    @score.round(3)
   end
 
   private
@@ -34,6 +34,8 @@ class MatchingMethod
 end
 
 class LookupTable < MatchingMethod
+  WEIGHT = 10
+
   private
 
   def cal_score
@@ -45,7 +47,8 @@ class LookupTable < MatchingMethod
                refs = LookupTableRecord.where(:ref => base, :name => @name.upcase)
 
                if refs.present?
-                 @value = (base & refs.map(&:ref)).join(', ')
+                 @label = (base & refs.map(&:ref)).join(', ')
+                 @value = "Matched"
                  1
                else
                  0
@@ -65,6 +68,7 @@ class LevenshteinDistance < MatchingMethod
 end
 
 class Soundex < MatchingMethod
+  WEIGHT = 3
   private
 
   def cal_score
@@ -75,6 +79,7 @@ class Soundex < MatchingMethod
 end
 
 class IrishSoundex < MatchingMethod
+  WEIGHT = 6
   private
 
   def cal_score

@@ -2,7 +2,12 @@ class HomeController < ApplicationController
   skip_before_filter :verify_authenticity_token, :only => [:match]
 
   def index
-    params[:matching_methods] = MatchingMethod.descendants.map(&:to_s)
+    params[:matching_methods] = MatchingMethod.descendants.map do |mm|
+      {
+        :name   => mm.to_s,
+        :weight => mm::WEIGHT
+      }
+    end
   end
 
   def match
@@ -14,7 +19,9 @@ class HomeController < ApplicationController
       file_content2 = LookupTableRecord.pluck(:name).uniq
     end
 
-    params[:matching_methods] = params[:matching_methods] || []
+    params[:matching_methods] = params[:matching_methods] || ActionController::Parameters.new
+    params[:matching_methods] = params[:matching_methods].to_a.select{|x| x.last[:name] }
+    params[:matching_methods] = params[:matching_methods].map{|x| {:name => x.first, :weight => x.last[:weight]} }
 
     @matched_names = file_content1.
       lines.

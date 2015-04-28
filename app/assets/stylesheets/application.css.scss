@@ -18,6 +18,16 @@ h1 {
   label + .checkbox {
     margin-top: 0;
   }
+
+  .checkbox {
+    .mm-value {
+      display: inline-block;
+      width: 4em;
+      padding: 0;
+      height: 2em;
+      text-align: center;
+    }
+  }
 }
 
 .section-header {

@@ -39,7 +39,8 @@
         <% MatchingMethod.descendants.each do |mm| %>
           <div class="checkbox">
             <label>
-              <%= check_box_tag 'matching_methods[]', mm, params[:matching_methods] && params[:matching_methods].include?(mm.to_s) %>
+              <%= check_box_tag "matching_methods[#{mm}][name]", mm, has_mm?(params[:matching_methods], mm) %>
+              <%= number_field_tag "matching_methods[#{mm}][weight]", has_mm?(params[:matching_methods], mm) ? params[:matching_methods].select{|x| x[:name] == mm.to_s }.first[:weight] : mm::WEIGHT, :class => 'mm-value form-control' %>
               <%= mm.to_s.titleize %>
             </label>
           </div>
@@ -78,12 +79,16 @@
                       <th>Method</th>
                       <th>Value</th>
                       <th>Score</th>
+                      <th>Weight</th>
+                      <th>Total</th>
                     </tr>
                     <% tmn.scores.each do |s| %>
                       <tr>
                         <td><%= s.class.name.titleize %></td>
                         <td><span title="<%= s.label %>"><%= s.value %></span></td>
-                        <td><%= s.get_score %></td>
+                        <td><%= s.score %></td>
+                        <td>x <%= s.weight %></td>
+                        <td><%= s.score * s.weight %></td>
                       </tr>
                     <% end %>
                   </table>
