@@ -20,8 +20,15 @@ class HomeController < ApplicationController
     end
 
     params[:matching_methods] = params[:matching_methods] || ActionController::Parameters.new
-    params[:matching_methods] = params[:matching_methods].to_a.select{|x| x.last[:name] }
-    params[:matching_methods] = params[:matching_methods].map{|x| {:name => x.first, :weight => x.last[:weight]} }
+    params[:matching_methods] = params[:matching_methods].
+      to_a.
+      select{|x| x.last[:name] }.  # Purge unchecked matching methods
+      map do |x|
+        {
+          :name => x.last[:name],
+          :weight => x.last[:weight]
+        }
+      end
 
     @matched_names = file_content1.
       lines.
