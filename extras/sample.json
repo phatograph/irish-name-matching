@@ -1,6 +1,11 @@
 {
-  "input1":"Smith\r\nJohn",
-  "input2":"Gowan\r\nSmyth\r\nO'Gowan\r\nMacGowan",
-  "matching_methods":["LookupTable", "LevenshteinDistance", "Soundex", "IrishSoundex"],
+  "input1":"Smith",
+  "input2":"Gowan\r\nSpeed",
+  "matching_methods":{
+    "1":{"name":"LookupTable", "weight":"10"},
+    "2":{"name":"LevenshteinDistance", "weight":"1"},
+    "3":{"name":"Soundex", "weight":"3"},
+    "4":{"name":"IrishSoundex", "weight":"6"}
+  },
   "threshold":"0"
 }
