@@ -19,7 +19,15 @@
       <div class="form-group">
         <%= label_tag 'file2', 'Or upload a file' %>
         <%= file_field_tag "file2" %>
-        <%= @file_content %>
+      </div>
+      <div class="form-group">
+        <%= label_tag 'standard_list', 'Or use standard list' %>
+        <div class="checkbox">
+          <label>
+            <%= check_box_tag 'standard_list' %>
+            Use standard list
+          </label>
+        </div>
       </div>
     </div>
   </div>

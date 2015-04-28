@@ -14,6 +14,7 @@ class BaseName
     @to_match_names   = params.fetch(:to_match_names)
 
     @to_match_names = @to_match_names.map do |tmn|
+      puts "Processing for #{@name}: #{tmn}"
       ToMatchName.new(
         :name      => tmn,
         :base_name => self

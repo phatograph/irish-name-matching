@@ -6,8 +6,10 @@ class MatchingMethod
     :score
 
   def initialize(params = {})
-    @name      = params.fetch(:name)
-    @base_name = params.fetch(:base_name)
+    @name           = params.fetch(:name).upcase
+    @base_name      = params.fetch(:base_name)
+    @base_name.name = @base_name.name.upcase
+
     cal_score
     @score = @score.round(3)
   end
@@ -87,12 +89,13 @@ class IrishSoundex < MatchingMethod
              name[2..name.length].gsub(' ', '')
            elsif name.match(/^M'/).present?
              name[2..name.length].gsub(' ', '')
-           elsif name.match(/^MAC/).present?
+           elsif name.match(/^MAC/).present? && name != 'MAC'
              name[3..name.length].gsub(' ', '')
            else
              name
            end
 
+    name = name.strip
     name = name.gsub(/^C/, 'K')
 
     result = name.first
