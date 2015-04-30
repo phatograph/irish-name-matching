@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  30 APR 2015 11:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  30 APR 2015 11:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -709,12 +709,12 @@ Package: prelim2e 2009/05/29 v1.3 prelim2e Package (MS)
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/carlisle/remreset.sty)))
-(./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux)
-(./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux)
-(./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux)
-(./Chapters/Chapter01.aux) (./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux
-) (./Chapters/Chapter0A.aux) (./FrontBackMatter/Bibliography.aux)
-(./FrontBackMatter/Colophon.aux) (./FrontBackMatter/Declaration.aux))
+(./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Dedication.aux
+) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Acknowledgments.aux)
+(./FrontBackMatter/Contents.aux) (./Chapters/Chapter01.aux)
+(./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux) (./Chapters/Chapter0A.aux
+) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Colophon.aux)
+(./FrontBackMatter/Declaration.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -805,11 +805,11 @@ ABD: EveryShipout initializing macros
 \openout2 = `FrontBackMatter/Titlepage.aux'.
 
  (./FrontBackMatter/Titlepage.tex
-<gfx/mu_em.jpg, id=140, 529.98pt x 150.5625pt>
+<gfx/mu_em.jpg, id=136, 529.98pt x 150.5625pt>
 File: gfx/mu_em.jpg Graphic file (type jpg)
  <use gfx/mu_em.jpg>
 Package pdftex.def Info: gfx/mu_em.jpg used on input line 20.
-(pdftex.def)             Requested size: 170.71652pt x 48.49802pt.
+(pdftex.def)             Requested size: 284.52756pt x 80.83156pt.
  [1
 
 
@@ -817,38 +817,16 @@ Package pdftex.def Info: gfx/mu_em.jpg used on input line 20.
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./gfx/m
 u_em.jpg>])
-\openout2 = `FrontBackMatter/Titleback.aux'.
-
- (./FrontBackMatter/Titleback.tex
-LaTeX Font Info:    Try loading font information for OMS+pplj on input line 10.
-
-LaTeX Font Info:    No file OMSpplj.fd. on input line 10.
-
-
-LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 10.
-
-) [2
-
-
-]
 \openout2 = `FrontBackMatter/Dedication.aux'.
 
- (./FrontBackMatter/Dedication.tex) [3
-
-
-] [4
-
+ (./FrontBackMatter/Dedication.tex) [2
 
 
 ]
 \openout2 = `FrontBackMatter/Abstract.aux'.
 
-
-(./FrontBackMatter/Abstract.tex) [5
-
-] [6
-
+ (./FrontBackMatter/Abstract.tex)
+[3
 
 
 ]
@@ -903,10 +881,7 @@ Overfull \hbox (8.78125pt too wide) in paragraph at lines 29--30
 -community
  []
 
-) [7
-
-] [8
-
+) [4
 
 
 ]
@@ -916,14 +891,21 @@ Overfull \hbox (8.78125pt too wide) in paragraph at lines 29--30
 Package tocbasic Info: character protrusion at toc deactivated on input line 13
 .
  (./main.toc
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 4.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 5.
 )
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [9
+ [5
+
+
+
 
 
 
@@ -934,38 +916,25 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 33
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
-
-[10
+ [6
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 46
 .
- (./main.lot)
+
+(./main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [11] (./main.lol)
+ (./main.lol)
 \tf@lol=\write8
 \openout8 = `main.lol'.
 
- [12]
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 76.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 76.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `cmss' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-) [13] [14
+ [7]) [8
 
 
 
-]
-[1
+] [1
 
 
 
@@ -1004,7 +973,16 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 7.65005pt on input line 20.
- [3
+LaTeX Font Info:    Try loading font information for OMS+pplj on input line 42.
+
+LaTeX Font Info:    No file OMSpplj.fd. on input line 42.
+
+
+LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 42.
+
+[3
 
 
 
@@ -1135,25 +1113,25 @@ Overfull \hbox (9.6941pt too wide) in paragraph at lines 54--54
 mmy id, sapien.
  []
 
-[13] <gfx/example_1.jpg, id=355, 240.9pt x 180.675pt>
+[13] <gfx/example_1.jpg, id=321, 240.9pt x 180.675pt>
 File: gfx/example_1.jpg Graphic file (type jpg)
  <use gfx/example_1.jpg>
 Package pdftex.def Info: gfx/example_1.jpg used on input line 92.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_2.jpg, id=356, 240.9pt x 180.675pt>
+<gfx/example_2.jpg, id=322, 240.9pt x 180.675pt>
 File: gfx/example_2.jpg Graphic file (type jpg)
  <use gfx/example_2.jpg>
 Package pdftex.def Info: gfx/example_2.jpg used on input line 95.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_3.jpg, id=357, 240.9pt x 180.675pt>
+<gfx/example_3.jpg, id=323, 240.9pt x 180.675pt>
 File: gfx/example_3.jpg Graphic file (type jpg)
  <use gfx/example_3.jpg>
 Package pdftex.def Info: gfx/example_3.jpg used on input line 97.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_4.jpg, id=358, 240.9pt x 180.675pt>
+<gfx/example_4.jpg, id=324, 240.9pt x 180.675pt>
 File: gfx/example_4.jpg Graphic file (type jpg)
  <use gfx/example_4.jpg>
 Package pdftex.def Info: gfx/example_4.jpg used on input line 99.
@@ -1243,16 +1221,15 @@ my, scelerisque
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
  (./main.aux (./FrontBackMatter/Titlepage.aux)
-(./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux)
-(./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Acknowledgments.aux)
-(./FrontBackMatter/Contents.aux) (./Chapters/Chapter01.aux)
-(./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux) (./Chapters/Chapter0A.aux
-) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Colophon.aux)
-(./FrontBackMatter/Declaration.aux))
+(./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux)
+(./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux)
+(./Chapters/Chapter01.aux) (./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux
+) (./Chapters/Chapter0A.aux) (./FrontBackMatter/Bibliography.aux)
+(./FrontBackMatter/Colophon.aux) (./FrontBackMatter/Declaration.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A0E754F7B25BB036228602402B4EC81E;2016.
+(rerunfilecheck)             Checksum: 8EE667BFF4C193A7CEE0276D0262A72C;1971.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1260,11 +1237,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 17122 strings out of 493117
- 261387 string characters out of 6135432
- 556785 words of memory out of 5000000
- 19982 multiletter control sequences out of 15000+600000
- 89900 words of font info for 138 fonts, out of 8000000 for 9000
+ 17067 strings out of 493117
+ 260227 string characters out of 6135432
+ 556004 words of memory out of 5000000
+ 19951 multiletter control sequences out of 15000+600000
+ 91949 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,13n,67p,1036b,2286s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1282,10 +1259,10 @@ live/2014/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/20
 onts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
 /palatino/uplri8a.pfb>
-Output written on main.pdf (41 pages, 271882 bytes).
+Output written on main.pdf (35 pages, 268749 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 451 compressed objects within 5 object streams
- 132 named destinations out of 1000 (max. 500000)
- 18730 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 419 compressed objects within 5 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 19234 words of extra memory for PDF output out of 20736 (max. 10000000)
 
