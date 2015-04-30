@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  30 APR 2015 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  30 APR 2015 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -711,11 +711,10 @@ Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/carlisle/remreset.sty)))
 (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux)
 (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux)
-(./FrontBackMatter/Publication.aux) (./FrontBackMatter/Acknowledgments.aux)
-(./FrontBackMatter/Contents.aux) (./Chapters/Chapter01.aux)
-(./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux) (./Chapters/Chapter0A.aux
-) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Colophon.aux)
-(./FrontBackMatter/Declaration.aux))
+(./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux)
+(./Chapters/Chapter01.aux) (./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux
+) (./Chapters/Chapter0A.aux) (./FrontBackMatter/Bibliography.aux)
+(./FrontBackMatter/Colophon.aux) (./FrontBackMatter/Declaration.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -806,7 +805,7 @@ ABD: EveryShipout initializing macros
 \openout2 = `FrontBackMatter/Titlepage.aux'.
 
  (./FrontBackMatter/Titlepage.tex
-<gfx/mu_em.jpg, id=144, 529.98pt x 150.5625pt>
+<gfx/mu_em.jpg, id=140, 529.98pt x 150.5625pt>
 File: gfx/mu_em.jpg Graphic file (type jpg)
  <use gfx/mu_em.jpg>
 Package pdftex.def Info: gfx/mu_em.jpg used on input line 20.
@@ -838,8 +837,6 @@ LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
  (./FrontBackMatter/Dedication.tex) [3
 
 
-
-
 ] [4
 
 
@@ -855,46 +852,11 @@ LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
 
 
 ]
-\openout2 = `FrontBackMatter/Publication.aux'.
-
- (./FrontBackMatter/Publication.tex
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 11.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 11.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `fvm' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-) [7
-
-
-
-] [8
-
-
-
-]
 \openout2 = `FrontBackMatter/Acknowledgments.aux'.
 
-
-(./FrontBackMatter/Acknowledgments.tex
+ (./FrontBackMatter/Acknowledgments.tex
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 5.
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 10.
-
-
-Package natbib Warning: Citation `knuth:1974' on page ix undefined on input lin
-e 10.
-
-
-Package natbib Warning: Citation `knuth:1974' on page ix undefined on input lin
-e 10.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
@@ -941,9 +903,9 @@ Overfull \hbox (8.78125pt too wide) in paragraph at lines 29--30
 -community
  []
 
-) [9
+) [7
 
-] [10
+] [8
 
 
 
@@ -961,7 +923,7 @@ Package microtype Info: Character `029' is missing
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [11
+ [9
 
 
 
@@ -973,7 +935,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 33
 \openout6 = `main.lof'.
 
 
-[12
+[10
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 46
@@ -982,11 +944,13 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 46
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [13] (./main.lol)
+ [11] (./main.lol)
 \tf@lol=\write8
 \openout8 = `main.lol'.
 
- [14]
+ [12]
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 76.
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 76.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmss.fd
@@ -996,7 +960,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [15] [16
+) [13] [14
 
 
 
@@ -1026,19 +990,21 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-
-Package natbib Warning: Citation `bringhurst:2002' on page 3 undefined on input
- line 12.
-
-
-Package natbib Warning: Citation `bringhurst:2002' on page 3 undefined on input
- line 12.
-
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 13.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 18.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 18.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fvm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 7.65005pt on input line 20.
-[3
+ [3
 
 
 
@@ -1140,14 +1106,6 @@ Overfull \hbox (2.94846pt too wide) in paragraph at lines 24--24
 ben-dum, nulla
  []
 
-
-Package natbib Warning: Citation `bentley:1999' on page 12 undefined on input l
-ine 38.
-
-
-Package natbib Warning: Citation `bentley:1999' on page 12 undefined on input l
-ine 38.
-
 [12]
 Overfull \hbox (18.80463pt too wide) in paragraph at lines 41--41
 []\T1/pplj/m/n/10.95 Pellentesque habi-tant morbi tris-tique senec-
@@ -1166,14 +1124,6 @@ Overfull \hbox (9.30934pt too wide) in paragraph at lines 42--42
  []
 
 
-Package natbib Warning: Citation `cormen:2001' on page 13 undefined on input li
-ne 45.
-
-
-Package natbib Warning: Citation `cormen:2001' on page 13 undefined on input li
-ne 45.
-
-
 Overfull \hbox (0.77591pt too wide) in paragraph at lines 51--51
 \T1/pplj/m/n/10.95 Morbi ul-tri-ces rutrum lorem. Nam el-e-men-tum ul-lam-cor-p
 er leo. Morbi
@@ -1185,48 +1135,25 @@ Overfull \hbox (9.6941pt too wide) in paragraph at lines 54--54
 mmy id, sapien.
  []
 
-[13]
-
-Package natbib Warning: Citation `sommerville:1992' on page 14 undefined on inp
-ut line 63.
-
-
-Package natbib Warning: Citation `sommerville:1992' on page 14 undefined on inp
-ut line 63.
-
-
-Package natbib Warning: Citation `knuth:1976' on page 14 undefined on input lin
-e 75.
-
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 76.
-
-Package natbib Warning: Citation `knuth:1976' on page 14 undefined on input lin
-e 76.
-
-
-Package natbib Warning: Citation `knuth:1976' on page 14 undefined on input lin
-e 76.
-
-<gfx/example_1.jpg, id=348, 240.9pt x 180.675pt>
+[13] <gfx/example_1.jpg, id=355, 240.9pt x 180.675pt>
 File: gfx/example_1.jpg Graphic file (type jpg)
  <use gfx/example_1.jpg>
 Package pdftex.def Info: gfx/example_1.jpg used on input line 92.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_2.jpg, id=349, 240.9pt x 180.675pt>
+<gfx/example_2.jpg, id=356, 240.9pt x 180.675pt>
 File: gfx/example_2.jpg Graphic file (type jpg)
  <use gfx/example_2.jpg>
 Package pdftex.def Info: gfx/example_2.jpg used on input line 95.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_3.jpg, id=350, 240.9pt x 180.675pt>
+<gfx/example_3.jpg, id=357, 240.9pt x 180.675pt>
 File: gfx/example_3.jpg Graphic file (type jpg)
  <use gfx/example_3.jpg>
 Package pdftex.def Info: gfx/example_3.jpg used on input line 97.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_4.jpg, id=351, 240.9pt x 180.675pt>
+<gfx/example_4.jpg, id=358, 240.9pt x 180.675pt>
 File: gfx/example_4.jpg Graphic file (type jpg)
  <use gfx/example_4.jpg>
 Package pdftex.def Info: gfx/example_4.jpg used on input line 99.
@@ -1283,14 +1210,7 @@ my, scelerisque
 ]) [22]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
- (./FrontBackMatter/Bibliography.tex
-No file main.bbl.
-)
-\openout2 = `FrontBackMatter/Colophon.aux'.
-
- (./FrontBackMatter/Colophon.tex) [23
-
-
+ (./FrontBackMatter/Bibliography.tex (./main.bbl)) [23
 
 
 
@@ -1302,21 +1222,29 @@ No file main.bbl.
 
 
 ]
-\openout2 = `FrontBackMatter/Declaration.aux'.
+\openout2 = `FrontBackMatter/Colophon.aux'.
 
- (./FrontBackMatter/Declaration.tex) [25
+
+(./FrontBackMatter/Colophon.tex) [25
+
+] [26
 
 
 
 ]
+\openout2 = `FrontBackMatter/Declaration.aux'.
 
-Package natbib Warning: There were undefined citations.
+ (./FrontBackMatter/Declaration.tex)
+[27
 
+
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
-(./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux)
-(./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux)
-(./FrontBackMatter/Publication.aux) (./FrontBackMatter/Acknowledgments.aux)
+ (./main.aux (./FrontBackMatter/Titlepage.aux)
+(./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux)
+(./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Acknowledgments.aux)
 (./FrontBackMatter/Contents.aux) (./Chapters/Chapter01.aux)
 (./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux) (./Chapters/Chapter0A.aux
 ) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Colophon.aux)
@@ -1324,7 +1252,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 27DF55AE7139983B1E8CCBFDF315B94F;2069.
+(rerunfilecheck)             Checksum: A0E754F7B25BB036228602402B4EC81E;2016.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1332,11 +1260,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 17118 strings out of 493117
- 261401 string characters out of 6135432
- 557153 words of memory out of 5000000
- 19975 multiletter control sequences out of 15000+600000
- 92825 words of font info for 142 fonts, out of 8000000 for 9000
+ 17122 strings out of 493117
+ 261387 string characters out of 6135432
+ 556785 words of memory out of 5000000
+ 19982 multiletter control sequences out of 15000+600000
+ 89900 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,13n,67p,1036b,2286s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1354,10 +1282,10 @@ live/2014/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/20
 onts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
 /palatino/uplri8a.pfb>
-Output written on main.pdf (41 pages, 277614 bytes).
+Output written on main.pdf (41 pages, 271882 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
- 437 compressed objects within 5 object streams
- 127 named destinations out of 1000 (max. 500000)
- 19250 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 451 compressed objects within 5 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 18730 words of extra memory for PDF output out of 20736 (max. 10000000)
 
