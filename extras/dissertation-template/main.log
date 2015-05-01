@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  30 APR 2015 11:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  1 MAY 2015 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -709,11 +709,9 @@ Package: prelim2e 2009/05/29 v1.3 prelim2e Package (MS)
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/carlisle/remreset.sty)))
-(./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Dedication.aux
-) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Acknowledgments.aux)
-(./FrontBackMatter/Contents.aux) (./Chapters/Chapter01.aux)
-(./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux) (./Chapters/Chapter0A.aux
-) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Colophon.aux)
+(./main.aux (./Chapters/Chapter01.aux) (./Chapters/Chapter02.aux)
+(./Chapters/Chapter03.aux) (./Chapters/Chapter0A.aux)
+(./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Colophon.aux)
 (./FrontBackMatter/Declaration.aux))
 \openout1 = `main.aux'.
 
@@ -802,144 +800,6 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
-\openout2 = `FrontBackMatter/Titlepage.aux'.
-
- (./FrontBackMatter/Titlepage.tex
-<gfx/mu_em.jpg, id=136, 529.98pt x 150.5625pt>
-File: gfx/mu_em.jpg Graphic file (type jpg)
- <use gfx/mu_em.jpg>
-Package pdftex.def Info: gfx/mu_em.jpg used on input line 20.
-(pdftex.def)             Requested size: 284.52756pt x 80.83156pt.
- [1
-
-
-
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./gfx/m
-u_em.jpg>])
-\openout2 = `FrontBackMatter/Dedication.aux'.
-
- (./FrontBackMatter/Dedication.tex) [2
-
-
-]
-\openout2 = `FrontBackMatter/Abstract.aux'.
-
- (./FrontBackMatter/Abstract.tex)
-[3
-
-
-]
-\openout2 = `FrontBackMatter/Acknowledgments.aux'.
-
- (./FrontBackMatter/Acknowledgments.tex
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-LaTeX Font Info:    Try loading font information for U+zeur on input line 29.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeur.fd
-File: uzeur.fd 2005/01/11 v4.0 (WaS)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eur.cfg
-File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
-)
-LaTeX Font Info:    Try loading font information for U+zeus on input line 29.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeus.fd
-File: uzeus.fd 2005/01/11 v4.0 (WaS)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eus.cfg
-File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
-)
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 29.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeuex.fd
-File: uzeuex.fd 2005/01/11 v4.0 (WaS)
-)
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 29.
-
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `zplm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Overfull \hbox (8.78125pt too wide) in paragraph at lines 29--30
-\T1/pplj/m/n/10.95 Repp, Hin-rich Harms, Roland Win-kler, and the whole L[]T[]X
--community
- []
-
-) [4
-
-
-]
-\openout2 = `FrontBackMatter/Contents.aux'.
-
- (./FrontBackMatter/Contents.tex
-Package tocbasic Info: character protrusion at toc deactivated on input line 13
-.
- (./main.toc
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 4.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplj/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 5.
-)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
- [5
-
-
-
-
-
-
-]
-Package tocbasic Info: character protrusion at lof deactivated on input line 33
-.
- (./main.lof)
-\tf@lof=\write6
-\openout6 = `main.lof'.
-
- [6
-
-]
-Package tocbasic Info: character protrusion at lot deactivated on input line 46
-.
-
-(./main.lot)
-\tf@lot=\write7
-\openout7 = `main.lot'.
-
- (./main.lol)
-\tf@lol=\write8
-\openout8 = `main.lol'.
-
- [7]) [8
-
-
-
-] [1
-
-
-
-
-] [2]
 \openout2 = `Chapters/Chapter01.aux'.
 
  (./Chapters/Chapter01.tex
@@ -959,194 +819,81 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 13.
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 18.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Overfull \hbox (1.76855pt too wide) in paragraph at lines 12--12
+\T1/pplj/m/n/10.95 nec com-modo wisi enim eget quam. Quisque libero justo, con-
+sectetuer
+ []
+
+LaTeX Font Info:    Try loading font information for U+zeur on input line 16.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeur.fd
+File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 18.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eur.cfg
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+)
+LaTeX Font Info:    Try loading font information for U+zeus on input line 16.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeus.fd
+File: uzeus.fd 2005/01/11 v4.0 (WaS)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eus.cfg
+File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
+)
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 16.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeuex.fd
+File: uzeuex.fd 2005/01/11 v4.0 (WaS)
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 16.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
 Package microtype Info: Loading generic settings for font family
-(microtype)             `fvm' (encoding: T1).
+(microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 20.
-LaTeX Font Info:    Try loading font information for OMS+pplj on input line 42.
-
-LaTeX Font Info:    No file OMSpplj.fd. on input line 42.
-
-
-LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 42.
-
-[3
-
-
-
-]
-Overfull \hbox (2.23529pt too wide) in paragraph at lines 63--64
-[]\T1/fvm/m/n/10.95 classicthesis-config.tex\T1/pplj/m/n/10.95 : a cen-tral pla
-ce to load all nifty pack-
- []
-
-[4]
-Overfull \hbox (9.23082pt too wide) in paragraph at lines 97--98
-[]\T1/fvm/m/n/10.95 eulermath\T1/pplj/m/n/10.95 : loads the awe-some Eu-ler fon
-ts for math. (Palatino
- []
-
-[5]
-Overfull \hbox (25.95596pt too wide) in paragraph at lines 101--102
-\T1/pplj/m/n/10.95 cally en-ables the \T1/fvm/m/n/10.95 minionpro \T1/pplj/m/n/
-10.95 op-tion and over-rides the \T1/fvm/m/n/10.95 pdfspacing
- []
-
-
-Overfull \hbox (7.53156pt too wide) in paragraph at lines 127--128
-[]\T1/pplj/m/n/10.95 In or-der to make things eas-ier in gen-eral, \T1/fvm/m/n/
-10.95 classicthesis-config.tex
- []
-
-
-Overfull \hbox (11.02849pt too wide) in paragraph at lines 133--134
-\T1/pplj/m/n/10.95 This sec-tion will give you some hints about how to adapt \T
-1/fvm/m/n/10.95 classicthesis
- []
-
-LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 7.65005pt on input line 138.
-
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 138--138
- \T1/fvm/m/sl/9 thesis-config.tex
- []
-
-
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 138--138
-\T1/fvm/m/sl/9 thesis-config.tex  
- []
-
-[6]
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 140.
-
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 164--164
- \T1/fvm/m/sl/9 classicthesis.sty
- []
-
-
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 164--164
-\T1/fvm/m/sl/9 classicthesis.sty  
- []
-
-
-Overfull \hbox (5.48045pt too wide) in paragraph at lines 171--172
-[]\T1/pplj/m/n/10.95 Beta ver-sions of \T1/fvm/m/n/10.95 classicthesis \T1/pplj
-/m/n/10.95 can be found at the fol-low-ing Google
- []
-
-LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 178.
-LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 9.30756pt on input line 178.
-[7])
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 209--91
-\T1/pplj/m/it/10.95 with-out any war-ranty\T1/pplj/m/n/10.95 ; with-out even th
-e im-plied war-ranty of \T1/pplj/m/it/10.95 mer-chantabil-
- []
-
-[8] [9
+ [1
 
 
 
 
 
-] [10]
-\openout2 = `Chapters/Chapter02.aux'.
-
- (./Chapters/Chapter02.tex
-Chapter 2.
-
-Overfull \hbox (0.39906pt too wide) in paragraph at lines 15--15
-\T1/pplj/m/n/10.95 Nulla ul-lam-cor-per vestibu-lum turpis. Pel-len-tesque cur-
-sus luc-tus mau-
- []
-
-[11
 
 
 
-]
-Overfull \hbox (2.94846pt too wide) in paragraph at lines 24--24
-[]\T1/pplj/m/n/10.95 Fusce mau-ris. Vestibu-lum luc-tus nibh at lec-tus. Sed bi
-ben-dum, nulla
- []
-
-[12]
-Overfull \hbox (18.80463pt too wide) in paragraph at lines 41--41
-[]\T1/pplj/m/n/10.95 Pellentesque habi-tant morbi tris-tique senec-
- []
-
-
-Overfull \hbox (10.94551pt too wide) in paragraph at lines 41--41
-\T1/pplj/m/n/10.95 lum fringilla lorem. Sed neque lec-tus, con-sectetuer at, co
-n-sectetuer
- []
-
-
-Overfull \hbox (9.30934pt too wide) in paragraph at lines 42--42
-\T1/pplj/m/n/10.95 quam auc-tor, pede con-se-quat laoreet var-ius, eros tel-lus
- scelerisque
- []
-
-
-Overfull \hbox (0.77591pt too wide) in paragraph at lines 51--51
-\T1/pplj/m/n/10.95 Morbi ul-tri-ces rutrum lorem. Nam el-e-men-tum ul-lam-cor-p
-er leo. Morbi
- []
-
-
-Overfull \hbox (9.6941pt too wide) in paragraph at lines 54--54
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (9.6941pt too wide) in paragraph at lines 20--20
 \T1/pplj/m/n/10.95 Vestibu-lum diam eros, fringilla et, con-sectetuer eu, non-u
 mmy id, sapien.
  []
 
-[13] <gfx/example_1.jpg, id=321, 240.9pt x 180.675pt>
-File: gfx/example_1.jpg Graphic file (type jpg)
- <use gfx/example_1.jpg>
-Package pdftex.def Info: gfx/example_1.jpg used on input line 92.
-(pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
+) [2]
+\openout2 = `Chapters/Chapter02.aux'.
 
-<gfx/example_2.jpg, id=322, 240.9pt x 180.675pt>
-File: gfx/example_2.jpg Graphic file (type jpg)
- <use gfx/example_2.jpg>
-Package pdftex.def Info: gfx/example_2.jpg used on input line 95.
-(pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
+ (./Chapters/Chapter02.tex
+Chapter 2.
+) [3
 
-<gfx/example_3.jpg, id=323, 240.9pt x 180.675pt>
-File: gfx/example_3.jpg Graphic file (type jpg)
- <use gfx/example_3.jpg>
-Package pdftex.def Info: gfx/example_3.jpg used on input line 97.
-(pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_4.jpg, id=324, 240.9pt x 180.675pt>
-File: gfx/example_4.jpg Graphic file (type jpg)
- <use gfx/example_4.jpg>
-Package pdftex.def Info: gfx/example_4.jpg used on input line 99.
-(pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
-)
-[14] [15 <./gfx/example_1.jpg> <./gfx/example_2.jpg> <./gfx/example_3.jpg> <./g
-fx/example_4.jpg>]
+
+
+] [4
+
+
+
+] [5
+
+
+] [6]
 \openout2 = `Chapters/Chapter03.aux'.
 
- (./Chapters/Chapter03.tex [16
-
-
-
-
-]
+ (./Chapters/Chapter03.tex
 Chapter 3.
 
 Overfull \hbox (0.973pt too wide) in paragraph at lines 9--9
@@ -1154,11 +901,32 @@ Overfull \hbox (0.973pt too wide) in paragraph at lines 9--9
 m-cor-per nulla.
  []
 
-[17]) [18] [19
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 15.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 7.65005pt on input line 15.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fvm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 15.
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 15.
+LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
+(Font)              scaled to size 7.65005pt on input line 15.
+ [7
 
 
 
-] [20]
+]) [8] [9
+
+
+
+]
+[10]
 \openout2 = `Chapters/Chapter0A.aux'.
 
  (./Chapters/Chapter0A.tex
@@ -1181,21 +949,24 @@ Overfull \hbox (16.78175pt too wide) in paragraph at lines 15--15
 my, scelerisque
  []
 
-[21
+[11
 
 
 
-]) [22]
+]
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.50006pt on input line 39.
+) [12]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
- (./FrontBackMatter/Bibliography.tex (./main.bbl)) [23
+ (./FrontBackMatter/Bibliography.tex (./main.bbl)) [13
 
 
 
 
 
 
-] [24
+] [14
 
 
 
@@ -1203,9 +974,12 @@ my, scelerisque
 \openout2 = `FrontBackMatter/Colophon.aux'.
 
 
-(./FrontBackMatter/Colophon.tex) [25
+(./FrontBackMatter/Colophon.tex
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 13.
+) [15
 
-] [26
+] [16
 
 
 
@@ -1213,56 +987,48 @@ my, scelerisque
 \openout2 = `FrontBackMatter/Declaration.aux'.
 
  (./FrontBackMatter/Declaration.tex)
-[27
+[17
 
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
- (./main.aux (./FrontBackMatter/Titlepage.aux)
-(./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux)
-(./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux)
-(./Chapters/Chapter01.aux) (./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux
-) (./Chapters/Chapter0A.aux) (./FrontBackMatter/Bibliography.aux)
-(./FrontBackMatter/Colophon.aux) (./FrontBackMatter/Declaration.aux))
+ (./main.aux (./Chapters/Chapter01.aux) (./Chapters/Chapter02.aux)
+(./Chapters/Chapter03.aux) (./Chapters/Chapter0A.aux)
+(./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Colophon.aux)
+(./FrontBackMatter/Declaration.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8EE667BFF4C193A7CEE0276D0262A72C;1971.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+(rerunfilecheck)             Checksum: 474A48D9CABA8CBF348A15DD5775E70E;1012.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 17067 strings out of 493117
- 260227 string characters out of 6135432
- 556004 words of memory out of 5000000
- 19951 multiletter control sequences out of 15000+600000
- 91949 words of font info for 142 fonts, out of 8000000 for 9000
+ 16716 strings out of 493117
+ 254131 string characters out of 6135432
+ 537778 words of memory out of 5000000
+ 19736 multiletter control sequences out of 15000+600000
+ 72955 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,13n,67p,1036b,2286s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,13n,67p,1095b,2355s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2014/texmf-dist/f
-onts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
-/palatino/uplri8a.pfb>
-Output written on main.pdf (35 pages, 268749 bytes).
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (17 pages, 106658 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
- 120 named destinations out of 1000 (max. 500000)
- 19234 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 232 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 15497 words of extra memory for PDF output out of 17280 (max. 10000000)
 
