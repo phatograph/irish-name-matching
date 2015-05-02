@@ -1,4 +1,91 @@
 \chapter{Related Work}
 \label{ch:relatedwork}
 
-\lipsum[12]
+From research questions on section \ref{sec:rq}, there are three aforementioned
+terms that will be a \emph{core} research fields of this project.
+These fields are \emph{name matching}, \emph{web service},
+and \emph{extensible platform}.
+
+\section{Name matching}
+
+\subsection{Edit distance}
+
+% http://en.wikipedia.org/wiki/Edit_distance
+% http://en.wikipedia.org/wiki/Levenshtein_distance
+% http://www.levenshtein.net/index.html
+% http://www.csse.monash.edu.au/~lloyd/tildeAlgDS/Dynamic/Edit/
+
+\subsection{Soundex}
+
+% This project relies on matching names of individuals from documents
+% created in the early 19th century, a time when spelling was not standardized,
+% handwriting could be difficult to read, contractions were used
+% and many people were illiterate and so dictated their names to
+% whoever was writing them down. This is a common problem in genealogy
+% and various solutions have been found.
+
+% ‘Traditional Soundex’
+% is a way of encoding a name for indexing, searching and matching
+% that translates the name into a 4 character code that tries
+% to characterise the essence of its sound in speech.
+% The motivation is that similar sounding names, spelled differently,
+% will produce the same code and so can be found when searching
+% for the name in indexes. Soundex coding works on the assumption
+% that consonant sounds remain more immutable in speech than vowels
+% and that the first letter of a name rarely is mistaken.
+% Therefore, the code consists of the first letter of the name
+% followed by three digits encoding the first three consonant sounds
+% in the name in the range 1..6, the letters being grouped
+% into generally similar sounding categories (for example,
+% both ‘m’ and ‘n’ share the code ‘5’). The codes for long names
+% are truncated while short names are padded out with zeroes
+% so all Soundex codes are 4 characters long. This makes for
+% efficient searching for names in computer systems,
+% results being based on an approximation of the sound of a name
+% and so returning matches that traditional alphabetical searches
+% would ignore.
+
+% However, the Soundex algorithm can encode
+% quite different names the same (for example McDonald and McAdam)
+% and so produce spurious results. It also relies on the immutability
+% of the first letter, so eliminating possible identically sounding names
+% (for example Kane and Caine). Other techniques have been used
+% to overcome these disadvantages as well as the western assumptions
+% behind Soundex. These include Fuzzy Matching based on the Levenshtein distance
+% formula, the Daitch-Mokotoff Soundex System (for Yiddish)
+% and Beider-Morse Phonetic Matching (BMPM).
+%
+% Irish surnames are a mixture of various influences reflecting
+% the country’s history. In 1841, the majority used on official documents
+% were either Anglicisations or translations of original Celtic names,
+% using various spellings. Matheson, the assistant registrar-general in Dublin,
+% used the civil registers in 1894 to produce a survey of names
+% classified by original language, distribution and frequency.
+% In 1901, he developed this into a full classification system with
+% the aim of helping in searches of the register indexes.
+% He illustrates it with examples collected from registry offices,
+% where many of members of close families used different forms of their surnames
+% (for example, a man called Smith registered as dead by his son using
+% the name O’Gowan). He used this information to classify the surnames of Ireland
+% into 2091 groups of alternate forms of the same name. For example,
+% group 1897 consists of Smith, Smyth, Smythe, Smeeth, Gowan, O’Gowan,
+% MacGowan, McGowan, M’Gowan, Goan, Going, Gow, Magough.
+% However, his classification is far from complete and also includes
+% multiple mapping between names (that is, the same name can occur
+% in more than one group).
+%
+% More recent specifically Irish surname matching systems have been developed
+% by the Irish Family History Foundation for searches on their RootsIreland website.
+% This uses a Standard Surname search based on very extensive groupings
+% which seems to have been compiled and added to as the records were digitised.
+% They also provide a list of first-names and their variants.
+% http://www.rootsireland.ie/index.php?id=28
+% http://www.rootsireland.ie/index.php?id=29
+%
+% Modified soundex encoding
+
+\subsection{Lookup Table}
+
+\section{Web service}
+
+\section{Extensible framework}
