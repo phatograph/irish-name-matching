@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  1 MAY 2015 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  2 MAY 2015 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -509,6 +509,18 @@ Package hyperref Info: Option `hypertexnames' set `true' on input line 169.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathsurround' on input line 169.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 169.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 169.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 169.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
@@ -709,10 +721,90 @@ Package: prelim2e 2009/05/29 v1.3 prelim2e Package (MS)
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/carlisle/remreset.sty)))
-(./main.aux (./Chapters/Chapter01.aux) (./Chapters/Chapter02.aux)
-(./Chapters/Chapter03.aux) (./Chapters/Chapter0A.aux)
-(./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Colophon.aux)
-(./FrontBackMatter/Declaration.aux))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+) (./main.aux
+(./Chapters/Chapter01.aux) (./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux
+) (./Chapters/Chapter0A.aux) (./FrontBackMatter/Bibliography.aux)
+(./FrontBackMatter/Colophon.aux) (./FrontBackMatter/Declaration.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -728,6 +820,13 @@ LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
 LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Try loading font information for T1+pplj on input line 39.
 
@@ -822,20 +921,14 @@ Class scrreprt Warning: \float@addtolists detected!
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-
-Overfull \hbox (1.76855pt too wide) in paragraph at lines 12--12
-\T1/pplj/m/n/10.95 nec com-modo wisi enim eget quam. Quisque libero justo, con-
-sectetuer
- []
-
-LaTeX Font Info:    Try loading font information for U+zeur on input line 16.
+LaTeX Font Info:    Try loading font information for U+zeur on input line 8.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeus on input line 16.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 8.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
@@ -843,13 +936,12 @@ File: uzeus.fd 2005/01/11 v4.0 (WaS)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 16.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 8.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 16.
-
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 8.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -858,7 +950,82 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [1
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 15.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+)
+Overfull \hbox (24.09578pt too wide) in paragraph at lines 24--72
+[]\T1/pplj/m/it/10.95 Smith\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Smyth\T1/pp
+lj/m/n/10.95 , \T1/pplj/m/it/10.95 Smythe\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.
+95 Smeeth\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Go-ing\T1/pplj/m/n/10.95 , \T
+1/pplj/m/it/10.95 Gow-ing\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Maizurn\T1/pp
+lj/m/n/10.95 , \T1/pplj/m/it/10.95 McGhoon\T1/pplj/m/n/10.95 ,
+ []
+
+
+Overfull \hbox (31.74838pt too wide) in paragraph at lines 24--72
+\T1/pplj/m/it/10.95 MaGough\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 M\TS1/pplj/
+m/it/10.95 '\T1/pplj/m/it/10.95 Ghoon\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 M
+ac-Givney\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Mac-Givena\T1/pplj/m/n/10.95 
+, \T1/pplj/m/it/10.95 M\TS1/pplj/m/it/10.95 '\T1/pplj/m/it/10.95 Givena\T1/pplj
+/m/n/10.95 , \T1/pplj/m/it/10.95 MacGhoon\T1/pplj/m/n/10.95 ,
+ []
+
+
+Overfull \hbox (19.84555pt too wide) in paragraph at lines 24--72
+\T1/pplj/m/it/10.95 M\TS1/pplj/m/it/10.95 '\T1/pplj/m/it/10.95 Evinie\T1/pplj/m
+/n/10.95 , \T1/pplj/m/it/10.95 Mc-Givney\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.9
+5 MacEvinie\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Mc-Givena\T1/pplj/m/n/10.95
+ , \T1/pplj/m/it/10.95 M\TS1/pplj/m/it/10.95 '\T1/pplj/m/it/10.95 Givney\T1/ppl
+j/m/n/10.95 , \T1/pplj/m/it/10.95 McEvinie\T1/pplj/m/n/10.95 ,
+ []
+
+
+Overfull \hbox (22.65984pt too wide) in paragraph at lines 24--72
+\T1/pplj/m/it/10.95 MacAv-inue\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 M\TS1/pp
+lj/m/it/10.95 '\T1/pplj/m/it/10.95 Avinue\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.
+95 McAv-inue\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Mc-Cona\T1/pplj/m/n/10.95 
+, \T1/pplj/m/it/10.95 MaGowen\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 MaGowan\T
+1/pplj/m/n/10.95 ,
+ []
+
+
+Overfull \hbox (15.32346pt too wide) in paragraph at lines 24--72
+\T1/pplj/m/it/10.95 MaGov-ern\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Ma-Ge-own
+\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Mc-Gowan\T1/pplj/m/n/10.95 , \T1/pplj/
+m/it/10.95 Mc-Goween\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Mc-Gown\T1/pplj/m/
+n/10.95 , \T1/pplj/m/it/10.95 M\TS1/pplj/m/it/10.95 '\T1/pplj/m/it/10.95 Cona\T
+1/pplj/m/n/10.95 ,
+ []
+
+
+Overfull \hbox (10.49454pt too wide) in paragraph at lines 24--72
+\T1/pplj/m/it/10.95 MeCowan\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 MeGowan\T1/
+pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Mac-Gown\T1/pplj/m/n/10.95 , \T1/pplj/m/it
+/10.95 Mac-Goween\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Mac-Gowan\T1/pplj/m/n
+/10.95 , \T1/pplj/m/it/10.95 Mac-
+ []
+
+
+Overfull \hbox (17.70044pt too wide) in paragraph at lines 24--72
+\T1/pplj/m/it/10.95 Cona\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 M\TS1/pplj/m/i
+t/10.95 '\T1/pplj/m/it/10.95 Gowan\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 M\TS
+1/pplj/m/it/10.95 '\T1/pplj/m/it/10.95 Gowen\T1/pplj/m/n/10.95 , \T1/pplj/m/it/
+10.95 M\TS1/pplj/m/it/10.95 '\T1/pplj/m/it/10.95 Gown\T1/pplj/m/n/10.95 , \T1/p
+plj/m/it/10.95 Ogowan\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 O\TS1/pplj/m/it/1
+0.95 '\T1/pplj/m/it/10.95 Gowan\T1/pplj/m/n/10.95 , \T1/pplj/m/it/10.95 Gowen\T
+1/pplj/m/n/10.95 ,
+ []
+
+
+Overfull \hbox (6.55193pt too wide) in paragraph at lines 78--83
+[]\T1/pplj/m/n/10.95 Various so-lu-tions have been cre-ated to find match-ing d
+if-fer-ent names
+ []
+
+[1
 
 
 
@@ -868,7 +1035,12 @@ Package microtype Info: Loading generic settings for font family
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (9.6941pt too wide) in paragraph at lines 20--20
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 110.
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 110.
+
+Overfull \hbox (9.6941pt too wide) in paragraph at lines 123--123
 \T1/pplj/m/n/10.95 Vestibu-lum diam eros, fringilla et, con-sectetuer eu, non-u
 mmy id, sapien.
  []
@@ -911,10 +1083,6 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 15.
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 15.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
 (Font)              scaled to size 7.65005pt on input line 15.
  [7
@@ -943,19 +1111,18 @@ Overfull \hbox (1.97018pt too wide) in paragraph at lines 7--7
 usto et pretium
  []
 
-
-Overfull \hbox (16.78175pt too wide) in paragraph at lines 15--15
-\T1/pplj/m/n/10.95 viverra ali-quam risus. Nul-lam pede justo, mo-lestie non-um
-my, scelerisque
- []
-
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.50006pt on input line 39.
 [11
 
 
 
 ]
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 39.
+Overfull \hbox (9.6941pt too wide) in paragraph at lines 48--48
+\T1/pplj/m/n/10.95 Vestibu-lum diam eros, fringilla et, con-sectetuer eu, non-u
+mmy id, sapien.
+ []
+
 ) [12]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
@@ -1001,15 +1168,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 474A48D9CABA8CBF348A15DD5775E70E;1012.
+(rerunfilecheck)             Checksum: E754AEBD599D62ABC21CDA70A27922E7;1075.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 16716 strings out of 493117
- 254131 string characters out of 6135432
- 537778 words of memory out of 5000000
- 19736 multiletter control sequences out of 15000+600000
- 72955 words of font info for 120 fonts, out of 8000000 for 9000
+ 17197 strings out of 493117
+ 261777 string characters out of 6135432
+ 541071 words of memory out of 5000000
+ 20199 multiletter control sequences out of 15000+600000
+ 73592 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,13n,67p,1095b,2355s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1025,10 +1192,10 @@ xlive/2014/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2
 f-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
 ype1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (17 pages, 106658 bytes).
+Output written on main.pdf (17 pages, 108434 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 199 compressed objects within 2 object streams
- 54 named destinations out of 1000 (max. 500000)
- 15497 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 240 PDF objects out of 1000 (max. 8388607)
+ 206 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 16529 words of extra memory for PDF output out of 17280 (max. 10000000)
 
