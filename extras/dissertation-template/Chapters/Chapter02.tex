@@ -106,9 +106,39 @@ Both Soundex variants are also implemented in the project.
 % classified by original language, distribution and frequency.
 % https://archive.org/details/cu31924029805540
 
+In 1901, Robert Edwin Matheson, the assistant registrar-general in Dublin,
+developed a name classification system \cite{MathesonV} for an aid of register indexing
+and searching. He used a report on surnames in Ireland extracted from
+civil registers \cite{MathesonSR} in 1894 as a base of his system
+\footnote{\cite{adamw} section 2.3.}.
+
 % In 1901, he developed this into a full classification system with
 % the aim of helping in searches of the register indexes.
 % https://archive.org/details/varietiessynony00math
+
+He gathered information from registry offices, focusing on
+people or members of close families. When these people made official
+register records with the office, they might use different variant
+of their surnames. For example, Mr. Green can be registered as dead
+by his son using the name Huneen.
+
+With these information, Matheson classified the surnames in Ireland
+into 2091 groups. For example, group 753 consists of these names.
+
+\begin{quotation} \noindent
+Green, Greenan, greenaway, greene, grene, Guerin, Houneen, Huneen,
+MacAlasher, MacAlesher, MacGlashan, MacGlashin, MacIllesher, M'Alasher,
+M'Alesher, McAlasher, McAlesher, McGlashan, McGlashin, McIllesher,
+M'Glashan, M'Glashin, M'Illesher, Oonin.
+\end{quotation}
+
+This classification also includes multiple mapping between names.
+One name can belong to one or more group. For example, \emph{Green}
+belongs to groups 753, 754, 768, and 1350.
+
+By using this classification information, we can construct a lookup table
+for Irish names by having names in the same group hold the same
+reference number.
 
 % He illustrates it with examples collected from registry offices,
 % where many of members of close families used different forms of their surnames

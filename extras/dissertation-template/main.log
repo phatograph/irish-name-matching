@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  4 MAY 2015 20:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  4 MAY 2015 23:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -970,7 +970,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [1
+ [1
 
 
 
@@ -979,11 +979,37 @@ Package microtype Info: Loading generic settings for font family
 
 
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (1.12244pt too wide) in paragraph at lines 125--127
+\T1/pplj/m/n/10.95 land into 2091 groups. For ex-am-ple, group 753 con-sists of
+ these names. 
+ []
+
+
+Overfull \hbox (11.60097pt too wide) in paragraph at lines 128--133
+[]\T1/pplj/m/n/10.95 Green, Greenan, green-away, greene, grene, Guerin, Houneen
+,
+ []
+
+
+Overfull \hbox (13.63629pt too wide) in paragraph at lines 128--133
+\T1/pplj/m/n/10.95 Huneen, MacAlasher, MacAlesher, Mac-Glashan, Mac-Glashin,
+ []
+
+
+Overfull \hbox (1.14227pt too wide) in paragraph at lines 128--133
+\T1/pplj/m/n/10.95 MacIllesher, M'Alasher, M'Alesher, McAlasher, McAlesher,
+ []
+
+
+Overfull \hbox (3.24474pt too wide) in paragraph at lines 128--133
+\T1/pplj/m/n/10.95 Mc-Glashan, Mc-Glashin, McIllesher, M'Glashan, M'Glashin,
+ []
+
+) [2]
 \openout2 = `Chapters/Chapter01.aux'.
 
-
-(./Chapters/Chapter01.tex
+ (./Chapters/Chapter01.tex
 Chapter 2.
 LaTeX Font Info:    Try loading font information for TS1+pplj on input line 16.
 
@@ -1198,25 +1224,25 @@ Overfull \hbox (9.6941pt too wide) in paragraph at lines 54--54
 mmy id, sapien.
  []
 
-[17] <gfx/example_1.jpg, id=272, 240.9pt x 180.675pt>
+[17] <gfx/example_1.jpg, id=277, 240.9pt x 180.675pt>
 File: gfx/example_1.jpg Graphic file (type jpg)
  <use gfx/example_1.jpg>
 Package pdftex.def Info: gfx/example_1.jpg used on input line 92.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_2.jpg, id=273, 240.9pt x 180.675pt>
+<gfx/example_2.jpg, id=278, 240.9pt x 180.675pt>
 File: gfx/example_2.jpg Graphic file (type jpg)
  <use gfx/example_2.jpg>
 Package pdftex.def Info: gfx/example_2.jpg used on input line 95.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_3.jpg, id=274, 240.9pt x 180.675pt>
+<gfx/example_3.jpg, id=279, 240.9pt x 180.675pt>
 File: gfx/example_3.jpg Graphic file (type jpg)
  <use gfx/example_3.jpg>
 Package pdftex.def Info: gfx/example_3.jpg used on input line 97.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_4.jpg, id=275, 240.9pt x 180.675pt>
+<gfx/example_4.jpg, id=280, 240.9pt x 180.675pt>
 File: gfx/example_4.jpg Graphic file (type jpg)
  <use gfx/example_4.jpg>
 Package pdftex.def Info: gfx/example_4.jpg used on input line 99.
@@ -1319,10 +1345,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
  ) 
 Here is how much of TeX's memory you used:
- 17410 strings out of 493117
- 264896 string characters out of 6135432
- 556679 words of memory out of 5000000
- 20330 multiletter control sequences out of 15000+600000
+ 17418 strings out of 493117
+ 265030 string characters out of 6135432
+ 556733 words of memory out of 5000000
+ 20336 multiletter control sequences out of 15000+600000
  79897 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,13n,67p,1025b,2286s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1340,10 +1366,10 @@ f-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
 ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on main.pdf (31 pages, 204389 bytes).
+Output written on main.pdf (31 pages, 206916 bytes).
 PDF statistics:
- 440 PDF objects out of 1000 (max. 8388607)
- 386 compressed objects within 4 object streams
- 110 named destinations out of 1000 (max. 500000)
+ 448 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 112 named destinations out of 1000 (max. 500000)
  18253 words of extra memory for PDF output out of 20736 (max. 10000000)
 
