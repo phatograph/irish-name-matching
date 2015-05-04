@@ -2,7 +2,7 @@
 \label{ch:relatedwork}
 
 From research questions on section \ref{sec:rq}, there are three aforementioned
-terms that will be a \emph{core} research fields of this project.
+terms that will be core research fields of this project.
 These fields are \emph{name matching}, \emph{web service},
 and \emph{extensible platform}.
 
@@ -17,13 +17,12 @@ various of them at the starting state.
 Edit distance is a way of quantifying how dissimilar two strings
 (e.g., words) are to one another by counting the minimum number
 of operations required to transform one string into the other.
-
 -- Edit distance, \citet{editdistance}
 \end{quotation}
 
-Old-fashioned string operation way of comparing two string
+\noindent An direct string operation way of comparing two string
 could work with name matching too. Levenshtein distance \citep{levenshteindistance}
-is chosen to implemented in this project.
+is chosen to be implemented in this project.
 
 % http://en.wikipedia.org/wiki/Edit_distance
 % http://en.wikipedia.org/wiki/Levenshtein_distance
@@ -70,6 +69,20 @@ For example, \emph{Smith} is translated to \texttt{S530}, and
 % and so returning matches that traditional alphabetical searches
 % would ignore.
 
+However, Irish names (specifically surnames, which this project
+focuses on at this starting state) have some characteristics
+that are not performed correctly by Soundex. For example
+some names are prepended with \emph{Mc}, like \emph{McDonald} and
+\emph{McAdam}. Both are encoded by Soundex as \texttt{M235},
+resulting in similarities, even they should not be consider as similar.
+
+Irish Soundex \cite{adamw} is a modified version of Soundex,
+aims to improve capability of a traditional one upon Irish surnames.
+By applying rules accroding to the langauage characteristics and
+make some adjustment to distinguish names properly.
+
+Both Soundex variants are also implemented in the project.
+
 % However, the Soundex algorithm can encode
 % quite different names the same (for example McDonald and McAdam)
 % and so produce spurious results. It also relies on the immutability
@@ -90,14 +103,17 @@ For example, \emph{Smith} is translated to \texttt{S530}, and
 % Matheson, the assistant registrar-general in Dublin,
 % used the civil registers in 1894 to produce a survey of names
 % classified by original language, distribution and frequency.
+% https://archive.org/details/cu31924029805540
+
 % In 1901, he developed this into a full classification system with
 % the aim of helping in searches of the register indexes.
+% https://archive.org/details/varietiessynony00math
 
 % He illustrates it with examples collected from registry offices,
 % where many of members of close families used different forms of their surnames
 % (for example, a man called Smith registered as dead by his son using
 % the name O’Gowan). He used this information to classify the surnames of Ireland
-% into 2091 groups of alternate forms of the same name. For example,
+% into 2091 groups of alternate forms of the same name (pp 32-63). For example,
 % group 1897 consists of Smith, Smyth, Smythe, Smeeth, Gowan, O’Gowan,
 % MacGowan, McGowan, M’Gowan, Goan, Going, Gow, Magough.
 
