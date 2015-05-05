@@ -1,157 +1,94 @@
 \chapter{Related Work}
 \label{ch:relatedwork}
 
-From research questions on section \ref{sec:rq}, there are three aforementioned
-terms that will be core research fields of this project.
-These fields are \emph{name matching}, \emph{web service},
-and \emph{extensible platform}.
-
-\section{Name matching}
-
-There are many methods for matching names. This project encodes
-various of them at the starting state.
-
-\subsection{Edit distance}
-
-\begin{quotation} \noindent
-Edit distance is a way of quantifying how dissimilar two strings
-(e.g., words) are to one another by counting the minimum number
-of operations required to transform one string into the other.
--- Edit distance, \citet{editdistance}
-\end{quotation}
-
-\noindent An direct string operation way of comparing two string
-could work with name matching too. Levenshtein distance \citep{levenshteindistance}
-is chosen to be implemented in this project.
-
-% http://en.wikipedia.org/wiki/Edit_distance
-% http://en.wikipedia.org/wiki/Levenshtein_distance
-% http://www.levenshtein.net/index.html
-% http://www.csse.monash.edu.au/~lloyd/tildeAlgDS/Dynamic/Edit/
-
-\subsection{Soundex}
-
-% This project relies on matching names of individuals from documents
-% created in the early 19th century, a time when spelling was not standardized,
-% handwriting could be difficult to read, contractions were used
-% and many people were illiterate and so dictated their names to
-% whoever was writing them down. This is a common problem in genealogy
-% and various solutions have been found.
-
-Soundex \cite{soundex} encodes a name (or any string) into a 4 character code
-which represents an essence of its sound as pronounced in English.
-The idea is to encode letters with similar sound into the same group,
-and ignore vowels (unless it is the first letter).
-For example, \emph{Smith} is translated to \texttt{S530}, and
-\emph{Simon} is translated to \texttt{S550}.
-
-% ‘Traditional Soundex’
-% is a way of encoding a name for indexing, searching and matching
-% that translates the name into a 4 character code that tries
-% to characterise the essence of its sound in speech.
-
-% The motivation is that similar sounding names, spelled differently,
-% will produce the same code and so can be found when searching
-% for the name in indexes. Soundex coding works on the assumption
-% that consonant sounds remain more immutable in speech than vowels
-% and that the first letter of a name rarely is mistaken.
-
-% Therefore, the code consists of the first letter of the name
-% followed by three digits encoding the first three consonant sounds
-% in the name in the range 1..6, the letters being grouped
-% into generally similar sounding categories (for example,
-% both ‘m’ and ‘n’ share the code ‘5’). The codes for long names
-% are truncated while short names are padded out with zeroes
-% so all Soundex codes are 4 characters long.
-
-% This makes for efficient searching for names in computer systems,
-% results being based on an approximation of the sound of a name
-% and so returning matches that traditional alphabetical searches
-% would ignore.
-
-However, Irish names (specifically surnames, which this project
-focuses on at this starting state) have some characteristics
-that are not performed correctly by Soundex. For example
-some names are prepended with \emph{Mc}, like \emph{McDonald} and
-\emph{McAdam}. Both are encoded by Soundex as \texttt{M235},
-resulting in similarities, even they should not be consider as similar.
-
-Irish Soundex\footnote{\cite{adamw} Appendix 3.}
-is a modified version of Soundex,
-aims to improve capability of a traditional one upon Irish surnames.
-By applying rules accroding to the langauage characteristics and
-make some adjustment to distinguish names properly.
-
-Both Soundex variants are also implemented in the project.
-
-% However, the Soundex algorithm can encode
-% quite different names the same (for example McDonald and McAdam)
-% and so produce spurious results. It also relies on the immutability
-% of the first letter, so eliminating possible identically sounding names
-% (for example Kane and Caine). Other techniques have been used
-% to overcome these disadvantages as well as the western assumptions
-% behind Soundex. These include Fuzzy Matching based on the Levenshtein distance
-% formula, the Daitch-Mokotoff Soundex System (for Yiddish)
-% and Beider-Morse Phonetic Matching (BMPM).
-
-\subsection{Lookup Table}
-
-% Irish surnames are a mixture of various influences reflecting
-% the country’s history. In 1841, the majority used on official documents
-% were either Anglicisations or translations of original Celtic names,
-% using various spellings.
-
-% Matheson, the assistant registrar-general in Dublin,
-% used the civil registers in 1894 to produce a survey of names
-% classified by original language, distribution and frequency.
-% https://archive.org/details/cu31924029805540
-
-In 1901, Robert Edwin Matheson, the assistant registrar-general in Dublin,
-developed a name classification system \cite{MathesonV} for an aid of register indexing
-and searching. He used a report on surnames in Ireland extracted from
-civil registers \cite{MathesonSR} in 1894 as a base of his system
-\footnote{\cite{adamw} section 2.3.}.
-
-% In 1901, he developed this into a full classification system with
-% the aim of helping in searches of the register indexes.
-% https://archive.org/details/varietiessynony00math
-
-He gathered information from registry offices, focusing on
-people or members of close families. When these people made official
-register records with the office, they might use different variant
-of their surnames. For example, Mr. Green can be registered as dead
-by his son using the name Huneen.
-
-With these information, Matheson classified the surnames in Ireland
-into 2091 groups. For example, group 753 consists of these names.
-
-\begin{quotation} \noindent
-Green, Greenan, greenaway, greene, grene, Guerin, Houneen, Huneen,
-MacAlasher, MacAlesher, MacGlashan, MacGlashin, MacIllesher, M'Alasher,
-M'Alesher, McAlasher, McAlesher, McGlashan, McGlashin, McIllesher,
-M'Glashan, M'Glashin, M'Illesher, Oonin.
-\end{quotation}
-
-This classification also includes multiple mapping between names.
-One name can belong to one or more group. For example, \emph{Green}
-belongs to groups 753, 754, 768, and 1350.
-
-By using this classification information, we can construct a lookup table
-for Irish names by having names in the same group hold the same
-reference number.
-
-% He illustrates it with examples collected from registry offices,
-% where many of members of close families used different forms of their surnames
-% (for example, a man called Smith registered as dead by his son using
-% the name O’Gowan). He used this information to classify the surnames of Ireland
-% into 2091 groups of alternate forms of the same name (pp 32-63). For example,
-% group 1897 consists of Smith, Smyth, Smythe, Smeeth, Gowan, O’Gowan,
-% MacGowan, McGowan, M’Gowan, Goan, Going, Gow, Magough.
-
-% However, his classification is far from complete and also includes
-% multiple mapping between names (that is, the same name can occur
-% in more than one group).
+% From research questions on section \ref{sec:rq}, there are three aforementioned
+% terms that will be core research fields of this project.
+% These fields are \emph{name matching}, \emph{web service},
+% and \emph{extensible platform}.
+%
+% \section{Name matching}
+%
+% There are many methods for matching names. This project encodes
+% various of them at the starting state.
+%
+% \subsection{Edit distance}
+%
+% \begin{quotation} \noindent
+% Edit distance is a way of quantifying how dissimilar two strings
+% (e.g., words) are to one another by counting the minimum number
+% of operations required to transform one string into the other.
+% -- Edit distance, \citet{editdistance}
+% \end{quotation}
+%
+% \noindent An direct string operation way of comparing two string
+% could work with name matching too. Levenshtein distance \citep{levenshteindistance}
+% is chosen to be implemented in this project.
+%
+% \subsection{Soundex}
+%
+% Soundex \cite{soundex} encodes a name (or any string) into a 4 character code
+% which represents an essence of its sound as pronounced in English.
+% The idea is to encode letters with similar sound into the same group,
+% and ignore vowels (unless it is the first letter).
+% For example, \emph{Smith} is translated to \texttt{S530}, and
+% \emph{Simon} is translated to \texttt{S550}.
+%
+% Irish Soundex\footnote{\cite{adamw} Appendix 3.}
+% is a modified version of Soundex,
+% aims to improve capability of a traditional one upon Irish surnames.
+% By applying rules accroding to the langauage characteristics and
+% make some adjustment to distinguish names properly.
+%
+% Both Soundex variants are also implemented in the project.
+%
+% \subsection{Lookup Table}
+%
+% In 1901, Robert Edwin Matheson, the assistant registrar-general in Dublin,
+% developed a name classification system \cite{MathesonV} for an aid of register indexing
+% and searching. He used a report on surnames in Ireland extracted from
+% civil registers \cite{MathesonSR} in 1894 as a base of his system
+% \footnote{\cite{adamw} section 2.3.}.
+%
+% He gathered information from registry offices, focusing on
+% people or members of close families. When these people made official
+% register records with the office, they might use different variant
+% of their surnames. For example, Mr. Green can be registered as dead
+% by his son using the name Huneen.
+%
+% With these information, Matheson classified the surnames in Ireland
+% into 2091 groups. For example, group 753 consists of these names.
+%
+% \begin{quotation} \noindent
+% Green, Greenan, greenaway, greene, grene, Guerin, Houneen, Huneen,
+% MacAlasher, MacAlesher, MacGlashan, MacGlashin, MacIllesher, M'Alasher,
+% M'Alesher, McAlasher, McAlesher, McGlashan, McGlashin, McIllesher,
+% M'Glashan, M'Glashin, M'Illesher, Oonin.
+% \end{quotation}
+%
+% This classification also includes multiple mapping between names.
+% One name can belong to one or more group. For example, \emph{Green}
+% belongs to groups 753, 754, 768, and 1350.
+%
+% By using this classification information, we can construct a lookup table
+% for Irish names by having names in the same group hold the same
+% reference number.
 
 \section{Web service}
+
+One convenient way to bring this service to public is to create a \emph{web service}.
+A web service is a tool or function that can be accessed by other programs
+over the web (via http) \cite{ws1}. A result from web service is designed
+to be used by computer programs rather than humans.
+
+There are many ways to implement web services. Two famous ones are
+\emph{Simple Object Access Protocol (SOAP)} and
+\emph{Representational State Transfer (REST)}.
+Both has their own advantages \cite{ws2}. We decided to implement
+our service using REST due to its simplicity and scalability \cite{ws3}\cite{ws4}.
+
+At this initial state, data resulting from our web service
+is in \texttt{JSON} \cite{json} format. Since it is widely used in web development
+and becoming more and more popular \cite{rest}. However, our service can be extended
+into any other format easily as well, such as traditional \texttt{XML}.
 
 \section{Extensible framework}

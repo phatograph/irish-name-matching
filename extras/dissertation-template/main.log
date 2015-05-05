@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  4 MAY 2015 23:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  5 MAY 2015 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -923,23 +923,18 @@ Class scrreprt Warning: \float@addtolists detected!
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-
-Overfull \hbox (0.27417pt too wide) in paragraph at lines 16--21
-\T1/pplj/m/n/10.95 min-i-mum num-ber of op-er-a-tions re-quired to trans-form o
-ne
- []
-
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 45.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 90.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 45.
+(Font)              scaled to size 9.30756pt on input line 90.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for U+zeur on input line 79.
+)
+LaTeX Font Info:    Try loading font information for U+zeur on input line 91.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
@@ -947,7 +942,7 @@ File: uzeur.fd 2005/01/11 v4.0 (WaS)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeus on input line 79.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 91.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
@@ -955,12 +950,12 @@ File: uzeus.fd 2005/01/11 v4.0 (WaS)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 79.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 91.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 79.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 91.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -980,36 +975,15 @@ Package microtype Info: Loading generic settings for font family
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (1.12244pt too wide) in paragraph at lines 125--127
-\T1/pplj/m/n/10.95 land into 2091 groups. For ex-am-ple, group 753 con-sists of
- these names. 
- []
-
-
-Overfull \hbox (11.60097pt too wide) in paragraph at lines 128--133
-[]\T1/pplj/m/n/10.95 Green, Greenan, green-away, greene, grene, Guerin, Houneen
-,
- []
-
-
-Overfull \hbox (13.63629pt too wide) in paragraph at lines 128--133
-\T1/pplj/m/n/10.95 Huneen, MacAlasher, MacAlesher, Mac-Glashan, Mac-Glashin,
- []
-
-
-Overfull \hbox (1.14227pt too wide) in paragraph at lines 128--133
-\T1/pplj/m/n/10.95 MacIllesher, M'Alasher, M'Alesher, McAlasher, McAlesher,
- []
-
-
-Overfull \hbox (3.24474pt too wide) in paragraph at lines 128--133
-\T1/pplj/m/n/10.95 Mc-Glashan, Mc-Glashin, McIllesher, M'Glashan, M'Glashin,
- []
-
-) [2]
 \openout2 = `Chapters/Chapter01.aux'.
 
- (./Chapters/Chapter01.tex
+
+(./Chapters/Chapter01.tex [2
+
+
+
+
+]
 Chapter 2.
 LaTeX Font Info:    Try loading font information for TS1+pplj on input line 16.
 
@@ -1085,12 +1059,7 @@ Overfull \hbox (6.55193pt too wide) in paragraph at lines 80--85
 if-fer-ent names
  []
 
-[3
-
-
-
-
-]
+[3]
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 113.
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
@@ -1224,25 +1193,25 @@ Overfull \hbox (9.6941pt too wide) in paragraph at lines 54--54
 mmy id, sapien.
  []
 
-[17] <gfx/example_1.jpg, id=277, 240.9pt x 180.675pt>
+[17] <gfx/example_1.jpg, id=259, 240.9pt x 180.675pt>
 File: gfx/example_1.jpg Graphic file (type jpg)
  <use gfx/example_1.jpg>
 Package pdftex.def Info: gfx/example_1.jpg used on input line 92.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_2.jpg, id=278, 240.9pt x 180.675pt>
+<gfx/example_2.jpg, id=260, 240.9pt x 180.675pt>
 File: gfx/example_2.jpg Graphic file (type jpg)
  <use gfx/example_2.jpg>
 Package pdftex.def Info: gfx/example_2.jpg used on input line 95.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_3.jpg, id=279, 240.9pt x 180.675pt>
+<gfx/example_3.jpg, id=261, 240.9pt x 180.675pt>
 File: gfx/example_3.jpg Graphic file (type jpg)
  <use gfx/example_3.jpg>
 Package pdftex.def Info: gfx/example_3.jpg used on input line 97.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_4.jpg, id=280, 240.9pt x 180.675pt>
+<gfx/example_4.jpg, id=262, 240.9pt x 180.675pt>
 File: gfx/example_4.jpg Graphic file (type jpg)
  <use gfx/example_4.jpg>
 Package pdftex.def Info: gfx/example_4.jpg used on input line 99.
@@ -1301,7 +1270,31 @@ mmy id, sapien.
 ) [26]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
- (./FrontBackMatter/Bibliography.tex (./main.bbl)) [27
+ (./FrontBackMatter/Bibliography.tex (./main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 9--15
+\T1/fvm/m/n/10.95 json-[]or-[]xml-[]which-[]data-[]format-[]is-[]better-[]for-[
+]developers/$[][]\T1/pplj/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--37
+[]\T1/pplj/m/n/10.95 John Mueller.  \T1/pplj/m/it/10.95 Un-der-stand-ing SOAP a
+nd REST Ba-
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 31--37
+\T1/pplj/m/it/10.95 sics\T1/pplj/m/n/10.95 .  Jan 2013.  URL [][]$\T1/fvm/m/n/1
+0.95 http : / / blog . smartbear . com / apis /
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 31--37
+\T1/fvm/m/n/10.95 understanding-[]soap-[]and-[]rest-[]basics/$[][]\T1/pplj/m/n/
+10.95 .  ac-cessed May 5$[]$,
+ []
+
+)) [27
 
 
 
@@ -1315,8 +1308,7 @@ mmy id, sapien.
 ]
 \openout2 = `FrontBackMatter/Colophon.aux'.
 
-
-(./FrontBackMatter/Colophon.tex) [29
+ (./FrontBackMatter/Colophon.tex) [29
 
 ] [30
 
@@ -1325,30 +1317,30 @@ mmy id, sapien.
 ]
 \openout2 = `FrontBackMatter/Declaration.aux'.
 
- (./FrontBackMatter/Declaration.tex)
-[31
+
+(./FrontBackMatter/Declaration.tex) [31
 
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
- (./main.aux (./Chapters/Chapter02.aux) (./Chapters/Chapter01.aux)
-(./Chapters/ChapterS01.aux) (./Chapters/ChapterS02.aux)
-(./Chapters/ChapterS03.aux) (./Chapters/Chapter0A.aux)
-(./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Colophon.aux)
-(./FrontBackMatter/Declaration.aux))
+ (./main.aux (./Chapters/Chapter02.aux) (./Chapters/Chapter01.aux) (./Chapters/
+ChapterS01.aux)
+(./Chapters/ChapterS02.aux) (./Chapters/ChapterS03.aux)
+(./Chapters/Chapter0A.aux) (./FrontBackMatter/Bibliography.aux)
+(./FrontBackMatter/Colophon.aux) (./FrontBackMatter/Declaration.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2C256CCCED982FB7D0305D414CFDA2AD;2460.
+(rerunfilecheck)             Checksum: 7475D16210257ACDCD5FE19B3B5887D6;2184.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
  ) 
 Here is how much of TeX's memory you used:
- 17418 strings out of 493117
- 265030 string characters out of 6135432
- 556733 words of memory out of 5000000
- 20336 multiletter control sequences out of 15000+600000
+ 17410 strings out of 493117
+ 264736 string characters out of 6135432
+ 556702 words of memory out of 5000000
+ 20332 multiletter control sequences out of 15000+600000
  79897 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,13n,67p,1025b,2286s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1366,10 +1358,10 @@ f-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
 ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on main.pdf (31 pages, 206916 bytes).
+Output written on main.pdf (31 pages, 205223 bytes).
 PDF statistics:
- 448 PDF objects out of 1000 (max. 8388607)
- 394 compressed objects within 4 object streams
- 112 named destinations out of 1000 (max. 500000)
- 18253 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 428 PDF objects out of 1000 (max. 8388607)
+ 374 compressed objects within 4 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 18221 words of extra memory for PDF output out of 20736 (max. 10000000)
 
