@@ -1,76 +1,50 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-A level-1 auxiliary file: Chapters/Chapter01.aux
-A level-1 auxiliary file: Chapters/Chapter02.aux
-A level-1 auxiliary file: Chapters/ChapterS01.aux
-A level-1 auxiliary file: Chapters/ChapterS02.aux
-A level-1 auxiliary file: Chapters/ChapterS03.aux
-A level-1 auxiliary file: Chapters/Chapter0A.aux
+A level-1 auxiliary file: Chapters/Chapter03.aux
 A level-1 auxiliary file: FrontBackMatter/Bibliography.aux
 The style file: plainnat.bst
-A level-1 auxiliary file: FrontBackMatter/Colophon.aux
-A level-1 auxiliary file: FrontBackMatter/Declaration.aux
+I found no \citation commands---while reading file main.aux
 Database file #1: Bibliography.bib
-Warning--empty publisher in soundex
-Warning--empty publisher in railsd
-Warning--empty publisher in rest
-Warning--empty publisher in ws4
-Warning--empty publisher in json
-Warning--empty publisher in MathesonSR
-Warning--empty publisher in MathesonV
-Warning--empty publisher in ws3
-Warning--empty publisher in ws1
-Warning--empty publisher in morpeth
-Warning--empty publisher in ruby
-Warning--empty publisher in rubyfp
-Warning--empty publisher in rails
-Warning--empty publisher in ws2
-Warning--empty publisher in rubyoo
-Warning--empty publisher in pofruby
-Warning--empty publisher in irishregistration
-Warning--empty publisher in editdistance
-Warning--empty publisher in levenshteindistance
-Warning--empty publisher in adamw
-You've used 20 entries,
+You've used 0 entries,
             2773 wiz_defined-function locations,
-            696 strings with 7354 characters,
-and the built_in function-call counts, 6403 in all, are:
-= -- 518
-> -- 211
-< -- 20
-+ -- 85
-- -- 63
-* -- 408
-:= -- 1051
-add.period$ -- 97
-call.type$ -- 20
-change.case$ -- 61
-chr.to.int$ -- 18
-cite$ -- 60
-duplicate$ -- 400
-empty$ -- 641
-format.name$ -- 85
-if$ -- 1307
-int.to.chr$ -- 3
+            594 strings with 4886 characters,
+and the built_in function-call counts, 33 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 10
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 40
-newline$ -- 145
-num.names$ -- 80
-pop$ -- 224
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 61
+purify$ -- 0
 quote$ -- 0
-skip$ -- 231
+skip$ -- 1
 stack$ -- 0
-substring$ -- 40
-swap$ -- 31
+substring$ -- 0
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
-warning$ -- 20
-while$ -- 60
+type$ -- 0
+warning$ -- 0
+while$ -- 0
 width$ -- 0
-write$ -- 301
-(There were 20 warnings)
+write$ -- 7
+(There was 1 error message)
