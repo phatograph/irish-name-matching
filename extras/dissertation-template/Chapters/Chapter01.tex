@@ -6,7 +6,36 @@ Here introduces adequate information in order to help getting start.
 
 \section{Motivation}
 
-In the 19\textsuperscript{th} century, in Ireland, there was no standard
+The first civil registration in Ireland was performed on 1864 \cite[]{irishregistration}.
+Before that time census meterials were mostly lost or incomplete. So genealogical researches
+need to rely on parish records and also some `census substitute' documents,
+such as land ownership and tenancy records\footnote{\cite[]{adamw} section 1.1}.
+
+However, for these documents, each of them usually does not contain enough
+information to indentify individuals. Some of them contains name and address,
+whereas others might contain only name. In order to fulfil missing information
+of one individual that scattered among many documents, \emph{Record linkage}
+is one method to do so.
+
+\graffito{``Record linkage is used in historical research, social studies,
+marketing, administration and government as well as in genealogy'' \\
+-- \citet[]{adamw} section 2.2}
+
+Record linkage uses a person\textquotesingle s name as a basis to link that
+person\textquotesingle s information between many documents.
+Together with other coherant attributes to ensure the link is correct, a
+more complete information about that person can be obtained.
+
+In addition, this is not only just for one person. We can assume the relationship
+of the person to others that might be close to, and apply the information
+to those people as well. For example, if we know that there is a record
+that is believed to consist of people from the same area in each page \cite[]{morpeth}
+(but no area or address is mentioned, or some is missing in the page). And we can find
+one or more person\textquotesingle s addresses in that page by using record linkage.
+We might be able to apply those addresses to all people in that page as well.
+
+Apparently linking or matching person\textquotesingle s name is important in the process.
+Unfortunately, in the 19\textsuperscript{th} century, in Ireland, there was no standard
 of the spelling of names, handwriting could be difficult to read
 and contractions or abbreviations were often used. Many people were not literate,
 so they asked literate people to write their names.
@@ -45,8 +74,6 @@ for our extent knowledge, there is yet no public system which encodes
 those solutions together and provides a service of name matching.
 This project is to create one system to archieve this.
 
-\pagebreak
-
 \section{Research Questions}
 \label{sec:rq}
 
@@ -64,6 +91,9 @@ The second question is an enhancement for the system. It can be designed
 as a more general purpose matching system rather than just specified
 only for Irish names. Therefore it should be extensible for any further
 matching methods to be developed in the future.
+
+In addition to the web service, web interface is to be introduced as well
+for the purpose of user friendly usage, individual usage, and demonstration.
 
 \section{Objective and Aims}
 

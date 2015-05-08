@@ -21,54 +21,56 @@ Warning--empty publisher in MathesonSR
 Warning--empty publisher in MathesonV
 Warning--empty publisher in ws3
 Warning--empty publisher in ws1
+Warning--empty publisher in morpeth
 Warning--empty publisher in ruby
 Warning--empty publisher in rubyfp
 Warning--empty publisher in rails
 Warning--empty publisher in ws2
 Warning--empty publisher in rubyoo
 Warning--empty publisher in pofruby
+Warning--empty publisher in irishregistration
 Warning--empty publisher in editdistance
 Warning--empty publisher in levenshteindistance
 Warning--empty publisher in adamw
-You've used 18 entries,
+You've used 20 entries,
             2773 wiz_defined-function locations,
-            689 strings with 7167 characters,
-and the built_in function-call counts, 5794 in all, are:
-= -- 471
-> -- 191
-< -- 18
-+ -- 77
-- -- 57
-* -- 372
-:= -- 952
-add.period$ -- 89
-call.type$ -- 18
-change.case$ -- 55
-chr.to.int$ -- 16
-cite$ -- 54
-duplicate$ -- 360
-empty$ -- 577
-format.name$ -- 77
-if$ -- 1182
+            696 strings with 7354 characters,
+and the built_in function-call counts, 6403 in all, are:
+= -- 518
+> -- 211
+< -- 20
++ -- 85
+- -- 63
+* -- 408
+:= -- 1051
+add.period$ -- 97
+call.type$ -- 20
+change.case$ -- 61
+chr.to.int$ -- 18
+cite$ -- 60
+duplicate$ -- 400
+empty$ -- 641
+format.name$ -- 85
+if$ -- 1307
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 36
-newline$ -- 133
-num.names$ -- 72
-pop$ -- 200
+missing$ -- 40
+newline$ -- 145
+num.names$ -- 80
+pop$ -- 224
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 61
 quote$ -- 0
-skip$ -- 207
+skip$ -- 231
 stack$ -- 0
-substring$ -- 36
-swap$ -- 29
+substring$ -- 40
+swap$ -- 31
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
-warning$ -- 18
-while$ -- 54
+type$ -- 120
+warning$ -- 20
+while$ -- 60
 width$ -- 0
-write$ -- 275
-(There were 18 warnings)
+write$ -- 301
+(There were 20 warnings)

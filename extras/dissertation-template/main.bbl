@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -19,7 +19,7 @@ Kresimir Bojcic.
 \newblock 2013.
 \newblock URL
   \url{http://www.toptal.com/ruby-on-rails/after-two-decades-of-programming-i-use-rails}.
-\newblock accessed \textsuperscript{th}, 2015.
+\newblock accessed May 6\textsuperscript{th}, 2015.
 
 \bibitem[Fakhruddin(2015)]{rest}
 Hussain Fakhruddin.
@@ -73,6 +73,11 @@ Vincent Ramdhanie.
 \newblock URL \url{http://stackoverflow.com/a/226159/459794}.
 \newblock accessed May 5\textsuperscript{th}, 2015.
 
+\bibitem[Ridgway(2013)]{morpeth}
+Christopher Ridgway.
+\newblock \emph{The Morpeth Roll: Ireland identified in 1841}.
+\newblock 2013.
+
 \bibitem[ruby lang.org(2015{\natexlab{a}})]{ruby}
 ruby lang.org.
 \newblock \emph{Ruby, a programmer's best friend}.
@@ -115,6 +120,13 @@ Bill Venners.
 \newblock Sep 2003.
 \newblock URL \url{http://www.artima.com/intv/rubyP.html}.
 \newblock accessed May 6\textsuperscript{th}, 2015.
+
+\bibitem[welfare.ie(2015)]{irishregistration}
+welfare.ie.
+\newblock \emph{History of Registration in Ireland}.
+\newblock 2015.
+\newblock URL \url{https://www.welfare.ie/en/downloads/GRO-History.pdf}.
+\newblock accessed May 8\textsuperscript{th}, 2015.
 
 \bibitem[Wikipedia(2015{\natexlab{a}})]{editdistance}
 Wikipedia.
