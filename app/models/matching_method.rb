@@ -6,16 +6,17 @@ class MatchingMethod
     :value,
     :label,
     :score,
-    :weight
+    :weight,
+    :weighted_score
 
   def initialize(params = {})
-    @name           = params.fetch(:name).upcase
-    @base_name      = params.fetch(:base_name)
-    @base_name.name = @base_name.name.upcase
-    @weight         = params.fetch(:weight)
+    @name      = params.fetch(:name)
+    @base_name = params.fetch(:base_name)
+    @weight    = params.fetch(:weight)
 
     cal_score
     @score = @score.round(3)
+    @weighted_score = (@score * @weight).round(3)
   end
 
   private
@@ -39,12 +40,12 @@ class LookupTable < MatchingMethod
   private
 
   def cal_score
-    base = LookupTableRecord.where(:name => @base_name.name.upcase)
+    base = LookupTableRecord.where(:name => @base_name.name)
     @score = if base.nil?
                0
              else
                base = base.map(&:ref)
-               refs = LookupTableRecord.where(:ref => base, :name => @name.upcase)
+               refs = LookupTableRecord.where(:ref => base, :name => @name)
 
                if refs.present?
                  @label = (base & refs.map(&:ref)).join(', ')
@@ -69,40 +70,8 @@ end
 
 class Soundex < MatchingMethod
   WEIGHT = 3
-  private
 
-  def cal_score
-    @value           = Text::Soundex.soundex(@name)
-    soundex_distance = soundex_distance(@value, @base_name.soundex)
-    @score           = ((@value.size - soundex_distance).to_f / @value.size)
-  end
-end
-
-class IrishSoundex < MatchingMethod
-  WEIGHT = 6
-  private
-
-  def cal_score
-    name = @name.upcase
-    name = name.match(/^ST./).present? ? "SAINT #{name[3..name.length]}" : name
-
-    name = if name.match(/^O /).present?
-             name[1..name.length].gsub(' ', '')
-           elsif name.match(/^O'/).present?
-             name[2..name.length].gsub(' ', '')
-           elsif name.match(/^MC/).present?
-             name[2..name.length].gsub(' ', '')
-           elsif name.match(/^M'/).present?
-             name[2..name.length].gsub(' ', '')
-           elsif name.match(/^MAC/).present? && name != 'MAC'
-             name[3..name.length].gsub(' ', '')
-           else
-             name
-           end
-
-    name = name.strip
-    name = name.gsub(/^C/, 'K')
-
+  def self.soundex(name)
     result = name.first
 
     name[1..name.length].split('').each do |n|
@@ -128,14 +97,11 @@ class IrishSoundex < MatchingMethod
              else
                result.ljust(4, '0')
              end
-
-    @value           = result
-    @label           = name
-    soundex_distance = soundex_distance(result, @base_name.soundex)
-    @score           = ((@value.size - soundex_distance).to_f / @value.size)
   end
 
-  def category(c)
+  private
+
+  def self.category(c)
     if c.match(/[AEIOUY]/).present?
       "/"
     elsif c.match(/[BPFV]/).present?
@@ -153,5 +119,51 @@ class IrishSoundex < MatchingMethod
     else
       ""
     end
+  end
+
+  def cal_score
+    name_soundex      = Soundex.soundex(@name)
+    base_name_soundex = Soundex.soundex(@base_name.name)
+
+    @value = "#{name_soundex} <=> #{base_name_soundex}"
+    s_dis  = soundex_distance(name_soundex, base_name_soundex)
+    @score = ((@value.size - s_dis).to_f / @value.size)
+  end
+end
+
+class IrishSoundex < MatchingMethod
+  WEIGHT = 6
+
+  def self.soundex(name)
+    name = name.match(/^ST./).present? ? "SAINT #{name[3..name.length]}" : name
+
+    name = if name.match(/^O /).present?
+             name[1..name.length].gsub(' ', '')
+           elsif name.match(/^O'/).present?
+             name[2..name.length].gsub(' ', '')
+           elsif name.match(/^MC/).present?
+             name[2..name.length].gsub(' ', '')
+           elsif name.match(/^M'/).present?
+             name[2..name.length].gsub(' ', '')
+           elsif name.match(/^MAC/).present? && name != 'MAC'
+             name[3..name.length].gsub(' ', '')
+           else
+             name
+           end
+
+    name = name.strip.gsub(/^C/, 'K')
+    @label = name
+    Soundex.soundex(name)
+  end
+
+  private
+
+  def cal_score
+    name_soundex      = IrishSoundex.soundex(@name)
+    base_name_soundex = IrishSoundex.soundex(@base_name.name)
+
+    @value = "#{name_soundex} <=> #{base_name_soundex}"
+    s_dis  = soundex_distance(name_soundex, base_name_soundex)
+    @score = ((@value.size - s_dis).to_f / @value.size)
   end
 end

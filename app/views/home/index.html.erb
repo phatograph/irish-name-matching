@@ -64,7 +64,7 @@
   <% @matched_names.each do |matched_name| %>
     <div class="panel panel-default">
       <div class="panel-body">
-        <h4><%= matched_name.name %> <small><%= matched_name.soundex %></small></h4>
+        <h4><%= matched_name.name %></h4>
         <div class="row">
           <% matched_name.to_match_names.each do |tmn| %>
             <div class="col-xs-6">
@@ -88,7 +88,7 @@
                         <td><span title="<%= s.label %>"><%= s.value %></span></td>
                         <td><%= s.score %></td>
                         <td>x <%= s.weight %></td>
-                        <td><%= s.score * s.weight %></td>
+                        <td><%= s.weighted_score %></td>
                       </tr>
                     <% end %>
                   </table>
