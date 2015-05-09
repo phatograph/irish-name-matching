@@ -1,8 +1,22 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{2}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Battley(2015)]{textgem}
+Paul Battley.
+\newblock \emph{Text, Collection of text algorithms}.
+\newblock 2015.
+\newblock URL \url{https://github.com/threedaymonk/text}.
+\newblock accessed \textsuperscript{th}, 2015.
+
+\bibitem[Winstanley(2014)]{adamw}
+Adam Winstanley.
+\newblock \emph{Identifying People on the Morpeth Roll}.
+\newblock July 2014.
+\newblock Postgraduate Diploma in Genealogical, Palaeographic \& Heraldic
+  Studies 2013-14.
 
 \end{thebibliography}

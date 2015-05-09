@@ -4,3 +4,144 @@
 This chapter describes the details how the project is implemented.
 Note that algorithms and codes listed here are written in Ruby programming language,
 which is the main language of the project.
+
+\section{Name matching algorithms}
+
+We will start off by detailing bundled matching algorithms here.
+
+\subsection{Levenshtein distance}
+
+This algorithm measures the difference between two strings.
+It tells the minimum number of opearations needed to change string to
+another. These opeations are insertions, deletions, or substitutions.
+Consider these following examples.
+
+\begin{itemize}
+  \item Sm\textbf{i}th $\rightarrow$ Sm\textbf{y}th \\
+    the minimum operation to change is 1, which is to substitute \emph{i} to
+    \emph{y}, therefore Levenshtein distance for these two strings is 1.
+  \item Gowan $\rightarrow$ \textbf{Mc}Gowan \\
+    2 insertions of \emph{M} and \emph{c} is required.
+  \item Sm\textbf{i}th\textbf{e} $\rightarrow$ Sm\textbf{y}th \\
+    1 deletion of \emph{e} and 1 substitution of \emph{i} to \emph{y} are required.
+\end{itemize}
+
+The implementation used in the project is done by \citet{textgem}\footnote{levenshtein.rb}.
+
+\subsection{Soundex}
+
+Soundex encodes a string into a 4 character code representing
+an essence of its sound as pronounced in English. It operates
+in the following steps.
+
+\begin{enumerate}
+  \item Take the first letter of a string.
+  \item Encode each remaining letters into a group following table \ref{table:soundex}.
+    Discards A, E, I, O, U, H, W, and Y
+  \item Remove two adjacent same characters.
+  \item If a group of a first letter is the same as the second letter,
+    remove the second letter.
+  \item Trim or pad with zeros as necessary, making the result 4 characters long.
+\end{enumerate}
+
+\begin{table}
+  \myfloatalign
+  \setlength{\tabcolsep}{0.3cm}
+  \begin{tabular}{c p{5cm}}
+    \toprule
+    \tableheadline{Group} & \tableheadline{Letters} \\
+    \midrule
+    1 & B, F, P, V \\
+    2 & C, G, J, K, Q, S, X, Z \\
+    3 & D, T \\
+    4 & L \\
+    5 & M, N \\
+    6 & R \\
+    - & A, E, I, O, U, H, W, Y \\
+    \bottomrule
+  \end{tabular}
+  \caption{Soundex letter group.}
+  \label{table:soundex}
+\end{table}
+
+Let us follow these steps by step, consider we are going to encode the string
+\emph{PFISTTER}.
+
+\begin{enumerate}
+  \item Take first letter of \emph{PFISTTER}. \\
+    PFISTTER $\rightarrow$ P
+  \item Encode remaining letter \emph{FISTTER}. \\
+    PFISTTER $\rightarrow$ P1-233-6 $\rightarrow$ P12336
+  \item Remove two adjacent same characters. \\
+    PFISTTER $\rightarrow$ P12336 $\rightarrow$ P1236
+  \item P is also in group 1, so remove the second 1 letter. \\
+    PFISTTER $\rightarrow$ P1236 $\rightarrow$ P236
+  \item P236 is 4 characters long, so it does not need to be trimmed. \\
+    PFISTTER $\rightarrow$ P1236 $\rightarrow$ P236
+\end{enumerate}
+
+Therefore, soundex of \emph{PFISTTER} is \texttt{P236}.
+
+The implementation of soundex (listing \ref{lst:soundex}) in this project is adapted from
+\citeauthor{adamw} \emph{Irish soundex} implementated in Visual Basic\footnote{\cite{adamw} Appendix 3.}.
+The code is commented following the same aforementioned steps.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label={lst:soundex}, caption={Soundex implementation.}]
+def self.soundex(name)
+  # Take the first letter of a string.
+  result = name.first
+
+  # Encode remaining letters
+  name[1..name.length].split('').each do |n|
+    result = result + category(n).to_s
+  end
+
+  # Remove two adjacent same characters
+  result.gsub!(/([0-9])\1+/, '\1')
+
+  # If category of 1st letter equals 2nd character, remove 2nd character
+  if result.size >= 2 && category(result[0]).to_s == result[1]
+    result.slice!(1)
+  end
+
+  # Trim or pad with zeros as necessary
+  result = if result.size == 4
+             result
+           elsif result.size > 4
+             result[0..3]
+           else
+             result.ljust(4, '0')
+           end
+end
+\end{lstlisting}
+\end{minipage}
+
+The \texttt{category} function implements soundex grouping table (table \ref{table:soundex})
+as in listing \ref{lst:soundexc}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label={lst:soundexc}, caption={Soundex grouping table implementation.}]
+def self.category(c)
+  if c.match(/[AEIOUHWY]/).present?
+    ""
+  elsif c.match(/[BPFV]/).present?
+    1
+  elsif c.match(/[CSKGJQXZ]/).present?
+    2
+  elsif c.match(/[DT]/).present?
+    3
+  elsif c.match(/[L]/).present?
+    4
+  elsif c.match(/[MN]/).present?
+    5
+  elsif c.match(/[R]/).present?
+    6
+  else
+    ""
+  end
+end
+\end{lstlisting}
+\end{minipage}
+
+\subsection{Irish soundex}
