@@ -1,36 +1,23 @@
-\BOOKMARK [0][]{chapter.1}{1 Solution}{}% 1
-\BOOKMARK [1][-]{section.1.1}{1.1 Name matching algorithms}{chapter.1}% 2
-\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Levenshtein distance}{section.1.1}% 3
-\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Soundex}{section.1.1}% 4
-\BOOKMARK [2][-]{subsection.1.1.3}{1.1.3 Irish soundex}{section.1.1}% 5
-\BOOKMARK [0][]{chapter.2}{2 Related Work}{}% 6
-\BOOKMARK [1][-]{section.2.1}{2.1 Name matching}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Edit distance}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Soundex}{section.2.1}% 9
-\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Lookup Table}{section.2.1}% 10
-\BOOKMARK [1][-]{section.2.2}{2.2 Web service}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{2.3 Extensible framework}{chapter.2}% 12
-\BOOKMARK [-1][]{part.1}{The Showcase}{}% 13
-\BOOKMARK [0][]{chapter.3}{3 Introduction}{part.1}% 14
-\BOOKMARK [1][-]{section.3.1}{3.1 Organization}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.2}{3.2 Style Options}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.3}{3.3 Customization}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.4}{3.4 Issues}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.5}{3.5 Future Work}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.6}{3.6 License}{chapter.3}% 20
-\BOOKMARK [0][]{chapter.4}{4 Examples}{part.1}% 21
-\BOOKMARK [1][-]{section.4.1}{4.1 A New Section}{chapter.4}% 22
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Test for a Subsection}{section.4.1}% 23
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Autem Timeam}{section.4.1}% 24
-\BOOKMARK [1][-]{section.4.2}{4.2 Another Section in This Chapter}{chapter.4}% 25
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Personas Initialmente}{section.4.2}% 26
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Figure Citations}{section.4.2}% 27
-\BOOKMARK [0][]{chapter.5}{5 Math Test Chapter}{part.1}% 28
-\BOOKMARK [1][-]{section.5.1}{5.1 Some Formulas}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.2}{5.2 Various Mathematical Examples}{chapter.5}% 30
-\BOOKMARK [-1][]{part.2}{Appendix}{}% 31
-\BOOKMARK [0][]{appendix.A}{A Appendix Test}{part.2}% 32
-\BOOKMARK [1][-]{section.A.1}{A.1 Appendix Section Test}{appendix.A}% 33
-\BOOKMARK [1][-]{section.A.2}{A.2 Another Appendix Section Test}{appendix.A}% 34
-\BOOKMARK [2][-]{subsection.A.2.1}{A.2.1 Sub}{section.A.2}% 35
-\BOOKMARK [0][]{dummy.1}{Bibliography}{part.2}% 36
+\BOOKMARK [0][]{chapter.1}{1 Architecture}{}% 1
+\BOOKMARK [1][-]{section.1.1}{1.1 Overall system}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{1.2 MVC}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{1.3 Web Interface}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{1.4 Web Service}{chapter.1}% 5
+\BOOKMARK [0][]{chapter.2}{2 Introduction}{}% 6
+\BOOKMARK [1][-]{section.2.1}{2.1 Motivation}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{2.2 Research Questions}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{2.3 Objective and Aims}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.4}{2.4 Report Structure}{chapter.2}% 10
+\BOOKMARK [0][]{chapter.3}{3 Related Work}{}% 11
+\BOOKMARK [1][-]{section.3.1}{3.1 Name matching}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Edit distance}{section.3.1}% 13
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Soundex}{section.3.1}% 14
+\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 Lookup Table}{section.3.1}% 15
+\BOOKMARK [1][-]{section.3.2}{3.2 Web service}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{3.3 Extensible framework}{chapter.3}% 17
+\BOOKMARK [0][]{chapter.4}{4 Name matching algorithms}{}% 18
+\BOOKMARK [1][-]{section.4.1}{4.1 Levenshtein distance}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.2}{4.2 Soundex}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.3}{4.3 Irish soundex}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.4}{4.4 Lookup table}{chapter.4}% 22
+\BOOKMARK [0][]{dummy.1}{Bibliography}{}% 23

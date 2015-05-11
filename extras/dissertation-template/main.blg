@@ -1,55 +1,74 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
+A level-1 auxiliary file: Chapters/Chapter04.aux
+A level-1 auxiliary file: Chapters/Chapter01.aux
+A level-1 auxiliary file: Chapters/Chapter02.aux
 A level-1 auxiliary file: Chapters/Chapter03.aux
-A level-1 auxiliary file: Chapters/ChapterS01.aux
-A level-1 auxiliary file: Chapters/ChapterS02.aux
-A level-1 auxiliary file: Chapters/ChapterS03.aux
-A level-1 auxiliary file: Chapters/Chapter0A.aux
 A level-1 auxiliary file: FrontBackMatter/Bibliography.aux
 The style file: plainnat.bst
 Database file #1: Bibliography.bib
+Warning--empty publisher in soundex
 Warning--empty publisher in textgem
+Warning--empty publisher in railsd
+Warning--empty publisher in rest
+Warning--empty publisher in ws4
+Warning--empty publisher in json
+Warning--empty publisher in MathesonSR
+Warning--empty publisher in MathesonV
+Warning--empty publisher in ws3
+Warning--empty publisher in postgresql
+Warning--empty publisher in ws1
+Warning--empty publisher in morpeth
+Warning--empty publisher in ruby
+Warning--empty publisher in rubyfp
+Warning--empty publisher in rails
+Warning--empty publisher in ws2
+Warning--empty publisher in rubyoo
+Warning--empty publisher in pofruby
+Warning--empty publisher in irishregistration
+Warning--empty publisher in editdistance
+Warning--empty publisher in levenshteindistance
 Warning--empty publisher in adamw
-You've used 2 entries,
+You've used 22 entries,
             2773 wiz_defined-function locations,
-            610 strings with 5272 characters,
-and the built_in function-call counts, 653 in all, are:
-= -- 49
-> -- 20
-< -- 2
-+ -- 8
-- -- 6
-* -- 40
-:= -- 111
-add.period$ -- 9
-call.type$ -- 2
-change.case$ -- 6
-chr.to.int$ -- 2
-cite$ -- 6
-duplicate$ -- 40
-empty$ -- 65
-format.name$ -- 8
-if$ -- 128
-int.to.chr$ -- 1
+            702 strings with 7478 characters,
+and the built_in function-call counts, 7035 in all, are:
+= -- 570
+> -- 231
+< -- 22
++ -- 93
+- -- 69
+* -- 446
+:= -- 1155
+add.period$ -- 107
+call.type$ -- 22
+change.case$ -- 67
+chr.to.int$ -- 20
+cite$ -- 66
+duplicate$ -- 440
+empty$ -- 705
+format.name$ -- 93
+if$ -- 1437
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 4
-newline$ -- 21
-num.names$ -- 8
-pop$ -- 23
+missing$ -- 44
+newline$ -- 159
+num.names$ -- 88
+pop$ -- 246
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 67
 quote$ -- 0
-skip$ -- 24
+skip$ -- 255
 stack$ -- 0
-substring$ -- 4
-swap$ -- 3
+substring$ -- 44
+swap$ -- 33
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 2
-while$ -- 6
+type$ -- 132
+warning$ -- 22
+while$ -- 66
 width$ -- 0
-write$ -- 35
-(There were 2 warnings)
+write$ -- 331
+(There were 22 warnings)
