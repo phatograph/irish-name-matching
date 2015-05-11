@@ -29,6 +29,7 @@ Consider these following examples.
 The implementation used in the project is done by \citet{textgem}\footnote{levenshtein.rb}.
 
 \subsection{Soundex}
+\label{sub:soundex}
 
 Soundex encodes a string into a 4 character code representing
 an essence of its sound as pronounced in English. It operates
@@ -145,3 +146,47 @@ end
 \end{minipage}
 
 \subsection{Irish soundex}
+
+Irish soundex is another variant of traditional soundex. It determines
+characteristics of Irish names and normalised them to modern names.
+This algorithm also follows \citeauthor{adamw}
+\emph{Irish soundex}\footnote{\cite{adamw} Appendix 3.}.
+
+Irish names might contain some prefix, e.g. \emph{Mc} or \emph{O},
+which are obstructive to soundex result. These prefixes are to be
+discarded. Moreover, there is no initial soft \emph{C} in Irish names,
+instead \emph{K} is used. So the first letter \emph{C} is changed to \emph{K}.
+It is implemented as in listing \ref{lst:irishsoundex}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label={lst:irishsoundex}, caption={Irish soundex implementation.}]
+def self.soundex(name)
+  # Change initial ST. to SAINT
+  name = name.match(/^ST./).present? ? "SAINT #{name[3..name.length]}" : name
+
+  # Discard Irish prefixes
+  name = if name.match(/^O /).present?
+           name[1..name.length].gsub(' ', '')
+         elsif name.match(/^O'/).present?
+           name[2..name.length].gsub(' ', '')
+         elsif name.match(/^MC/).present?
+           name[2..name.length].gsub(' ', '')
+         elsif name.match(/^M'/).present?
+           name[2..name.length].gsub(' ', '')
+         elsif name.match(/^MAC/).present? && name != 'MAC'
+           name[3..name.length].gsub(' ', '')
+         else
+           name
+         end
+
+  # Change initial C to K
+  name = name.strip.gsub(/^C/, 'K')
+
+  # Call to traditional soundex.
+  Soundex.soundex(name)
+end
+\end{lstlisting}
+\end{minipage}
+
+Irish soundex algorithm in this project calls traditional soundex
+described in section \ref{sub:soundex} to minimise repeated code.

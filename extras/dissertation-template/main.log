@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  9 MAY 2015 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  9 MAY 2015 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -351,6 +351,87 @@ File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
 Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
@@ -473,31 +554,31 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip60
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 173.
-Package hyperref Info: Option `linktocpage' set `true' on input line 173.
-Package hyperref Info: Option `breaklinks' set `true' on input line 173.
-Package hyperref Info: Option `pageanchor' set `true' on input line 173.
-Package hyperref Info: Option `plainpages' set `false' on input line 173.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 173.
+Package hyperref Info: Option `colorlinks' set `true' on input line 176.
+Package hyperref Info: Option `linktocpage' set `true' on input line 176.
+Package hyperref Info: Option `breaklinks' set `true' on input line 176.
+Package hyperref Info: Option `pageanchor' set `true' on input line 176.
+Package hyperref Info: Option `plainpages' set `false' on input line 176.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 176.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 173.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 173.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 173.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 176.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 176.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 173.
+(hyperref)                removing `\mathsurround' on input line 176.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 173.
+(hyperref)                removing `\z@' on input line 176.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 173.
+(hyperref)                removing `superscript' on input line 176.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 176.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
@@ -696,89 +777,8 @@ Package: prelim2e 2009/05/29 v1.3 prelim2e Package (MS)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/carlisle/remreset.sty))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
-Package textcomp Info: Sub-encoding information:
-(textcomp)               5 = only ISO-Adobe without \textcurrency
-(textcomp)               4 = 5 + \texteuro
-(textcomp)               3 = 4 + \textohm
-(textcomp)               2 = 3 + \textestimated + \textcurrency
-(textcomp)               1 = TS1 - \textcircled - \t
-(textcomp)               0 = TS1 (full)
-(textcomp)             Font families with sub-encoding setting implement
-(textcomp)             only a restricted character set as indicated.
-(textcomp)             Family '?' is the default used for unknown fonts.
-(textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
-LaTeX Info: Redefining \oldstylenums on input line 266.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
-
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
-)) (./main.aux
-(./Chapters/Chapter03.aux) (./Chapters/ChapterS01.aux)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/carlisle/remreset.sty)))
+(./main.aux (./Chapters/Chapter03.aux) (./Chapters/ChapterS01.aux)
 (./Chapters/ChapterS02.aux) (./Chapters/ChapterS03.aux)
 (./Chapters/Chapter0A.aux) (./FrontBackMatter/Bibliography.aux))
 \openout1 = `main.aux'.
@@ -795,14 +795,14 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Try loading font information for T1+pplj on input line 39.
 
@@ -945,36 +945,53 @@ Package microtype Info: Loading generic settings for font family
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 83.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 84.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 83.
+(Font)              scaled to size 9.30756pt on input line 84.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 90.
+(Font)              scaled to size 8.50006pt on input line 91.
+LaTeX Font Info:    Try loading font information for TS1+fvm on input line 97.
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 89--119
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bera/ts1fvm.fd
+File: ts1fvm.fd 2004/09/07 scalable font definitions for TS1/fvm.
+)
+LaTeX Font Info:    Font shape `TS1/fvm/m/n' will be
+(Font)              scaled to size 8.50006pt on input line 97.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fvm' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 90--120
 []$[]$ 
  []
 
 [2]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 123--146
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 124--147
 []$[]$ 
  []
 
-[3]) [4] [5
+[3]
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 161--190
+[]$[]$ 
+ []
+
+[4]) [5] [6
 
 
 
+] [7
 
 
-] [6]
+] [8]
 \openout2 = `Chapters/ChapterS01.aux'.
 
  (./Chapters/ChapterS01.tex
@@ -987,11 +1004,11 @@ LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <7> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 13.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 7.65005pt on input line 20.
-[7
+[9
 
 
 
-] [8]
+] [10]
 Overfull \hbox (2.23529pt too wide) in paragraph at lines 63--64
 []\T1/fvm/m/n/10.95 classicthesis-config.tex\T1/pplj/m/n/10.95 : a cen-tral pla
 ce to load all nifty pack-
@@ -1003,7 +1020,7 @@ Overfull \hbox (9.23082pt too wide) in paragraph at lines 97--98
 ts for math. (Palatino
  []
 
-[9]
+[11]
 Overfull \hbox (25.95596pt too wide) in paragraph at lines 101--102
 \T1/pplj/m/n/10.95 cally en-ables the \T1/fvm/m/n/10.95 minionpro \T1/pplj/m/n/
 10.95 op-tion and over-rides the \T1/fvm/m/n/10.95 pdfspacing
@@ -1023,27 +1040,27 @@ Overfull \hbox (11.02849pt too wide) in paragraph at lines 133--134
 
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
 (Font)              scaled to size 7.65005pt on input line 138.
-[10]
+[12]
 Overfull \hbox (5.48045pt too wide) in paragraph at lines 171--172
 []\T1/pplj/m/n/10.95 Beta ver-sions of \T1/fvm/m/n/10.95 classicthesis \T1/pplj
 /m/n/10.95 can be found at the fol-low-ing Google
  []
 
-[11]
+[13]
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
 (Font)              Font shape `T1/fvm/m/sl' tried instead on input line 178.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
 (Font)              scaled to size 9.30756pt on input line 178.
- [12])
+ [14])
 Overfull \hbox (7.80904pt too wide) in paragraph at lines 209--119
 \T1/pplj/m/it/10.95 with-out any war-ranty\T1/pplj/m/n/10.95 ; with-out even th
 e im-plied war-ranty of \T1/pplj/m/it/10.95 mer-chantabil-
  []
 
-[13]
+[15]
 \openout2 = `Chapters/ChapterS02.aux'.
 
- (./Chapters/ChapterS02.tex [14
+ (./Chapters/ChapterS02.tex [16
 
 
 
@@ -1056,13 +1073,13 @@ Overfull \hbox (0.39906pt too wide) in paragraph at lines 15--15
 sus luc-tus mau-
  []
 
-[15]
+[17]
 Overfull \hbox (2.94846pt too wide) in paragraph at lines 24--24
 []\T1/pplj/m/n/10.95 Fusce mau-ris. Vestibu-lum luc-tus nibh at lec-tus. Sed bi
 ben-dum, nulla
  []
 
-[16]
+[18]
 Overfull \hbox (18.80463pt too wide) in paragraph at lines 41--41
 []\T1/pplj/m/n/10.95 Pellentesque habi-tant morbi tris-tique senec-
  []
@@ -1085,41 +1102,41 @@ Overfull \hbox (0.77591pt too wide) in paragraph at lines 51--51
 er leo. Morbi
  []
 
-[17]
+[19]
 Overfull \hbox (9.6941pt too wide) in paragraph at lines 54--54
 \T1/pplj/m/n/10.95 Vestibu-lum diam eros, fringilla et, con-sectetuer eu, non-u
 mmy id, sapien.
  []
 
-<gfx/example_1.jpg, id=290, 240.9pt x 180.675pt>
+<gfx/example_1.jpg, id=329, 240.9pt x 180.675pt>
 File: gfx/example_1.jpg Graphic file (type jpg)
  <use gfx/example_1.jpg>
 Package pdftex.def Info: gfx/example_1.jpg used on input line 92.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_2.jpg, id=291, 240.9pt x 180.675pt>
+<gfx/example_2.jpg, id=330, 240.9pt x 180.675pt>
 File: gfx/example_2.jpg Graphic file (type jpg)
  <use gfx/example_2.jpg>
 Package pdftex.def Info: gfx/example_2.jpg used on input line 95.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_3.jpg, id=292, 240.9pt x 180.675pt>
+<gfx/example_3.jpg, id=331, 240.9pt x 180.675pt>
 File: gfx/example_3.jpg Graphic file (type jpg)
  <use gfx/example_3.jpg>
 Package pdftex.def Info: gfx/example_3.jpg used on input line 97.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 
-<gfx/example_4.jpg, id=293, 240.9pt x 180.675pt>
+<gfx/example_4.jpg, id=332, 240.9pt x 180.675pt>
 File: gfx/example_4.jpg Graphic file (type jpg)
  <use gfx/example_4.jpg>
 Package pdftex.def Info: gfx/example_4.jpg used on input line 99.
 (pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
 )
-[18] [19 <./gfx/example_1.jpg> <./gfx/example_2.jpg> <./gfx/example_3.jpg> <./g
+[20] [21 <./gfx/example_1.jpg> <./gfx/example_2.jpg> <./gfx/example_3.jpg> <./g
 fx/example_4.jpg>]
 \openout2 = `Chapters/ChapterS03.aux'.
 
- (./Chapters/ChapterS03.tex [20
+ (./Chapters/ChapterS03.tex [22
 
 
 
@@ -1132,11 +1149,11 @@ Overfull \hbox (0.973pt too wide) in paragraph at lines 9--9
 m-cor-per nulla.
  []
 
-[21]) [22] [23
+[23]) [24] [25
 
 
 
-] [24]
+] [26]
 \openout2 = `Chapters/Chapter0A.aux'.
 
  (./Chapters/Chapter0A.tex
@@ -1159,14 +1176,14 @@ Overfull \hbox (9.6941pt too wide) in paragraph at lines 48--48
 mmy id, sapien.
  []
 
-[25
+[27
 
 
 
-]) [26]
+]) [28]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
- (./FrontBackMatter/Bibliography.tex (./main.bbl)) [27
+ (./FrontBackMatter/Bibliography.tex (./main.bbl)) [29
 
 
 
@@ -1187,13 +1204,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
- 16271 strings out of 493117
- 247122 string characters out of 6135432
- 550757 words of memory out of 5000000
- 19192 multiletter control sequences out of 15000+600000
- 79573 words of font info for 131 fonts, out of 8000000 for 9000
+ 16336 strings out of 493117
+ 248066 string characters out of 6135432
+ 549864 words of memory out of 5000000
+ 19225 multiletter control sequences out of 15000+600000
+ 79866 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,14n,51p,1025b,1283s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,14n,51p,1025b,1511s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -1209,10 +1226,10 @@ live/2014/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/20
 onts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
 /palatino/uplri8a.pfb>
-Output written on main.pdf (27 pages, 216246 bytes).
+Output written on main.pdf (29 pages, 221039 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 391 compressed objects within 4 object streams
- 148 named destinations out of 1000 (max. 500000)
- 17661 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 486 PDF objects out of 1000 (max. 8388607)
+ 432 compressed objects within 5 object streams
+ 176 named destinations out of 1000 (max. 500000)
+ 18173 words of extra memory for PDF output out of 20736 (max. 10000000)
 
