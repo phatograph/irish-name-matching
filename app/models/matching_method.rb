@@ -25,11 +25,11 @@ class MatchingMethod
     raise NotImplementedError
   end
 
-  def soundex_distance(s1, s2)
+  def soundex_distance_score(s1, s2)
     if s1.first != s2.first
-      s1.size  # Different category, so they suppose to be completely different
+      0  # Different category, so they suppose to be completely different
     else
-      Text::Levenshtein.distance(s1[1..3], s2[1..3])
+      (s1.size - Text::Levenshtein.distance(s1, s2).to_f ) / s1.size
     end
   end
 end
@@ -41,9 +41,11 @@ class LookupTable < MatchingMethod
 
   def cal_score
     base = LookupTableRecord.where(:name => @base_name.name)
-    @score = if base.nil?
+
+    @score = if base.nil?  # Could not find reference for base name, no matches
                0
              else
+               # Find any reference that has 1) same name 2) same reference
                base = base.map(&:ref)
                refs = LookupTableRecord.where(:ref => base, :name => @name)
 
@@ -51,7 +53,7 @@ class LookupTable < MatchingMethod
                  @label = (base & refs.map(&:ref)).join(', ')
                  @value = "Matched"
                  1
-               else
+               else  # Could not find reference for matching name, no matches
                  0
                end
              end
@@ -72,22 +74,21 @@ class Soundex < MatchingMethod
   WEIGHT = 3
 
   def self.soundex(name)
+    # Take the first letter of a string.
     result = name.first
 
+    # Encode remaining letters
     name[1..name.length].split('').each do |n|
       result = result + category(n).to_s
     end
 
-    # Remove double chatacters
+    # Remove two adjacent same characters
     result.gsub!(/([0-9])\1+/, '\1')
 
     # If category of 1st letter equals 2nd character, remove 2nd character
     if result.size >= 2 && category(result[0]).to_s == result[1]
       result.slice!(1)
     end
-
-    # Remove slashes
-    result.gsub!(/\//, '')
 
     # Trim or pad with zeros as necessary
     result = if result.size == 4
@@ -102,8 +103,8 @@ class Soundex < MatchingMethod
   private
 
   def self.category(c)
-    if c.match(/[AEIOUY]/).present?
-      "/"
+    if c.match(/[AEIOUHWY]/).present?
+      ""
     elsif c.match(/[BPFV]/).present?
       1
     elsif c.match(/[CSKGJQXZ]/).present?
@@ -125,9 +126,8 @@ class Soundex < MatchingMethod
     name_soundex      = Soundex.soundex(@name)
     base_name_soundex = Soundex.soundex(@base_name.name)
 
-    @value = "#{name_soundex} <=> #{base_name_soundex}"
-    s_dis  = soundex_distance(name_soundex, base_name_soundex)
-    @score = ((@value.size - s_dis).to_f / @value.size)
+    @value = "#{base_name_soundex} <=> #{name_soundex}"
+    @score = soundex_distance_score(name_soundex, base_name_soundex)
   end
 end
 
@@ -135,8 +135,10 @@ class IrishSoundex < MatchingMethod
   WEIGHT = 6
 
   def self.soundex(name)
-    name = name.match(/^ST./).present? ? "SAINT #{name[3..name.length]}" : name
+    # Change initial ST. to SAINT
+    name = name.match(/^ST\./).present? ? "SAINT #{name[3..name.length]}" : name
 
+    # Discard Irish prefixes
     name = if name.match(/^O /).present?
              name[1..name.length].gsub(' ', '')
            elsif name.match(/^O'/).present?
@@ -151,9 +153,14 @@ class IrishSoundex < MatchingMethod
              name
            end
 
+    # Change initial C to K
     name = name.strip.gsub(/^C/, 'K')
-    @label = name
-    Soundex.soundex(name)
+
+    # Call to traditional soundex.
+    return {
+      :label => name,
+      :soundex => Soundex.soundex(name)
+    }
   end
 
   private
@@ -162,8 +169,8 @@ class IrishSoundex < MatchingMethod
     name_soundex      = IrishSoundex.soundex(@name)
     base_name_soundex = IrishSoundex.soundex(@base_name.name)
 
-    @value = "#{name_soundex} <=> #{base_name_soundex}"
-    s_dis  = soundex_distance(name_soundex, base_name_soundex)
-    @score = ((@value.size - s_dis).to_f / @value.size)
+    @value = "#{base_name_soundex[:soundex]} <=> #{name_soundex[:soundex]}"
+    @label = name_soundex[:label]
+    @score = soundex_distance_score(name_soundex[:soundex], base_name_soundex[:soundex])
   end
 end
