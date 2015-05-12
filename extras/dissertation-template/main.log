@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  11 MAY 2015 18:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  12 MAY 2015 19:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -778,9 +778,16 @@ Package: prelim2e 2009/05/29 v1.3 prelim2e Package (MS)
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/carlisle/remreset.sty)))
-(./main.aux (./Chapters/Chapter04.aux) (./Chapters/Chapter01.aux)
-(./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux)
-(./FrontBackMatter/Bibliography.aux))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count142
+\float@exts=\toks28
+\float@box=\box32
+\@float@everytoks=\toks29
+\@floatcapt=\box33
+) (./main.aux
+(./Chapters/Chapter04.aux) (./Chapters/Chapter01.aux) (./Chapters/Chapter02.aux
+) (./Chapters/Chapter03.aux) (./FrontBackMatter/Bibliography.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -811,17 +818,17 @@ File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count142
+\scratchcounter=\count143
 \scratchdimen=\dimen157
-\scratchbox=\box32
-\nofMPsegments=\count143
-\nofMParguments=\count144
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count145
+\scratchbox=\box34
+\nofMPsegments=\count144
+\nofMParguments=\count145
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count146
 \MPscratchDim=\dimen158
-\MPnumerator=\count146
-\makeMPintoPDFobject=\count147
-\everyMPtoPDFconversion=\toks29
+\MPnumerator=\count147
+\makeMPintoPDFobject=\count148
+\everyMPtoPDFconversion=\toks31
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -839,11 +846,12 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count148
-\AtBeginShipoutBox=\box33
+\c@lstlisting=\count149
+\AtBeginShipoutBox=\box35
 Package hyperref Info: Link coloring ON on input line 39.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -852,7 +860,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count149
+\c@section@level=\count150
 )
 LaTeX Info: Redefining \ref on input line 39.
 LaTeX Info: Redefining \pageref on input line 39.
@@ -897,15 +905,20 @@ Class scrreprt Warning: \float@addtolists detected!
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-)
-LaTeX Font Info:    Try loading font information for U+zeur on input line 91.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeur.fd
+<gfx/base_tmn.jpg, id=106, 269.0853pt x 151.2852pt>
+File: gfx/base_tmn.jpg Graphic file (type jpg)
+ <use gfx/base_tmn.jpg>
+Package pdftex.def Info: gfx/base_tmn.jpg used on input line 30.
+(pdftex.def)             Requested size: 312.9803pt x 175.97801pt.
+LaTeX Font Info:    Try loading font information for U+zeur on input line 43.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeus on input line 91.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 43.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
@@ -913,12 +926,12 @@ File: uzeus.fd 2005/01/11 v4.0 (WaS)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 91.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 43.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 91.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 43.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -937,11 +950,28 @@ Package microtype Info: Loading generic settings for font family
 
 
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./gfx/b
+ase_tmn.jpg>]
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 44.
+
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+)
+Overfull \hbox (7.29451pt too wide) in paragraph at lines 51--55
+\T1/pplj/m/n/10.95 We re-alised that, for match-ing names, each match-ing al-go
+-rithms should
+ []
+
+<gfx/overall.jpg, id=121, 725.109pt x 546.1203pt>
+File: gfx/overall.jpg Graphic file (type jpg)
+ <use gfx/overall.jpg>
+Package pdftex.def Info: gfx/overall.jpg used on input line 89.
+(pdftex.def)             Requested size: 455.24408pt x 342.8743pt.
+
+[2]) [3 <./gfx/overall.jpg>]
 \openout2 = `Chapters/Chapter01.aux'.
 
-
-(./Chapters/Chapter01.tex [2
+ (./Chapters/Chapter01.tex [4
 
 
 
@@ -952,11 +982,7 @@ LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 22.
-LaTeX Font Info:    Try loading font information for TS1+pplj on input line 24.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ts1pplj.fd
-File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-) [3]
+[5]
 Overfull \hbox (6.6838pt too wide) in paragraph at lines 55--65
 \T1/pplj/m/n/10.95 M\TS1/pplj/m/n/10.95 '\T1/pplj/m/n/10.95 Givena, MacGhoon, M
 \TS1/pplj/m/n/10.95 '\T1/pplj/m/n/10.95 Evinie, Mc-Givney, MacEvinie, Mc-
@@ -992,16 +1018,16 @@ Overfull \hbox (6.55193pt too wide) in paragraph at lines 71--76
 if-fer-ent names
  []
 
-[4]
-Overfull \hbox (0.20271pt too wide) in paragraph at lines 128--130
+[6]
+Overfull \hbox (0.20271pt too wide) in paragraph at lines 129--131
 \T1/pplj/m/n/10.95 out-come of the project. en-coun-tered prob-lems, and fu-tur
 e works
  []
 
-) [5]
+) [7]
 \openout2 = `Chapters/Chapter02.aux'.
 
- (./Chapters/Chapter02.tex [6
+ (./Chapters/Chapter02.tex [8
 
 
 
@@ -1024,7 +1050,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [7]
+ [9]
 Overfull \hbox (1.12244pt too wide) in paragraph at lines 59--61
 \T1/pplj/m/n/10.95 land into 2091 groups. For ex-am-ple, group 753 con-sists of
  these names. 
@@ -1051,27 +1077,27 @@ Overfull \hbox (3.24474pt too wide) in paragraph at lines 62--67
 \T1/pplj/m/n/10.95 Mc-Glashan, Mc-Glashin, McIllesher, M'Glashan, M'Glashin,
  []
 
-[8]
+[10]
 Overfull \hbox (3.62923pt too wide) in paragraph at lines 100--104
 \T1/pplj/m/n/10.95 Our sys-tem is im-ple-mented in \T1/pplj/m/it/10.95 Ruby \T1
 /pplj/m/n/10.95 [[]] pro-gram-ming lan-guage. Ruby
  []
 
-<gfx/ruby.png, id=177, 198.9834pt x 244.2726pt>
+<gfx/ruby.png, id=203, 198.9834pt x 244.2726pt>
 File: gfx/ruby.png Graphic file (type png)
  <use gfx/ruby.png>
 Package pdftex.def Info: gfx/ruby.png used on input line 108.
 (pdftex.def)             Requested size: 115.89017pt x 142.26378pt.
 
-<gfx/ror.png, id=178, 793.96625pt x 1027.84pt>
+<gfx/ror.png, id=204, 793.96625pt x 1027.84pt>
 File: gfx/ror.png Graphic file (type png)
  <use gfx/ror.png>
 Package pdftex.def Info: gfx/ror.png used on input line 110.
 (pdftex.def)             Requested size: 109.88245pt x 142.26378pt.
-) [9 <./gfx/ruby.png> <./gfx/ror.png>]
+) [11 <./gfx/ruby.png> <./gfx/ror.png>]
 \openout2 = `Chapters/Chapter03.aux'.
 
- (./Chapters/Chapter03.tex [10
+ (./Chapters/Chapter03.tex [12
 
 
 
@@ -1087,7 +1113,7 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 48--57
 []$[]$ 
  []
 
-[11] [12]
+[13] [14]
 LaTeX Font Info:    Try loading font information for TS1+fvm on input line 124.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/bera/ts1fvm.fd
@@ -1109,25 +1135,25 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 151--174
 []$[]$ 
  []
 
-[13]
+[15]
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 192--203
 []$[]$ 
  []
 
-[14]
+[16]
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 217--249
 []$[]$ 
  []
 
-[15] [16]
+[17] [18]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 7.65005pt on input line 293.
- [17])
+ [19])
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 320--94
 []$[]$ 
  []
 
-[18]
+[20]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
  (./FrontBackMatter/Bibliography.tex (./main.bbl
@@ -1178,7 +1204,7 @@ Underfull \hbox (badness 1460) in paragraph at lines 69--75
 10.95 .  ac-cessed May 5$[]$,
  []
 
-[19
+[21
 
 
 
@@ -1199,7 +1225,7 @@ Underfull \hbox (badness 1406) in paragraph at lines 153--158
 /pplj/m/n/10.95 .  2015.  URL [][]$\T1/fvm/m/n/10.95 http : / / en .
  []
 
-)) [20]
+)) [22]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
  (./main.aux (./Chapters/Chapter04.aux) (./Chapters/Chapter01.aux)
@@ -1208,15 +1234,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CF66EC44CEAFCDA61CF6C6DA7BA37068;1420.
+(rerunfilecheck)             Checksum: 23D36FF9A81339F1ED3B20C16D8CD607;1562.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 16309 strings out of 493117
- 247563 string characters out of 6135432
- 553800 words of memory out of 5000000
- 19209 multiletter control sequences out of 15000+600000
- 66889 words of font info for 105 fonts, out of 8000000 for 9000
+ 16394 strings out of 493117
+ 248767 string characters out of 6135432
+ 554527 words of memory out of 5000000
+ 19277 multiletter control sequences out of 15000+600000
+ 69614 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,14n,51p,485b,1464s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1230,10 +1256,10 @@ ive/2014/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/201
 dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (20 pages, 272512 bytes).
+Output written on main.pdf (22 pages, 1213036 bytes).
 PDF statistics:
- 511 PDF objects out of 1000 (max. 8388607)
- 469 compressed objects within 5 object streams
- 199 named destinations out of 1000 (max. 500000)
- 16067 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 538 PDF objects out of 1000 (max. 8388607)
+ 492 compressed objects within 5 object streams
+ 206 named destinations out of 1000 (max. 500000)
+ 16605 words of extra memory for PDF output out of 17280 (max. 10000000)
 
