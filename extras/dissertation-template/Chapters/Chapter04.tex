@@ -1,10 +1,14 @@
 \chapter{Architecture}
 \label{ch:architecture}
 
+\section{MVC}
+\label{sec:mvc}
+
 Now that we already know how to match (by comparing and calculating
 \emph{similarity score} from section \ref{ch:nma}), we then proceed
 to a bigger picture. This section describes how the architecture
 of overall system is.
+
 \section{Initial idea}
 \label{sec:initialidea}
 
@@ -178,8 +182,51 @@ Once all cycles are fully finished for every \emph{base names} and
 ready. So we can sort and present in web interface (section \ref{sec:wi}), or return
 as a result in web service (section \ref{sec:ws}).
 
-\section{MVC}
+\section{Data flow}
 \label{sec:mcv}
+
+In the previous section we describe the essence of this project,
+how we use matching algorithms to calculate score of similarity
+between two strings. We know how to process the data.
+Now in order to make the system becomes useable.
+We need to consider two more things.
+
+\begin{itemize}
+  \item How to gather inputs from clients.
+  \item How to present or return results to clients.
+\end{itemize}
+
+From research questions (section \ref{sec:rq}) we mentioned
+two ways to communicate with clients, by \emph{web service} and
+\emph{web interface}.
+
+Clients who use the system as a web service
+will send inputs directly without any medium in between, and will
+receive result back in form of agreed format, e.g. \texttt{JSON}.
+
+On the other hand, clients who use the system via web interface
+will use a form in a web page provided by the system to provide
+inputs, and results will be presented in another web page
+after user submitted the form.
+
+\begin{table}[H]
+  \myfloatalign
+  \setlength{\tabcolsep}{0.3cm}
+  \begin{tabular}{l p{4cm} l}
+    \toprule
+    \tableheadline{Service type} & \tableheadline{Input source} & \tableheadline{Result format}  \\
+    \midrule
+    Web service & Web/mobile/desktop application & \texttt{JSON} \\
+    \midrule
+    Web interface & Provided form & Web page result \\
+    \bottomrule
+  \end{tabular}
+  \caption{Service types and their inputs and results.}
+  \label{table:dataflow}
+\end{table}
+
+In the next section (\ref{sec:mvc}) we will describe how we
+gather inputs and provide results.
 
 \section{Web Interface}
 \label{sec:wi}
