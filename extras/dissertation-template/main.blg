@@ -29,46 +29,47 @@ Warning--empty publisher in pofruby
 Warning--empty publisher in irishregistration
 Warning--empty publisher in editdistance
 Warning--empty publisher in levenshteindistance
+Warning--empty publisher in mvc
 Warning--empty publisher in adamw
-You've used 22 entries,
+You've used 23 entries,
             2773 wiz_defined-function locations,
-            702 strings with 7478 characters,
-and the built_in function-call counts, 7035 in all, are:
-= -- 570
-> -- 231
-< -- 22
-+ -- 93
-- -- 69
-* -- 446
-:= -- 1155
-add.period$ -- 107
-call.type$ -- 22
-change.case$ -- 67
+            706 strings with 7593 characters,
+and the built_in function-call counts, 7353 in all, are:
+= -- 596
+> -- 241
+< -- 23
++ -- 98
+- -- 72
+* -- 467
+:= -- 1206
+add.period$ -- 112
+call.type$ -- 23
+change.case$ -- 70
 chr.to.int$ -- 20
-cite$ -- 66
-duplicate$ -- 440
-empty$ -- 705
-format.name$ -- 93
-if$ -- 1437
-int.to.chr$ -- 3
+cite$ -- 69
+duplicate$ -- 460
+empty$ -- 737
+format.name$ -- 97
+if$ -- 1502
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 44
-newline$ -- 159
-num.names$ -- 88
-pop$ -- 246
+missing$ -- 46
+newline$ -- 166
+num.names$ -- 92
+pop$ -- 257
 preamble$ -- 1
-purify$ -- 67
+purify$ -- 70
 quote$ -- 0
-skip$ -- 255
+skip$ -- 266
 stack$ -- 0
-substring$ -- 44
-swap$ -- 33
+substring$ -- 46
+swap$ -- 35
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 132
-warning$ -- 22
-while$ -- 66
+type$ -- 138
+warning$ -- 23
+while$ -- 69
 width$ -- 0
-write$ -- 331
-(There were 22 warnings)
+write$ -- 346
+(There were 23 warnings)

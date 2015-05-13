@@ -1,9 +1,6 @@
 \chapter{Architecture}
 \label{ch:architecture}
 
-\section{MVC}
-\label{sec:mvc}
-
 Now that we already know how to match (by comparing and calculating
 \emph{similarity score} from section \ref{ch:nma}), we then proceed
 to a bigger picture. This section describes how the architecture
@@ -205,9 +202,9 @@ will send inputs directly without any medium in between, and will
 receive result back in form of agreed format, e.g. \texttt{JSON}.
 
 On the other hand, clients who use the system via web interface
-will use a form in a web page provided by the system to provide
-inputs, and results will be presented in another web page
-after user submitted the form.
+will use a form in a web interface (web page) provided by the system to provide
+inputs, and results will be presented in another page
+after client submitted the form.
 
 \begin{table}[H]
   \myfloatalign
@@ -228,8 +225,55 @@ after user submitted the form.
 In the next section (\ref{sec:mvc}) we will describe how we
 gather inputs and provide results.
 
-\section{Web Interface}
-\label{sec:wi}
+\section{MVC}
+\label{sec:mvc}
+
+Our system is based on Ruby on Rails, which is a MVC\footnote{Model-View-Controller
+\cite[]{mvc}} framework. We will use Rails architecture to encapsulate
+our system be these following means.
+
+\begin{description}
+  \item[View:] where the form for web interface is implemented.
+    It creates a web page with inputs for use to fill in.
+    Client can inputs names manually, or upload a file
+    containing names. He also can choose whether to use any
+    available matching algorithms.
+
+    Inputs from \emph{view} are then passed to \emph{controller}.
+
+    \emph{View} is also responsible in displaying result to
+    web interface clients, and generating \texttt{JSON} result
+    for web service clients.
+  \item[Controller:] receives inputs from different sources,
+    inputs from form of web interface style, or direct input from clients
+    using web service style. Inputs will be pre-processed, such as
+    separating lines from file input, removing white spaces,
+    or converting input to upper-case.
+
+    Once inputs are ready, \emph{controller} then passes these inputs
+    to \emph{model}, where our matching system lies in.
+
+    After inputs are processed, \emph{controller} receives results
+    back from \emph{model}, then \emph{controller} will decide
+    which kind of result it needs to return from input source.
+    It will then pass results to appropriate \emph{view}.
+  \item[Model:] this is where we implement our whole matching system in.
+    Model constructs \emph{base names} and \emph{to-match names}
+    from received inputs, then invoke matching algorithms, as described
+    in section \ref{sec:actualsys}. \emph{Model} will pass results back to
+    \emph{controller} after finished.
+\end{description}
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\makebox[\textwidth][c]{\includegraphics[width=18cm]{gfx/mvc}}
+\caption{Data flow from web service client and web interface client.}
+\label{fig:mvc}
+\end{figure}
 
 \section{Web Service}
 \label{sec:ws}
+
+\section{Web Interface}
+\label{sec:wi}
