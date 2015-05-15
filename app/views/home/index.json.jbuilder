@@ -1,6 +1,5 @@
 json.array! @matched_names do |matched_name|
   json.name matched_name.name
-  json.soundex matched_name.soundex
 
   json.to_match_names do
     json.array! matched_name.to_match_names do |tmn|
