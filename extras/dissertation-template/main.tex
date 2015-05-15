@@ -27,7 +27,8 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[
-  twoside,openright,titlepage,numbers=noenddot,headinclude,%1headlines,
+  % twoside,openright,
+  titlepage,numbers=noenddot,headinclude,%1headlines,
   footinclude=true,cleardoublepage=empty,
   BCOR=5mm,paper=a4,fontsize=11pt, % Binding correction, paper type and font size
   ngerman,american, % Languages
@@ -91,9 +92,6 @@
 \include{Chapters/Chapter04}
 \include{Chapters/Chapter01}
 \include{Chapters/Chapter02}
-\include{Chapters/Chapter03}
-% \include{Chapters/Chapter05}
-% \include{Chapters/Chapter06}
 
 \cleardoublepage % Empty page before the start of the next part
 
@@ -103,13 +101,18 @@
 
 % \part{The Solution}
 
-% \cleardoublepage % Empty page before the start of the next part
+\include{Chapters/Chapter03}
+
+\cleardoublepage % Empty page before the start of the next part
 
 %------------------------------------------------
 
 % \ctparttext{}
 
-% \part{The Conclusion}
+% \part{The Forward}
+
+\include{Chapters/Chapter05}
+\include{Chapters/Chapter06}
 
 % \cleardoublepage % Empty page before the start of the next part
 

@@ -5,6 +5,39 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[welfare.ie(2015)]{irishregistration}
+welfare.ie.
+\newblock \emph{History of Registration in Ireland}.
+\newblock 2015.
+\newblock URL \url{https://www.welfare.ie/en/downloads/GRO-History.pdf}.
+\newblock accessed May 8\textsuperscript{th}, 2015.
+
+\bibitem[Winstanley(2014)]{adamw}
+Adam Winstanley.
+\newblock \emph{Identifying People on the Morpeth Roll}.
+\newblock July 2014.
+\newblock Postgraduate Diploma in Genealogical, Palaeographic \& Heraldic
+  Studies 2013-14.
+
+\bibitem[Ridgway(2013)]{morpeth}
+Christopher Ridgway.
+\newblock \emph{The Morpeth Roll: Ireland identified in 1841}.
+\newblock 2013.
+
+\bibitem[Wikipedia(2015{\natexlab{a}})]{editdistance}
+Wikipedia.
+\newblock \emph{Edit distance}.
+\newblock 2015{\natexlab{a}}.
+\newblock URL \url{http://en.wikipedia.org/wiki/Edit_distance}.
+\newblock accessed May 4\textsuperscript{th}, 2015.
+
+\bibitem[Wikipedia(2015{\natexlab{b}})]{levenshteindistance}
+Wikipedia.
+\newblock \emph{Levenshtein distance}.
+\newblock 2015{\natexlab{b}}.
+\newblock URL \url{http://en.wikipedia.org/wiki/Levenshtein_distance}.
+\newblock accessed May 4\textsuperscript{th}, 2015.
+
 \bibitem[Archives and Administration(2007)]{soundex}
 National Archives and Records Administration.
 \newblock \emph{The Soundex Indexing System}.
@@ -12,28 +45,41 @@ National Archives and Records Administration.
 \newblock URL \url{http://www.archives.gov/research/census/soundex.html}.
 \newblock accessed May 4\textsuperscript{th}, 2015.
 
-\bibitem[Battley(2015)]{textgem}
-Paul Battley.
-\newblock \emph{Text, Collection of text algorithms}.
-\newblock 2015.
-\newblock URL \url{https://github.com/threedaymonk/text}.
-\newblock accessed May 9\textsuperscript{th}, 2015.
+\bibitem[Matheson(1901)]{MathesonV}
+Robert~Edwin Matheson.
+\newblock \emph{Varieties and synonymes of surnames and christian names in
+  Ireland}.
+\newblock 1901.
+\newblock URL \url{https://archive.org/details/varietiessynony00math}.
+\newblock accessed May 4\textsuperscript{th}, 2015.
 
-\bibitem[Bojcic(2013)]{railsd}
-Kresimir Bojcic.
-\newblock \emph{What are the Benefits of Ruby on Rails? After Two Decades of
-  Programming, I Use Rails}.
+\bibitem[Matheson(1894)]{MathesonSR}
+Robert~Edwin Matheson.
+\newblock \emph{Special report on surnames in Ireland}.
+\newblock 1894.
+\newblock URL \url{https://archive.org/details/cu31924029805540}.
+\newblock accessed May 4\textsuperscript{th}, 2015.
+
+\bibitem[Ramdhanie(2008)]{ws1}
+Vincent Ramdhanie.
+\newblock \emph{What is a `web service' in plain English?}
+\newblock Oct 2008.
+\newblock URL \url{http://stackoverflow.com/a/226159/459794}.
+\newblock accessed May 5\textsuperscript{th}, 2015.
+
+\bibitem[Tutorial(2013)]{ws2}
+The Java EE~6 Tutorial.
+\newblock \emph{Types of Web Services}.
 \newblock 2013.
-\newblock URL
-  \url{http://www.toptal.com/ruby-on-rails/after-two-decades-of-programming-i-use-rails}.
-\newblock accessed May 6\textsuperscript{th}, 2015.
+\newblock URL \url{http://docs.oracle.com/javaee/6/tutorial/doc/giqsx.html}.
+\newblock accessed May 5\textsuperscript{th}, 2015.
 
-\bibitem[Fakhruddin(2015)]{rest}
-Hussain Fakhruddin.
-\newblock \emph{JSON or XML -- Which Data Format Is Better For Developers?}
-\newblock April 2015.
+\bibitem[Mueller(2013)]{ws3}
+John Mueller.
+\newblock \emph{Understanding SOAP and REST Basics}.
+\newblock Jan 2013.
 \newblock URL
-  \url{http://teks.co.in/site/blog/json-or-xml-which-data-format-is-better-for-developers/}.
+  \url{http://blog.smartbear.com/apis/understanding-soap-and-rest-basics/}.
 \newblock accessed May 5\textsuperscript{th}, 2015.
 
 \bibitem[Francia(2010)]{ws4}
@@ -50,53 +96,34 @@ Introducing JSON.
 \newblock URL \url{http://www.json.org}.
 \newblock accessed May 5\textsuperscript{th}, 2015.
 
-\bibitem[Matheson(1894)]{MathesonSR}
-Robert~Edwin Matheson.
-\newblock \emph{Special report on surnames in Ireland}.
-\newblock 1894.
-\newblock URL \url{https://archive.org/details/cu31924029805540}.
-\newblock accessed May 4\textsuperscript{th}, 2015.
-
-\bibitem[Matheson(1901)]{MathesonV}
-Robert~Edwin Matheson.
-\newblock \emph{Varieties and synonymes of surnames and christian names in
-  Ireland}.
-\newblock 1901.
-\newblock URL \url{https://archive.org/details/varietiessynony00math}.
-\newblock accessed May 4\textsuperscript{th}, 2015.
-
-\bibitem[Mueller(2013)]{ws3}
-John Mueller.
-\newblock \emph{Understanding SOAP and REST Basics}.
-\newblock Jan 2013.
+\bibitem[Fakhruddin(2015)]{rest}
+Hussain Fakhruddin.
+\newblock \emph{JSON or XML -- Which Data Format Is Better For Developers?}
+\newblock April 2015.
 \newblock URL
-  \url{http://blog.smartbear.com/apis/understanding-soap-and-rest-basics/}.
+  \url{http://teks.co.in/site/blog/json-or-xml-which-data-format-is-better-for-developers/}.
 \newblock accessed May 5\textsuperscript{th}, 2015.
 
-\bibitem[postgresql.org(2015)]{postgresql}
-postgresql.org.
-\newblock \emph{PostgreSQL}.
-\newblock 2015.
-\newblock URL \url{http://www.postgresql.org}.
-\newblock accessed May 11\textsuperscript{th}, 2015.
-
-\bibitem[Ramdhanie(2008)]{ws1}
-Vincent Ramdhanie.
-\newblock \emph{What is a `web service' in plain English?}
-\newblock Oct 2008.
-\newblock URL \url{http://stackoverflow.com/a/226159/459794}.
-\newblock accessed May 5\textsuperscript{th}, 2015.
-
-\bibitem[Ridgway(2013)]{morpeth}
-Christopher Ridgway.
-\newblock \emph{The Morpeth Roll: Ireland identified in 1841}.
-\newblock 2013.
+\bibitem[Venners(2003)]{pofruby}
+Bill Venners.
+\newblock \emph{The Philosophy of Ruby}.
+\newblock Sep 2003.
+\newblock URL \url{http://www.artima.com/intv/rubyP.html}.
+\newblock accessed May 6\textsuperscript{th}, 2015.
 
 \bibitem[ruby lang.org(2015{\natexlab{a}})]{ruby}
 ruby lang.org.
 \newblock \emph{Ruby, a programmer's best friend}.
 \newblock 2015{\natexlab{a}}.
 \newblock URL \url{https://www.ruby-lang.org/en/}.
+\newblock accessed May 6\textsuperscript{th}, 2015.
+
+\bibitem[tutorialspoint.com(2015)]{rubyoo}
+tutorialspoint.com.
+\newblock \emph{Object Oriented Ruby}.
+\newblock 2015.
+\newblock URL
+  \url{http://www.tutorialspoint.com/ruby/ruby_object_oriented.htm}.
 \newblock accessed May 6\textsuperscript{th}, 2015.
 
 \bibitem[ruby lang.org(2015{\natexlab{b}})]{rubyfp}
@@ -113,48 +140,28 @@ rubyonrails.org.
 \newblock URL \url{http://rubyonrails.org}.
 \newblock accessed May 6\textsuperscript{th}, 2015.
 
-\bibitem[Tutorial(2013)]{ws2}
-The Java EE~6 Tutorial.
-\newblock \emph{Types of Web Services}.
+\bibitem[Bojcic(2013)]{railsd}
+Kresimir Bojcic.
+\newblock \emph{What are the Benefits of Ruby on Rails? After Two Decades of
+  Programming, I Use Rails}.
 \newblock 2013.
-\newblock URL \url{http://docs.oracle.com/javaee/6/tutorial/doc/giqsx.html}.
-\newblock accessed May 5\textsuperscript{th}, 2015.
-
-\bibitem[tutorialspoint.com(2015)]{rubyoo}
-tutorialspoint.com.
-\newblock \emph{Object Oriented Ruby}.
-\newblock 2015.
 \newblock URL
-  \url{http://www.tutorialspoint.com/ruby/ruby_object_oriented.htm}.
+  \url{http://www.toptal.com/ruby-on-rails/after-two-decades-of-programming-i-use-rails}.
 \newblock accessed May 6\textsuperscript{th}, 2015.
 
-\bibitem[Venners(2003)]{pofruby}
-Bill Venners.
-\newblock \emph{The Philosophy of Ruby}.
-\newblock Sep 2003.
-\newblock URL \url{http://www.artima.com/intv/rubyP.html}.
-\newblock accessed May 6\textsuperscript{th}, 2015.
-
-\bibitem[welfare.ie(2015)]{irishregistration}
-welfare.ie.
-\newblock \emph{History of Registration in Ireland}.
+\bibitem[Battley(2015)]{textgem}
+Paul Battley.
+\newblock \emph{Text, Collection of text algorithms}.
 \newblock 2015.
-\newblock URL \url{https://www.welfare.ie/en/downloads/GRO-History.pdf}.
-\newblock accessed May 8\textsuperscript{th}, 2015.
+\newblock URL \url{https://github.com/threedaymonk/text}.
+\newblock accessed May 9\textsuperscript{th}, 2015.
 
-\bibitem[Wikipedia(2015{\natexlab{a}})]{editdistance}
-Wikipedia.
-\newblock \emph{Edit distance}.
-\newblock 2015{\natexlab{a}}.
-\newblock URL \url{http://en.wikipedia.org/wiki/Edit_distance}.
-\newblock accessed May 4\textsuperscript{th}, 2015.
-
-\bibitem[Wikipedia(2015{\natexlab{b}})]{levenshteindistance}
-Wikipedia.
-\newblock \emph{Levenshtein distance}.
-\newblock 2015{\natexlab{b}}.
-\newblock URL \url{http://en.wikipedia.org/wiki/Levenshtein_distance}.
-\newblock accessed May 4\textsuperscript{th}, 2015.
+\bibitem[postgresql.org(2015)]{postgresql}
+postgresql.org.
+\newblock \emph{PostgreSQL}.
+\newblock 2015.
+\newblock URL \url{http://www.postgresql.org}.
+\newblock accessed May 11\textsuperscript{th}, 2015.
 
 \bibitem[Wikipedia(2015{\natexlab{c}})]{mvc}
 Wikipedia.
@@ -162,12 +169,5 @@ Wikipedia.
 \newblock 2015{\natexlab{c}}.
 \newblock URL \url{http://en.wikipedia.org/wiki/Model-view-controller}.
 \newblock accessed May 13\textsuperscript{th}, 2015.
-
-\bibitem[Winstanley(2014)]{adamw}
-Adam Winstanley.
-\newblock \emph{Identifying People on the Morpeth Roll}.
-\newblock July 2014.
-\newblock Postgraduate Diploma in Genealogical, Palaeographic \& Heraldic
-  Studies 2013-14.
 
 \end{thebibliography}
