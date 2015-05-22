@@ -1,5 +1,5 @@
 {
-  "base_name":"Smith",
+  "base_names":"Smith",
   "to_match_names":"Gowan\r\nSpeed",
   "matching_algorithms":{
     "1":{"name":"LookupTable", "weight":"10"},

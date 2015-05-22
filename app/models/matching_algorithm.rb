@@ -1,4 +1,4 @@
-class MatchingMethod
+class MatchingAlgorithm
   WEIGHT = 1
 
   attr_accessor :name,
@@ -34,7 +34,7 @@ class MatchingMethod
   end
 end
 
-class LookupTable < MatchingMethod
+class LookupTable < MatchingAlgorithm
   WEIGHT = 10
 
   private
@@ -60,7 +60,7 @@ class LookupTable < MatchingMethod
   end
 end
 
-class LevenshteinDistance < MatchingMethod
+class LevenshteinDistance < MatchingAlgorithm
   private
 
   def cal_score
@@ -70,7 +70,7 @@ class LevenshteinDistance < MatchingMethod
   end
 end
 
-class Soundex < MatchingMethod
+class Soundex < MatchingAlgorithm
   WEIGHT = 3
 
   def self.soundex(name)
@@ -131,7 +131,7 @@ class Soundex < MatchingMethod
   end
 end
 
-class IrishSoundex < MatchingMethod
+class IrishSoundex < MatchingAlgorithm
   WEIGHT = 6
 
   def self.soundex(name)

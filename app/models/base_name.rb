@@ -3,15 +3,15 @@ class BaseName
 
   attr_accessor :name,
     :to_match_names,
-    :matching_methods
+    :matching_algorithms
 
   def initialize(params = {})
-    MatchingMethod  # Hack to load up MatchingMethod subclasses
+    MatchingAlgorithm  # Hack to load up MatchingAlgorithm subclasses
 
-    @name             = params.fetch(:name)
-    @matching_methods = params.fetch(:matching_methods)
-    threshold         = params.fetch(:threshold) || DEFAULT_THRESHOLD
-    @to_match_names   = params.fetch(:to_match_names)
+    @name                = params.fetch(:name)
+    @matching_algorithms = params.fetch(:matching_algorithms)
+    @to_match_names      = params.fetch(:to_match_names)
+    threshold            = params.fetch(:threshold) || DEFAULT_THRESHOLD
 
     @to_match_names = @to_match_names.map do |tmn|
       puts "Processing for #{@name}: #{tmn}"
@@ -39,10 +39,10 @@ class ToMatchName
     @score     = 0
     @scores    = []
 
-    if @base_name.matching_methods.present?
-      MatchingMethod  # Hack to load up MatchingMethod subclasses
+    if @base_name.matching_algorithms.present?
+      MatchingAlgorithm  # Hack to load up MatchingAlgorithm subclasses
 
-      @scores = @base_name.matching_methods.map do |mm|
+      @scores = @base_name.matching_algorithms.map do |mm|
         mm[:name].constantize.new(
           :name      => @name,
           :base_name => @base_name,

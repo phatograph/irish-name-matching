@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col-xs-6">
       <div class="form-group">
-        <%= label_tag 'input1', 'Input 1 (separated by newline)' %>
-        <%= text_area_tag 'input1', params[:input1], :class => 'form-control', :rows => 5, :tabindex => 1 %>
+        <%= label_tag 'base_names', 'Input 1 (separated by newline)' %>
+        <%= text_area_tag 'base_names', params[:base_names], :class => 'form-control', :rows => 5, :tabindex => 1 %>
       </div>
       <div class="form-group">
         <%= label_tag 'file1', 'Or upload a file' %>
@@ -13,8 +13,8 @@
     </div>
     <div class="col-xs-6">
       <div class="form-group">
-        <%= label_tag 'input2', 'Input 2 (separated by newline)' %>
-        <%= text_area_tag 'input2', params[:input2], :class => 'form-control', :rows => 5, :tabindex => 2 %>
+        <%= label_tag 'to_match_names', 'Input 2 (separated by newline)' %>
+        <%= text_area_tag 'to_match_names', params[:to_match_names], :class => 'form-control', :rows => 5, :tabindex => 2 %>
       </div>
       <div class="form-group">
         <%= label_tag 'file2', 'Or upload a file' %>
@@ -35,12 +35,12 @@
   <div class="row">
     <div class="col-xs-6">
       <div class="form-group">
-        <label>Matching methods</label>
-        <% MatchingMethod.descendants.each do |mm| %>
+        <label>Matching algorithms</label>
+        <% MatchingAlgorithm.descendants.each do |mm| %>
           <div class="checkbox">
             <label>
-              <%= check_box_tag "matching_methods[#{mm}][name]", mm, has_mm?(params[:matching_methods], mm) %>
-              <%= number_field_tag "matching_methods[#{mm}][weight]", has_mm?(params[:matching_methods], mm) ? params[:matching_methods].select{|x| x[:name] == mm.to_s }.first[:weight] : mm::WEIGHT, :class => 'mm-value form-control' %>
+              <%= check_box_tag "matching_algorithms[#{mm}][name]", mm, has_mm?(params[:matching_algorithms], mm) %>
+              <%= number_field_tag "matching_algorithms[#{mm}][weight]", has_mm?(params[:matching_algorithms], mm) ? params[:matching_algorithms].select{|x| x[:name] == mm.to_s }.first[:weight] : mm::WEIGHT, :class => 'mm-value form-control' %>
               <%= mm.to_s.titleize %>
             </label>
           </div>
@@ -76,7 +76,7 @@
                   </h4>
                   <table class="table">
                     <tr>
-                      <th>Method</th>
+                      <th>Algorithm</th>
                       <th>Value</th>
                       <th>Score</th>
                       <th>Weight</th>
