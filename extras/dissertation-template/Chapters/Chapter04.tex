@@ -6,6 +6,40 @@ Now that we already know how to match (by comparing and calculating
 to a bigger picture. This section describes how the architecture
 of overall system is.
 
+\section{Web Service}
+\label{sec:ws}
+
+From figure \ref{fig:mvc}, web service clients use the system
+by directly pass inputs to the \emph{controller}. Recalling
+from previous sessions, all possible inputs to the system
+are as follow.
+
+\begin{enumerate}
+  \item Base names, separated by
+        new lines\footnote{\texttt{Preferably \textbackslash n} or \texttt{\textbackslash r}, see \url{http://stackoverflow.com/questions/1761051/difference-between-n-and-r}.}.
+  \item To match names, separated by new lines.
+  \item Matching algorithms, specify needed algorithm names along with its weight (section \ref{sec:weight}).
+  \item Threshold (section \ref{sec:threshold}).
+\end{enumerate}
+
+Currently a preferable format is \texttt{JSON}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language={json}, label={lst:json}, caption={\texttt{JSON}.}]
+{
+  "base_name":"Smith",
+  "to_match_names":"Gowan\r\nSpeed",
+  "matching_algorithms":{
+    "1":{"name":"LookupTable", "weight":"10"},
+    "2":{"name":"LevenshteinDistance", "weight":"1"},
+    "3":{"name":"Soundex", "weight":"3"},
+    "4":{"name":"IrishSoundex", "weight":"6"}
+  },
+  "threshold":"0"
+}
+\end{lstlisting}
+\end{minipage}
+
 \section{Initial idea}
 \label{sec:initialidea}
 
@@ -50,6 +84,7 @@ the matching process against the whole \emph{to-match name} list again, from
 start to the end.
 
 \section{Weighting matching algorithms}
+\label{sec:weight}
 
 We realised that, for matching names, each matching algorithms
 should not be treated as all the same priority. For example, for Irish names,
@@ -77,7 +112,7 @@ Table \ref{table:weights} states these suggested initial weights.
   \label{table:weights}
 \end{table}
 
-By summarise products of each matching algorithm \emph{similarity score}
+By summarising products of each matching algorithm \emph{similarity score}
 and its weight, dividing by sum of all weight, we can obtain
 \emph{overall weighted score} (OWS). This sentence can be represented
 by equation \ref{eq:ows}.
@@ -179,6 +214,19 @@ Once all cycles are fully finished for every \emph{base names} and
 ready. So we can sort and present in web interface (section \ref{sec:wi}), or return
 as a result in web service (section \ref{sec:ws}).
 
+\section{Thresholding the results}
+\label{sec:threshold}
+
+Suppose there are a thousand of \emph{to-match names}, there could be
+many irreverent results that are not likely to match each
+\emph{base name}. For example \emph{overall weighted scores} of
+`SMITH' and `CROMBIE' is just 0.007.
+
+Client may opt-out these irreverent results by specifying
+a floating number \emph{threshold}.
+Any \emph{to-match name} with \emph{overall weighted scores}
+lower than \emph{threshold} will be discarded from the result.
+
 \section{Data flow}
 \label{sec:mcv}
 
@@ -271,9 +319,6 @@ our system be these following means.
 \caption{Data flow from web service client and web interface client.}
 \label{fig:mvc}
 \end{figure}
-
-\section{Web Service}
-\label{sec:ws}
 
 \section{Web Interface}
 \label{sec:wi}

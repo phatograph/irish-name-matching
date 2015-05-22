@@ -1,7 +1,7 @@
 {
-  "input1":"Smith",
-  "input2":"Gowan\r\nSpeed",
-  "matching_methods":{
+  "base_name":"Smith",
+  "to_match_names":"Gowan\r\nSpeed",
+  "matching_algorithms":{
     "1":{"name":"LookupTable", "weight":"10"},
     "2":{"name":"LevenshteinDistance", "weight":"1"},
     "3":{"name":"Soundex", "weight":"3"},
