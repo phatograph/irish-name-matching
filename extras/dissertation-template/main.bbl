@@ -1,9 +1,38 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Wikipedia(2015{\natexlab{a}})]{mvc}
+Wikipedia.
+\newblock \emph{Model-view-controller}.
+\newblock 2015{\natexlab{a}}.
+\newblock URL \url{http://en.wikipedia.org/wiki/Model-view-controller}.
+\newblock accessed May 13\textsuperscript{th}, 2015.
+
+\bibitem[curl.haxx.se(2015)]{curl}
+curl.haxx.se.
+\newblock \emph{cURL, a command line tool and library for transferring data
+  with URL syntax}.
+\newblock 2015.
+\newblock URL \url{http://curl.haxx.se}.
+\newblock accessed May 22\textsuperscript{nd}, 2015.
+
+\bibitem[Wikipedia(2015{\natexlab{b}})]{post}
+Wikipedia.
+\newblock \emph{POST (HTTP)}.
+\newblock 2015{\natexlab{b}}.
+\newblock URL \url{http://en.wikipedia.org/wiki/POST_(HTTP)}.
+\newblock accessed May 22\textsuperscript{nd}, 2015.
+
+\bibitem[Rails(2015)]{jbuiler}
+Rails.
+\newblock \emph{Jbuilder}.
+\newblock 2015.
+\newblock URL \url{https://github.com/rails/jbuilder}.
+\newblock accessed May 22\textsuperscript{nd}, 2015.
 
 \bibitem[welfare.ie(2015)]{irishregistration}
 welfare.ie.
@@ -24,17 +53,17 @@ Christopher Ridgway.
 \newblock \emph{The Morpeth Roll: Ireland identified in 1841}.
 \newblock 2013.
 
-\bibitem[Wikipedia(2015{\natexlab{a}})]{editdistance}
+\bibitem[Wikipedia(2015{\natexlab{c}})]{editdistance}
 Wikipedia.
 \newblock \emph{Edit distance}.
-\newblock 2015{\natexlab{a}}.
+\newblock 2015{\natexlab{c}}.
 \newblock URL \url{http://en.wikipedia.org/wiki/Edit_distance}.
 \newblock accessed May 4\textsuperscript{th}, 2015.
 
-\bibitem[Wikipedia(2015{\natexlab{b}})]{levenshteindistance}
+\bibitem[Wikipedia(2015{\natexlab{d}})]{levenshteindistance}
 Wikipedia.
 \newblock \emph{Levenshtein distance}.
-\newblock 2015{\natexlab{b}}.
+\newblock 2015{\natexlab{d}}.
 \newblock URL \url{http://en.wikipedia.org/wiki/Levenshtein_distance}.
 \newblock accessed May 4\textsuperscript{th}, 2015.
 
@@ -162,12 +191,5 @@ postgresql.org.
 \newblock 2015.
 \newblock URL \url{http://www.postgresql.org}.
 \newblock accessed May 11\textsuperscript{th}, 2015.
-
-\bibitem[Wikipedia(2015{\natexlab{c}})]{mvc}
-Wikipedia.
-\newblock \emph{Model-view-controller}.
-\newblock 2015{\natexlab{c}}.
-\newblock URL \url{http://en.wikipedia.org/wiki/Model-view-controller}.
-\newblock accessed May 13\textsuperscript{th}, 2015.
 
 \end{thebibliography}

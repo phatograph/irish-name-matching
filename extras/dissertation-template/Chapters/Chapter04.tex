@@ -6,39 +6,8 @@ Now that we already know how to match (by comparing and calculating
 to a bigger picture. This section describes how the architecture
 of overall system is.
 
-\section{Web Service}
-\label{sec:ws}
-
-From figure \ref{fig:mvc}, web service clients use the system
-by directly pass inputs to the \emph{controller}. Recalling
-from previous sessions, all possible inputs to the system
-are as follow.
-
-\begin{enumerate}
-  \item Base names, separated by
-        new lines\footnote{\texttt{Preferably \textbackslash n} or \texttt{\textbackslash r}, see \url{http://stackoverflow.com/questions/1761051/difference-between-n-and-r}.}.
-  \item To match names, separated by new lines.
-  \item Matching algorithms, specify needed algorithm names along with its weight (section \ref{sec:weight}).
-  \item Threshold (section \ref{sec:threshold}).
-\end{enumerate}
-
-Currently a preferable format is \texttt{JSON}.
-
-\begin{minipage}{\linewidth}
-\begin{lstlisting}[language={json}, label={lst:json}, caption={\texttt{JSON}.}]
-{
-  "base_names":"Smith",
-  "to_match_names":"Gowan\r\nSpeed",
-  "matching_algorithms":{
-    "1":{"name":"LookupTable", "weight":"10"},
-    "2":{"name":"LevenshteinDistance", "weight":"1"},
-    "3":{"name":"Soundex", "weight":"3"},
-    "4":{"name":"IrishSoundex", "weight":"6"}
-  },
-  "threshold":"0"
-}
-\end{lstlisting}
-\end{minipage}
+\section{Web Interface}
+\label{sec:wi}
 
 \section{Initial idea}
 \label{sec:initialidea}
@@ -320,5 +289,137 @@ our system be these following means.
 \label{fig:mvc}
 \end{figure}
 
-\section{Web Interface}
-\label{sec:wi}
+\section{Web Service}
+\label{sec:ws}
+
+From figure \ref{fig:mvc}, web service clients use the system
+by directly pass inputs to the \emph{controller}. Recalling
+from previous sessions, all possible inputs to the system
+are as follow.
+
+\begin{enumerate}
+  \item Base names, separated by
+        new lines\footnote{\texttt{Preferably \textbackslash n} or \texttt{\textbackslash r}, see \url{http://stackoverflow.com/questions/1761051/difference-between-n-and-r}.}.
+  \item To match names, separated by new lines.
+  \item Matching algorithms, specify needed algorithm names along with its weight (section \ref{sec:weight}).
+  \item Threshold (section \ref{sec:threshold}).
+\end{enumerate}
+
+Currently a preferable format is \texttt{JSON}. In listing \ref{lst:json}
+shown a sample \texttt{JSON} input for using web service, let us
+call this \texttt{sample.json}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language={json}, label={lst:json}, caption={\texttt{sample.json}.}]
+{
+  "base_names":"Smith",
+  "to_match_names":"Smythe\r\nO'Gowan",
+  "matching_algorithms":{
+    "1":{"name":"LookupTable", "weight":"10"},
+    "2":{"name":"LevenshteinDistance", "weight":"1"},
+    "3":{"name":"Soundex", "weight":"3"},
+    "4":{"name":"IrishSoundex", "weight":"6"}
+  },
+  "threshold":"0"
+}
+\end{lstlisting}
+\end{minipage}
+
+\texttt{sample.json} is an attempt to match between \emph{base name} `SMITH',
+and \emph{to-match name} `SMYTHE' and `O\textquotesingle GOWAN'. Using 4 matching
+algorithms, and threshold as 0. We will submit this \texttt{sample.json} input
+to the system using cURL \cite[]{curl} in command line.
+
+\begin{minipage}{\linewidth}
+  \begin{lstlisting}[language={bash}, label={lst:curl}, caption={}]
+$ curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d @sample.json http://localhost:4001/match.json
+\end{lstlisting}
+\end{minipage}
+
+We use HTTP POST \cite[]{post} to submit \texttt{sample.json} to the web service,
+currently running locally, so the \texttt{url} using here is \url{http://localhost:4001/match.json}.
+The formatted \texttt{JSON} result is shown in listing \ref{lst:curl2},
+note that the result of matching between `SMITH' and `O\textquotesingle GOWAN' is truncated
+just for readability.
+
+\begin{lstlisting}[language={json}, label={lst:curl2}, caption={Result from \texttt{sample.json}.}]
+[
+  {
+    "base_name": "SMITH",
+    "to_match_names": [
+      {
+        "to_match_name": "SMYTHE",
+        "overall_weighted_score": 0.983,
+        "scores": [
+          {
+            "method": "LookupTable",
+            "value": "Matched",
+            "label": "1897",
+            "score": 1,
+            "weight": 10
+          },
+          {
+            "method": "LevenshteinDistance",
+            "value": 2,
+            "label": null,
+            "score": 0.667,
+            "weight": 1
+          },
+          {
+            "method": "Soundex",
+            "value": "S530 <=> S530",
+            "label": null,
+            "score": 1,
+            "weight": 3
+          },
+          {
+            "method": "IrishSoundex",
+            "value": "S530 <=> S530",
+            "label": "SMYTHE",
+            "score": 1,
+            "weight": 6
+          }
+        ]
+      },
+      {
+        "to_match_name": "O'GOWAN",
+        "overall_weighted_score": 0.5,
+        ...
+      }
+    ]
+  }
+]
+\end{lstlisting}
+
+From the results, \emph{overall weighted score} between `SMITH' and `SMYTHE'
+is 0.983, higher than `SMITH' and `O\textquotesingle GOWAN' (0.5), so the former is sorted
+before the latter.
+
+To generate these results in \texttt{JSON}, we use Jbuilder \cite[]{jbuiler},
+a template for generating JSON structures. The template we use is shown
+in listing \ref{lst:jbuilder}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label={lst:jbuilder}, caption={Jbuilder template for generating \texttt{JSON} results.}]
+json.array! @matched_names do |matched_name|
+  json.base_name matched_name.name
+
+  json.to_match_names do
+    json.array! matched_name.to_match_names do |tmn|
+      json.to_match_name tmn.name
+      json.overall_weighted_score tmn.score
+
+      json.scores do
+        json.array! tmn.scores do |s|
+          json.method s.class.name
+          json.value s.value
+          json.label s.label
+          json.score s.score
+          json.weight s.weight
+        end
+      end
+    end
+  end
+end
+\end{lstlisting}
+\end{minipage}

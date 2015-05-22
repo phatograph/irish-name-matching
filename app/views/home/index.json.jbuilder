@@ -1,10 +1,10 @@
 json.array! @matched_names do |matched_name|
-  json.name matched_name.name
+  json.base_name matched_name.name
 
   json.to_match_names do
     json.array! matched_name.to_match_names do |tmn|
-      json.name tmn.name
-      json.score tmn.score
+      json.to_match_name tmn.name
+      json.overall_weighted_score tmn.score
 
       json.scores do
         json.array! tmn.scores do |s|

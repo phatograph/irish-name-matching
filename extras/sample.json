@@ -1,6 +1,6 @@
 {
   "base_names":"Smith",
-  "to_match_names":"Gowan\r\nSpeed",
+  "to_match_names":"Smythe\r\nO'Gowan",
   "matching_algorithms":{
     "1":{"name":"LookupTable", "weight":"10"},
     "2":{"name":"LevenshteinDistance", "weight":"1"},
