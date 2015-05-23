@@ -15,7 +15,7 @@ class HomeController < ApplicationController
     to_match_names = params[:file2].present? ? params[:file2].read : params[:to_match_names]
     to_match_names = to_match_names.lines.map {|x| x.strip.upcase }
 
-    if params[:standard_list].present?
+    if %w{true t 1}.include? params[:standard_list]
       to_match_names = LookupTableRecord.pluck(:name).uniq
     end
 

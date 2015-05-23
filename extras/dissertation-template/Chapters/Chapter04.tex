@@ -6,9 +6,6 @@ Now that we already know how to match (by comparing and calculating
 to a bigger picture. This section describes how the architecture
 of overall system is.
 
-\section{Web Interface}
-\label{sec:wi}
-
 \section{Initial idea}
 \label{sec:initialidea}
 
@@ -298,11 +295,13 @@ from previous sessions, all possible inputs to the system
 are as follow.
 
 \begin{enumerate}
-  \item Base names, separated by
+  \item Base names -- separated by
         new lines\footnote{\texttt{Preferably \textbackslash n} or \texttt{\textbackslash r}, see \url{http://stackoverflow.com/questions/1761051/difference-between-n-and-r}.}.
-  \item To match names, separated by new lines.
-  \item Matching algorithms, specify needed algorithm names along with its weight (section \ref{sec:weight}).
+  \item To-match names -- separated by new lines.
+  \item Matching algorithms -- specify needed algorithm names along with its weight (section \ref{sec:weight}).
   \item Threshold (section \ref{sec:threshold}).
+  \item Standard list -- will be introduced in section \ref{sec:stdname}.
+    Specify \texttt{true}, \texttt{t}, or \texttt{1} to use the standard list.
 \end{enumerate}
 
 Currently a preferable format is \texttt{JSON}. In listing \ref{lst:json}
@@ -320,7 +319,8 @@ call this \texttt{sample.json}.
     "3":{"name":"Soundex", "weight":"3"},
     "4":{"name":"IrishSoundex", "weight":"6"}
   },
-  "threshold":"0"
+  "threshold":"0",
+  "standard_list":""
 }
 \end{lstlisting}
 \end{minipage}
@@ -385,10 +385,6 @@ just for readability.
         "to_match_name": "O'GOWAN",
         "overall_weighted_score": 0.5,
         ...
-      }
-    ]
-  }
-]
 \end{lstlisting}
 
 From the results, \emph{overall weighted score} between `SMITH' and `SMYTHE'
@@ -423,3 +419,56 @@ json.array! @matched_names do |matched_name|
 end
 \end{lstlisting}
 \end{minipage}
+
+
+\section{Web Interface}
+\label{sec:wi}
+
+Our system provides a web interface with inputs form.
+All possible inputs are equivalent to web service as follow.
+
+\begin{enumerate}
+  \item Base names -- clients can fill the names in \emph{input 1}, separated
+    by new lines. alternatively, clients can also upload a file containing names
+    separated by new lines. if the web interface detects that the file input
+    is present, direct text input will be discarded.
+  \item To-match names -- the same way of \emph{base name}, using \emph{Input 2}.
+  \item Matching algorithms -- clients can choose available algorithms
+    from the list along with its weight using checkboxes. Uncheck to
+    opt-out any algorithms.
+  \item Threshold -- clients can specify floating number threshold using input box.
+  \item Standard list -- will be introduced in section \ref{sec:stdname}.
+    clients can check the checkbox to use the standard list.
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\makebox[\textwidth][c]{\includegraphics[width=16cm]{gfx/web_interface}}
+\caption{Web interface with input forms.}
+\label{fig:wi}
+\end{figure}
+
+Figure \ref{fig:wi} is an attempt to match between \emph{base name} `SMITH'
+and `SPEED', and \emph{to-match name} `SMYTHE' and `O\textquotesingle GOWAN'. Using 4 matching
+algorithms, and threshold as 0. After finish filling all inputs client
+may press the blue `Submit' button to begin matching.
+
+\begin{figure}[H]
+\centering
+\captionsetup{justification=centering}
+\makebox[\textwidth][c]{\includegraphics[width=14cm]{gfx/web_interface_result}}
+\caption{Web interface results page.}
+\label{fig:wi_res}
+\end{figure}
+
+Figure \ref{fig:wi_res} shows the web interface result of this matching.
+There are two \emph{base names} and two \emph{to-match names}, so the results
+are matchings of total $2 \times 2 = 4$ names. Each outer box is results
+of matching between each \emph{base names}, with the outer box there
+is an inner box containing details of each \emph{to-match names}.
+
+From the results, \emph{overall weighted score}
+(each green labelled box) between `SMITH' and `SMYTHE'
+is 0.983, higher than `SMITH' and `O\textquotesingle GOWAN' (0.5), so the former is sorted
+before the latter.
