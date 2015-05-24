@@ -34,32 +34,6 @@ class MatchingAlgorithm
   end
 end
 
-class LookupTable < MatchingAlgorithm
-  WEIGHT = 10
-
-  private
-
-  def cal_score
-    base = LookupTableRecord.where(:name => @base_name.name)
-
-    @score = if base.nil?  # Could not find reference for base name, no matches
-               0
-             else
-               # Find any reference that has 1) same name 2) same reference
-               base = base.map(&:ref)
-               refs = LookupTableRecord.where(:ref => base, :name => @name)
-
-               if refs.present?
-                 @label = (base & refs.map(&:ref)).join(', ')
-                 @value = "Matched"
-                 1
-               else  # Could not find reference for matching name, no matches
-                 0
-               end
-             end
-  end
-end
-
 class LevenshteinDistance < MatchingAlgorithm
   private
 
@@ -123,8 +97,8 @@ class Soundex < MatchingAlgorithm
   end
 
   def cal_score
-    name_soundex      = Soundex.soundex(@name)
-    base_name_soundex = Soundex.soundex(@base_name.name)
+    name_soundex      = self.class.soundex(@name)
+    base_name_soundex = self.class.soundex(@base_name.name)
 
     @value = "#{base_name_soundex} <=> #{name_soundex}"
     @score = soundex_distance_score(name_soundex, base_name_soundex)
@@ -166,11 +140,38 @@ class IrishSoundex < MatchingAlgorithm
   private
 
   def cal_score
-    name_soundex      = IrishSoundex.soundex(@name)
-    base_name_soundex = IrishSoundex.soundex(@base_name.name)
+    name_soundex      = self.class.soundex(@name)
+    base_name_soundex = self.class.soundex(@base_name.name)
 
     @value = "#{base_name_soundex[:soundex]} <=> #{name_soundex[:soundex]}"
     @label = name_soundex[:label]
     @score = soundex_distance_score(name_soundex[:soundex], base_name_soundex[:soundex])
+  end
+end
+
+class LookupTable < MatchingAlgorithm
+  WEIGHT = 10
+
+  private
+
+  def cal_score
+    # Look for a reference for base name
+    base = LookupTableRecord.where(:name => @base_name.name)
+
+    @score = if base.nil?  # Could not find reference for base name, no matches
+               0
+             else
+               # Find any reference that has 1) same name 2) same reference
+               base = base.map(&:ref)
+               refs = LookupTableRecord.where(:ref => base, :name => @name)
+
+               if refs.present?
+                 @label = (base & refs.map(&:ref)).join(', ')
+                 @value = "Matched"
+                 1
+               else  # Could not find reference for matching name, no matches
+                 0
+               end
+             end
   end
 end

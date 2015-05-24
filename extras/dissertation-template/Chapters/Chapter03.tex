@@ -320,6 +320,7 @@ is as in lisiting \ref{lst:lookup}.
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[label={lst:lookup}, caption={Lookup table implementation.}]
 def cal_score
+  # Look for a reference for base name
   base = LookupTableRecord.where(:name => @base_name.name)
 
   @score = if base.nil?  # Could not find reference for base name, no matches

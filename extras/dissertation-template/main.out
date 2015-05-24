@@ -1,40 +1,41 @@
-\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 1
-\BOOKMARK [1][-]{section.1.1}{1.1 Motivation}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{1.2 Research Questions}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{1.3 Objective and Aims}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.4}{1.4 Report Structure}{chapter.1}% 5
-\BOOKMARK [0][]{chapter.2}{2 Related Work}{}% 6
-\BOOKMARK [1][-]{section.2.1}{2.1 Name matching}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Edit distance}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Soundex}{section.2.1}% 9
-\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Lookup Table}{section.2.1}% 10
-\BOOKMARK [1][-]{section.2.2}{2.2 Web service}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{2.3 Extensible framework}{chapter.2}% 12
-\BOOKMARK [-1][]{part.1}{The Solution}{}% 13
-\BOOKMARK [0][]{chapter.3}{3 Name matching algorithms}{part.1}% 14
-\BOOKMARK [1][-]{section.3.1}{3.1 Levenshtein distance}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.2}{3.2 Soundex}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.3}{3.3 Irish soundex}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.4}{3.4 Lookup table}{chapter.3}% 18
-\BOOKMARK [0][]{chapter.4}{4 Architecture}{part.1}% 19
-\BOOKMARK [1][-]{section.4.1}{4.1 Initial idea}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.2}{4.2 Weighting matching algorithms}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.3}{4.3 Actual system}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.4}{4.4 Thresholding the results}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.5}{4.5 Data flow}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.6}{4.6 MVC}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.7}{4.7 Web Service}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.8}{4.8 Web Interface}{chapter.4}% 27
-\BOOKMARK [0][]{chapter.5}{5 Extending the system}{part.1}% 28
-\BOOKMARK [1][-]{section.5.1}{5.1 Matching algorithms inheritance}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.2}{5.2 Implementing new matching algorithms}{chapter.5}% 30
-\BOOKMARK [-1][]{part.2}{The Forward}{}% 31
-\BOOKMARK [0][]{chapter.6}{6 Evaluation}{part.2}% 32
-\BOOKMARK [1][-]{section.6.1}{6.1 Introducing standard name list}{chapter.6}% 33
-\BOOKMARK [1][-]{section.6.2}{6.2 Response speed}{chapter.6}% 34
-\BOOKMARK [1][-]{section.6.3}{6.3 Memory performance}{chapter.6}% 35
-\BOOKMARK [0][]{chapter.7}{7 Conclusion}{part.2}% 36
-\BOOKMARK [1][-]{section.7.1}{7.1 Outcome}{chapter.7}% 37
-\BOOKMARK [1][-]{section.7.2}{7.2 Encountered problem}{chapter.7}% 38
-\BOOKMARK [1][-]{section.7.3}{7.3 Future works}{chapter.7}% 39
-\BOOKMARK [0][]{dummy.1}{Bibliography}{part.2}% 40
+\BOOKMARK [0][]{chapter.1}{1 Extending the system}{}% 1
+\BOOKMARK [1][-]{section.1.1}{1.1 Matching algorithms inheritance}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{1.2 Exporting a class method}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{1.3 Implementing new matching algorithms}{chapter.1}% 4
+\BOOKMARK [0][]{chapter.2}{2 Introduction}{}% 5
+\BOOKMARK [1][-]{section.2.1}{2.1 Motivation}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{2.2 Research Questions}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{2.3 Objective and Aims}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.4}{2.4 Report Structure}{chapter.2}% 9
+\BOOKMARK [0][]{chapter.3}{3 Related Work}{}% 10
+\BOOKMARK [1][-]{section.3.1}{3.1 Name matching}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Edit distance}{section.3.1}% 12
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Soundex}{section.3.1}% 13
+\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 Lookup Table}{section.3.1}% 14
+\BOOKMARK [1][-]{section.3.2}{3.2 Web service}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{3.3 Extensible framework}{chapter.3}% 16
+\BOOKMARK [-1][]{part.1}{The Solution}{}% 17
+\BOOKMARK [0][]{chapter.4}{4 Name matching algorithms}{part.1}% 18
+\BOOKMARK [1][-]{section.4.1}{4.1 Levenshtein distance}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.2}{4.2 Soundex}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.3}{4.3 Irish soundex}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.4}{4.4 Lookup table}{chapter.4}% 22
+\BOOKMARK [0][]{chapter.5}{5 Architecture}{part.1}% 23
+\BOOKMARK [1][-]{section.5.1}{5.1 Initial idea}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.2}{5.2 Weighting matching algorithms}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.3}{5.3 Actual system}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.4}{5.4 Thresholding the results}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.5}{5.5 Data flow}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.6}{5.6 MVC}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.7}{5.7 Web Service}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.8}{5.8 Web Interface}{chapter.5}% 31
+\BOOKMARK [-1][]{part.2}{The Forward}{}% 32
+\BOOKMARK [0][]{chapter.6}{6 Evaluation}{part.2}% 33
+\BOOKMARK [1][-]{section.6.1}{6.1 Introducing standard name list}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.2}{6.2 Response speed}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.3}{6.3 Memory performance}{chapter.6}% 36
+\BOOKMARK [0][]{chapter.7}{7 Conclusion}{part.2}% 37
+\BOOKMARK [1][-]{section.7.1}{7.1 Outcome}{chapter.7}% 38
+\BOOKMARK [1][-]{section.7.2}{7.2 Encountered problem}{chapter.7}% 39
+\BOOKMARK [1][-]{section.7.3}{7.3 Future works}{chapter.7}% 40
+\BOOKMARK [0][]{dummy.1}{Bibliography}{part.2}% 41

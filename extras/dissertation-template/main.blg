@@ -1,16 +1,17 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
+A level-1 auxiliary file: Chapters/Chapter05.aux
 A level-1 auxiliary file: Chapters/Chapter01.aux
 A level-1 auxiliary file: Chapters/Chapter02.aux
 A level-1 auxiliary file: Chapters/Chapter03.aux
 A level-1 auxiliary file: Chapters/Chapter04.aux
-A level-1 auxiliary file: Chapters/Chapter05.aux
 A level-1 auxiliary file: Chapters/Chapter06.aux
 A level-1 auxiliary file: Chapters/Chapter07.aux
 A level-1 auxiliary file: FrontBackMatter/Bibliography.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
+Warning--empty publisher in hf
 Warning--empty publisher in irishregistration
 Warning--empty publisher in adamw
 Warning--empty publisher in morpeth
@@ -37,45 +38,45 @@ Warning--empty publisher in mvc
 Warning--empty publisher in curl
 Warning--empty publisher in post
 Warning--empty publisher in jbuiler
-You've used 26 entries,
+You've used 27 entries,
             2481 wiz_defined-function locations,
-            680 strings with 7510 characters,
-and the built_in function-call counts, 7396 in all, are:
-= -- 619
-> -- 190
+            684 strings with 7608 characters,
+and the built_in function-call counts, 7742 in all, are:
+= -- 640
+> -- 217
 < -- 26
-+ -- 110
-- -- 54
-* -- 420
-:= -- 1203
-add.period$ -- 127
-call.type$ -- 26
-change.case$ -- 26
-chr.to.int$ -- 22
-cite$ -- 52
-duplicate$ -- 494
-empty$ -- 781
-format.name$ -- 82
-if$ -- 1562
++ -- 120
+- -- 62
+* -- 449
+:= -- 1262
+add.period$ -- 130
+call.type$ -- 27
+change.case$ -- 27
+chr.to.int$ -- 23
+cite$ -- 54
+duplicate$ -- 513
+empty$ -- 811
+format.name$ -- 91
+if$ -- 1632
 int.to.chr$ -- 5
-int.to.str$ -- 27
-missing$ -- 52
-newline$ -- 187
-num.names$ -- 78
-pop$ -- 289
+int.to.str$ -- 28
+missing$ -- 54
+newline$ -- 192
+num.names$ -- 81
+pop$ -- 302
 preamble$ -- 1
-purify$ -- 26
+purify$ -- 27
 quote$ -- 0
-skip$ -- 247
+skip$ -- 256
 stack$ -- 0
-substring$ -- 52
-swap$ -- 65
+substring$ -- 54
+swap$ -- 67
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 104
-warning$ -- 26
-while$ -- 52
+type$ -- 108
+warning$ -- 27
+while$ -- 54
 width$ -- 0
-write$ -- 391
-(There were 26 warnings)
+write$ -- 402
+(There were 27 warnings)

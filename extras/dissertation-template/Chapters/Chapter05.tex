@@ -1,5 +1,88 @@
 \chapter{Extending the system}
 
+In this section we show how we design our system to be extensible
+in terms of adding new matching algorithms.
+
 \section{Matching algorithms inheritance}
+
+All matching algorithms (chapter \ref{ch:nma}) inherit the same superclass,\\
+\texttt{MatchingAlgorithm} (shown in listing \ref{lst:ma_imp}). They all use the same class constructor
+(in Ruby, it is called the \emph{initialize} method). To create an instance
+of \texttt{MatchingAlgorithm}, current \emph{base name}, \emph{to-match name}
+and \emph{weight} are passed as parameters.
+
+We use \emph{The Strategy Pattern}\footnote{\cite[]{hf}, page 24}
+as a design pattern. In \texttt{MatchingAlgorithm} the \texttt{cal\_score} method
+is declared but also meant to be overridden, so every matching
+algorithm needs to override this method using their own matching logic.
+\texttt{cal\_score} is also private to be only used within the subclasses
+themselves.
+
+We also define \texttt{soundex\_distance\_score} method to be shared
+between soundex algorithms. Any further shared methods can be declare
+here as well.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label={lst:ma_imp}, caption={\texttt{MatchingAlgorithm} class.}]
+class MatchingAlgorithm
+  WEIGHT = 1
+
+  attr_accessor :name,
+    :base_name,
+    :value,
+    :label,
+    :score,
+    :weight,
+    :weighted_score
+
+  def initialize(params = {})
+    @name      = params.fetch(:name)
+    @base_name = params.fetch(:base_name)
+    @weight    = params.fetch(:weight)
+
+    cal_score
+    @score = @score.round(3)
+    @weighted_score = (@score * @weight).round(3)
+  end
+
+  private
+
+  def cal_score
+    raise NotImplementedError
+  end
+
+  def soundex_distance_score(s1, s2)
+    if s1.first != s2.first
+      0  # Different category, so they suppose to be completely different
+    else
+      (s1.size - Text::Levenshtein.distance(s1, s2).to_f ) / s1.size
+    end
+  end
+end
+\end{lstlisting}
+\end{minipage}
+
+For example of a concrete matching algorithm,
+we have already shown some \texttt{cal\_score} overridings. For
+\emph{Levenshtein distance} as in in listing \ref{lst:leven},
+and for \emph{Lookup table} as in listing \ref{lst:lookup}.
+Here we will show one example of the whole \texttt{LevenshteinDistance} class,
+which is a subclass of \texttt{MatchingAlgorithm}, as in listing \ref{lst:leven_class}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label={lst:leven_class}, caption={\texttt{LevenshteinDistance} class.}]
+class LevenshteinDistance < MatchingAlgorithm
+  private
+
+  def cal_score
+    @value = Text::Levenshtein.distance(@name, @base_name.name)
+    size   = [@name.size, @base_name.name.size].max
+    @score = ((size - @value).to_f / size)
+  end
+end
+\end{lstlisting}
+\end{minipage}
+
+\section{Exporting a class method}
 
 \section{Implementing new matching algorithms}
