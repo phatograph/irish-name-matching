@@ -12,6 +12,7 @@ A level-1 auxiliary file: FrontBackMatter/Bibliography.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
 Warning--empty publisher in hf
+Warning--empty publisher in classmethod
 Warning--empty publisher in irishregistration
 Warning--empty publisher in adamw
 Warning--empty publisher in morpeth
@@ -38,45 +39,45 @@ Warning--empty publisher in mvc
 Warning--empty publisher in curl
 Warning--empty publisher in post
 Warning--empty publisher in jbuiler
-You've used 27 entries,
+You've used 28 entries,
             2481 wiz_defined-function locations,
-            684 strings with 7608 characters,
-and the built_in function-call counts, 7742 in all, are:
-= -- 640
-> -- 217
-< -- 26
-+ -- 120
-- -- 62
-* -- 449
-:= -- 1262
-add.period$ -- 130
-call.type$ -- 27
-change.case$ -- 27
-chr.to.int$ -- 23
-cite$ -- 54
-duplicate$ -- 513
-empty$ -- 811
-format.name$ -- 91
-if$ -- 1632
+            690 strings with 7796 characters,
+and the built_in function-call counts, 8026 in all, are:
+= -- 664
+> -- 224
+< -- 27
++ -- 124
+- -- 64
+* -- 466
+:= -- 1308
+add.period$ -- 135
+call.type$ -- 28
+change.case$ -- 28
+chr.to.int$ -- 24
+cite$ -- 56
+duplicate$ -- 532
+empty$ -- 841
+format.name$ -- 94
+if$ -- 1692
 int.to.chr$ -- 5
-int.to.str$ -- 28
-missing$ -- 54
-newline$ -- 192
-num.names$ -- 81
-pop$ -- 302
+int.to.str$ -- 29
+missing$ -- 56
+newline$ -- 199
+num.names$ -- 84
+pop$ -- 313
 preamble$ -- 1
-purify$ -- 27
+purify$ -- 28
 quote$ -- 0
-skip$ -- 256
+skip$ -- 265
 stack$ -- 0
-substring$ -- 54
-swap$ -- 67
+substring$ -- 56
+swap$ -- 70
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
-warning$ -- 27
-while$ -- 54
+type$ -- 112
+warning$ -- 28
+while$ -- 56
 width$ -- 0
-write$ -- 402
-(There were 27 warnings)
+write$ -- 417
+(There were 28 warnings)

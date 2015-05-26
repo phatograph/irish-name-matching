@@ -1,7 +1,8 @@
 \chapter{Extending the system}
 
 In this section we show how we design our system to be extensible
-in terms of adding new matching algorithms.
+in terms of adding new matching algorithms, also using existing
+shared methods, or sharing new methods.
 
 \section{Matching algorithms inheritance}
 
@@ -13,8 +14,10 @@ and \emph{weight} are passed as parameters.
 
 We use \emph{The Strategy Pattern}\footnote{\cite[]{hf}, page 24}
 as a design pattern. In \texttt{MatchingAlgorithm} the \texttt{cal\_score} method
-is declared but also meant to be overridden, so every matching
+is declared and also meant to be overridden, so every matching
 algorithm needs to override this method using their own matching logic.
+Each matching algorithm class will call \texttt{cal\_score}
+to calculate its scores.
 \texttt{cal\_score} is also private to be only used within the subclasses
 themselves.
 
@@ -22,10 +25,12 @@ We also define \texttt{soundex\_distance\_score} method to be shared
 between soundex algorithms. Any further shared methods can be declare
 here as well.
 
+\texttt{MatchingAlgorithm} class is shown in listing \ref{lst:ma_imp}.
+
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[label={lst:ma_imp}, caption={\texttt{MatchingAlgorithm} class.}]
 class MatchingAlgorithm
-  WEIGHT = 1
+  WEIGHT = 1  # Default weight of every matching algorithm.
 
   attr_accessor :name,
     :base_name,
@@ -64,9 +69,8 @@ end
 
 For example of a concrete matching algorithm,
 we have already shown some \texttt{cal\_score} overridings. For
-\emph{Levenshtein distance} as in in listing \ref{lst:leven},
-and for \emph{Lookup table} as in listing \ref{lst:lookup}.
-Here we will show one example of the whole \texttt{LevenshteinDistance} class,
+\emph{Levenshtein distance} is as in in listing \ref{lst:leven}.
+Here we will show whole \texttt{LevenshteinDistance} class,
 which is a subclass of \texttt{MatchingAlgorithm}, as in listing \ref{lst:leven_class}.
 
 \begin{minipage}{\linewidth}
@@ -83,6 +87,126 @@ end
 \end{lstlisting}
 \end{minipage}
 
+Also for \emph{Lookup table} is as in listing \ref{lst:lookup}.
+Here we will show whole \texttt{LookupTable} class,
+which is another subclass of \texttt{MatchingAlgorithm}, as in listing \ref{lst:leven_class}.
+Note that \texttt{LookupTable} overrides default \emph{weight}, which
+\texttt{LevenshteinDistance} does not.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label={lst:lt_class}, caption={\texttt{LookupTable} class.}]
+class LookupTable < MatchingAlgorithm
+  WEIGHT = 10  # Overriding default weight.
+
+  private
+
+  def cal_score
+    ...
+  end
+end
+\end{lstlisting}
+\end{minipage}
+
 \section{Exporting a class method}
+
+When we mentioned soundex implementation in listing \ref{lst:soundex},
+we introduced \texttt{self.soundex} method instead of \texttt{cal\_score}.
+Defining a method with \texttt{self.} is to create a \emph{class method} \cite[]{classmethod}.
+\emph{Class method} can be called directly without creating instance of the class,
+it is the same as \emph{static method} in Java. For example as in listing
+\ref{lst:classmethod}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label={lst:classmethod}, caption={Calling class method \emph{Soundex.soundex}.}]
+[7] pry(main)> Soundex.soundex('SMITH')
+=> "S530"
+\end{lstlisting}
+\end{minipage}
+
+By defining this method to be a \emph{class method}, it can be reused
+in other class as well. In listing \ref{lst:sd_class} we will show whole
+\texttt{Soundex} class, which is another subclass of \texttt{MatchingAlgorithm}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label={lst:sd_class}, caption={\texttt{Soundex} class.}]
+class Soundex < MatchingAlgorithm
+  WEIGHT = 3
+
+  def self.soundex(name)
+    ...
+  end
+
+  private
+
+  def self.category(c)
+    ...
+  end
+
+  def cal_score
+    name_soundex      = self.class.soundex(@name)
+    base_name_soundex = self.class.soundex(@base_name.name)
+
+    @value = "#{base_name_soundex} <=> #{name_soundex}"
+    @score = soundex_distance_score(name_soundex, base_name_soundex)
+  end
+end
+\end{lstlisting}
+\end{minipage}
+
+Note that we have already covered \texttt{self.soundex} and \texttt{self.category} implementation
+in listing \ref{lst:soundex} and \ref{lst:soundexc} respectively, so both
+are truncated for readability. Here we focus on the \texttt{cal\_score} overriding
+on \texttt{Soundex} class. The use of \texttt{self.class.soundex} in \texttt{cal\_score}
+refers to \texttt{Soundex.soundex}. And \texttt{soundex\_distance\_score}
+is defined in \texttt{MatchingAlgorithm}.
+
+As for Irish soundex, it also contains its own \texttt{self.soundex}
+\emph{class method}. But this \texttt{self.soundex} also calls \texttt{Soundex.soundex}
+to use original soundex code, as in listing \ref{lst:is_call_s} (extracted from
+\texttt{IrishSoundex.soundex} implementation, listing \ref{lst:irishsoundex}).
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label={lst:is_call_s}, caption={\texttt{IrishSoundex.soundex} calls to \texttt{Soundex.soundex}.}]
+# Call to traditional soundex.
+return {
+  :label => name,
+  :soundex => Soundex.soundex(name)
+}
+\end{lstlisting}
+\end{minipage}
+
+In listing \ref{lst:is_class} we will show whole \texttt{IrishSoundex} class,
+which is another subclass of \texttt{MatchingAlgorithm}.
+
+\begin{minipage}{\linewidth}
+  \begin{lstlisting}[label={lst:is_class}, caption={\texttt{IrishSoundex} class.}]
+class IrishSoundex < MatchingAlgorithm
+  WEIGHT = 6
+
+  def self.soundex(name)
+    ..
+  end
+
+  private
+
+  def cal_score
+    name_soundex      = self.class.soundex(@name)
+    base_name_soundex = self.class.soundex(@base_name.name)
+
+    @value = "#{base_name_soundex[:soundex]} <=> #{name_soundex[:soundex]}"
+    @label = name_soundex[:label]
+    @score = soundex_distance_score(name_soundex[:soundex], base_name_soundex[:soundex])
+  end
+end
+\end{lstlisting}
+\end{minipage}
+
+Note that we have already covered \texttt{self.soundex} implementation
+in listing \ref{lst:irishsoundex}, so it is truncated for readability.
+Here we focus on the \texttt{cal\_score} overriding
+on \texttt{IrishSoundex} class. The use of \texttt{self.class.soundex} in \texttt{cal\_score}
+refers to \texttt{IrishSoundex.soundex}. And \texttt{soundex\_distance\_score}
+is defined in \texttt{MatchingAlgorithm}.
+
 
 \section{Implementing new matching algorithms}
