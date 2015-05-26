@@ -6,7 +6,7 @@ class BaseName
     :matching_algorithms
 
   def initialize(params = {})
-    MatchingAlgorithm  # Hack to load up MatchingAlgorithm subclasses
+    MatchingAlgorithm  # Hack to load up MatchingAlgorithm subclasses.
 
     @name                = params.fetch(:name)
     @matching_algorithms = params.fetch(:matching_algorithms)
@@ -40,7 +40,7 @@ class ToMatchName
     @scores    = []
 
     if @base_name.matching_algorithms.present?
-      MatchingAlgorithm  # Hack to load up MatchingAlgorithm subclasses
+      MatchingAlgorithm  # Hack to load up MatchingAlgorithm subclasses.
 
       @scores = @base_name.matching_algorithms.map do |mm|
         mm[:name].constantize.new(
