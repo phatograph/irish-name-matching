@@ -208,5 +208,86 @@ on \texttt{IrishSoundex} class. The use of \texttt{self.class.soundex} in \textt
 refers to \texttt{IrishSoundex.soundex}. And \texttt{soundex\_distance\_score}
 is defined in \texttt{MatchingAlgorithm}.
 
-
 \section{Implementing new matching algorithms}
+
+Currently there are 4 matching algorithms derived from
+\texttt{MatchingAlgorithm}.
+
+\begin{enumerate}
+  \item \texttt{LevenshteinDistance}
+  \item \texttt{Soundex}
+  \item \texttt{IrishSoundex}
+  \item \texttt{LookupTable}
+\end{enumerate}
+
+The implementations of all of these classes are within the same file
+as their superclass, \texttt{MatchingAlgorithm}, the path is\\
+\texttt{app/models/matching\_algorithm.rb}. The structure of this file
+is shown in listing \ref{lst:maf}.
+
+\begin{minipage}{\linewidth}
+  \begin{lstlisting}[label={lst:maf}, caption={\texttt{matching\_algorithm.rb}.}]
+class MatchingAlgorithm
+  ..
+end
+
+class LevenshteinDistance < MatchingAlgorithm
+  ..
+end
+
+class Soundex < MatchingAlgorithm
+  ..
+end
+
+class IrishSoundex < MatchingAlgorithm
+  ..
+end
+
+class LookupTable < MatchingAlgorithm
+  ..
+end
+\end{lstlisting}
+\end{minipage}
+
+To add a new matching algorithm, suppose we were to implement another
+soundex for Indian \cite[]{indiansoundex}. We would call this \texttt{IndianSoundex}.
+Here is the list of steps to do so.
+
+\begin{enumerate}
+  \item Modify the file \texttt{app/models/matching\_algorithm.rb} where all
+    the matching algorithms are in. Append the class definition to the file.
+
+    \begin{minipage}{\linewidth}
+    \begin{lstlisting}
+..
+
+class LookupTable < MatchingAlgorithm
+  ..
+end
+
+class IndianSoundex < MatchingAlgorithm
+  private
+
+  def cal_score
+    # To be implemented.
+  end
+end
+    \end{lstlisting}
+    \end{minipage}
+
+  \item Override \texttt{cal\_score}, fulfil the algorithm for Indian
+    soundex.
+  \item You may create \emph{class method} \texttt{self.soundex} to follow
+    the same pattern as \texttt{Soundex} and \texttt{IrishSoundex}, making
+    it reusable too.
+  \item You may also use \emph{class method} of soundex and Irish soundex
+    by calling to \texttt{Soundex.soundex} and \texttt{IrishSoundex.soundex}.
+  \item You may also use shared method \texttt{soundex\_distance\_score}
+    to calculate distance score like two other soundexes do.
+\end{enumerate}
+
+You may consider adding more shared methods to \texttt{MatchingAlgorithm}
+superclass if considered appropriate, i.e. many subclasses will use it.
+On the other hand, if you need some method just inside the class,
+consider create just private methods.
+

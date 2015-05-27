@@ -1,9 +1,16 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Thottingal(2009)]{indiansoundex}
+Santhosh Thottingal.
+\newblock \emph{Phonetic Comparison Algorithm for Indian Languages}.
+\newblock July 2009.
+\newblock URL \url{http://thottingal.in/blog/2009/07/26/indicsoundex/}.
+\newblock accessed May 26\textsuperscript{th}, 2015.
 
 \bibitem[Freeman et~al.(2004)Freeman, Freeman, Bates, and Sierra]{hf}
 Elisabeth Freeman, Eric Freeman, Bert Bates, and Kathy Sierra.
