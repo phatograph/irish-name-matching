@@ -14,7 +14,7 @@ class BaseName
     threshold            = params.fetch(:threshold) || DEFAULT_THRESHOLD
 
     @to_match_names = @to_match_names.map do |tmn|
-      puts "Processing for #{@name}: #{tmn}"
+      # puts "Processing for #{@name}: #{tmn}"
       ToMatchName.new(
         :name      => tmn,
         :base_name => self

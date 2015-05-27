@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 LookupTableRecord.create(:name => "ABERCROMBIE", :ref => 1)
 LookupTableRecord.create(:name => "ABERCROMBIE", :ref => 376)
 LookupTableRecord.create(:name => "ABERNATHY", :ref => 2)
