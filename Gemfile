@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.0'
+ruby '1.9.3'
 gem 'rails', '4.2.0'
 gem 'pg'
 
@@ -17,9 +17,11 @@ gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
 group :development, :test do
-  gem 'byebug'
+  # gem 'byebug'
   gem 'web-console', '~> 2.0'
-  gem 'spring'
+  # gem 'spring'
+  gem 'rails-perftest'
+  gem 'ruby-prof'
 end
 
 group :development do

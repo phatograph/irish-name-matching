@@ -1,12 +1,12 @@
 {
-  "base_names":"Smith",
-  "to_match_names":"Smythe\r\nO'Gowan",
+  "base_names":"Monahan",
+  "to_match_names":"",
   "matching_algorithms":{
     "1":{"name":"LookupTable", "weight":"10"},
     "2":{"name":"LevenshteinDistance", "weight":"1"},
     "3":{"name":"Soundex", "weight":"3"},
     "4":{"name":"IrishSoundex", "weight":"6"}
   },
-  "threshold":"0",
-  "standard_list":""
+  "threshold":"0.5",
+  "standard_list":"1"
 }
