@@ -151,30 +151,30 @@ and all use default weights.
 To conduct testing, we use \emph{rails-perftest} \cite[]{perftest} to
 run our test cases. Table \ref{table:speed_res} shows the test result in response speed aspect.
 
-From the results, Levenshtein distance is the fastest matching algorithm
-because it has the simplest logic among the four. Soundex and Irish soundex
-are second and third because they involve more string converting logic,
-and Irish soundex has more steps. Lastly, lookup table involves many
-database queries so that makes it much more slower than the rest.
-
-\begin{table}
+\begin{table}[H]
   \myfloatalign
   \setlength{\tabcolsep}{0.3cm}
   \begin{tabular}{r c}
     \toprule
     \tableheadline{Matching algorithms} & \tableheadline{Response speed (ms)} \\
     \midrule
-    Levenshtein distance & 1337 \\
-    Soundex & 2024 \\
-    Irish soundex & 2456 \\
-    Lookup table & 24293 \\
+    Levenshtein distance & 1,337 \\
+    Soundex & 2,024 \\
+    Irish soundex & 2,456 \\
+    Lookup table & 24,293 \\
     \midrule
-    All 4 algorithms & 28786 \\
+    All 4 algorithms & 28,786 \\
     \bottomrule
   \end{tabular}
   \caption{Response speed for each matching algorithms.}
   \label{table:speed_res}
 \end{table}
+
+From the results, Levenshtein distance is the fastest matching algorithm
+because it has the simplest logic among the four. Soundex and Irish soundex
+are second and third because they involve more string converting logic,
+and Irish soundex has more steps. Lastly, lookup table involves many
+database queries so that makes it much more slower than the rest.
 
 \section{Memory usage}
 
@@ -187,11 +187,7 @@ testing. Matching algorithms are varies between each scenario
 and all are using default weights. Table \ref{table:mem_res} shows
 the test result in memory usage aspect.
 
-From the results, memory usage for each algorithm follows response speed fashion.
-Levenshtein distance and two soundexes use much less memory
-compared to lookup table.
-
-\begin{table}
+\begin{table}[H]
   \myfloatalign
   \setlength{\tabcolsep}{0.3cm}
   \begin{tabular}{r c}
@@ -209,3 +205,7 @@ compared to lookup table.
   \caption{Memory usage for each matching algorithms.}
   \label{table:mem_res}
 \end{table}
+
+From the results, memory usage for each algorithm follows response speed fashion.
+Levenshtein distance and two soundexes use much less memory
+compared to lookup table.

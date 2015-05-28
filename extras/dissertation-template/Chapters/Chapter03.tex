@@ -38,8 +38,8 @@ Once the distance is calculated, it will be compared to the length of
 the longer string between the two (or if they are the same length,
 use that length).
 
-For example, Levenshtein distance between \emph{SMYTH} and \emph{SMITHE}
-is 2, compare 2 to length of the longer string, \emph{SMITHE}, which is 6.
+For example, Levenshtein distance between `SMYTH' and `SMITHE'
+is 2, compare 2 to length of the longer string, `SMITHE', which is 6.
 So the \emph{similarity score} of these two strings are $6 - (2 / 6) = 0.667$.
 
 The code of this algorithm is as in listing \ref{lst:leven}, note that
@@ -72,7 +72,7 @@ in the following steps.
   \item Trim or pad with zeros as necessary, making the result 4 characters long.
 \end{enumerate}
 
-\begin{table}
+\begin{table}[H]
   \myfloatalign
   \setlength{\tabcolsep}{0.3cm}
   \begin{tabular}{c p{5cm}}
@@ -93,12 +93,12 @@ in the following steps.
 \end{table}
 
 Let us follow these steps by step, consider we are going to encode the string
-\emph{PFISTTER}.
+`PFISTTER'.
 
 \begin{enumerate}
-  \item Take first letter of \emph{PFISTTER}. \\
+  \item Take first letter of `PFISTTER'. \\
     PFISTTER $\rightarrow$ P
-  \item Encode remaining letter \emph{FISTTER}. \\
+  \item Encode remaining letter `FISTTER'. \\
     PFISTTER $\rightarrow$ P1-233-6 $\rightarrow$ P12336
   \item Remove two adjacent same characters. \\
     PFISTTER $\rightarrow$ P12336 $\rightarrow$ P1236
@@ -108,7 +108,7 @@ Let us follow these steps by step, consider we are going to encode the string
     PFISTTER $\rightarrow$ P1236 $\rightarrow$ P236
 \end{enumerate}
 
-Therefore, soundex of \emph{PFISTTER} is \texttt{P236}.
+Therefore, soundex of `PFISTTER' is \texttt{P236}.
 
 The implementation of soundex (listing \ref{lst:soundex}) in this project is adapted from
 \citeauthor{adamw}\textquotesingle s \emph{Irish soundex} implementated in Visual Basic\footnote{\cite{adamw} Appendix 3.}.
@@ -183,7 +183,7 @@ these steps.
     to calculate the distance between them.
 \end{itemize}
 
-For example, \emph{similarity score} between \emph{SMITH} and \emph{SPEED},
+For example, \emph{similarity score} between `SMITH' and `SPEED',
 which soundexes are \texttt{S530} and \texttt{S130} respectively,
 is 0.75 (1 substitution from \emph{5} to \emph{1}, so 1 difference of length 4).
 
