@@ -1,29 +1,9 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Thottingal(2009)]{indiansoundex}
-Santhosh Thottingal.
-\newblock \emph{Phonetic Comparison Algorithm for Indian Languages}.
-\newblock July 2009.
-\newblock URL \url{http://thottingal.in/blog/2009/07/26/indicsoundex/}.
-\newblock accessed May 26\textsuperscript{th}, 2015.
-
-\bibitem[Freeman et~al.(2004)Freeman, Freeman, Bates, and Sierra]{hf}
-Elisabeth Freeman, Eric Freeman, Bert Bates, and Kathy Sierra.
-\newblock \emph{Head First Design Patterns}.
-\newblock 2004.
-
-\bibitem[railstips.org(2009)]{classmethod}
-railstips.org.
-\newblock \emph{Class and Instance Methods in Ruby}.
-\newblock May 2009.
-\newblock URL
-  \url{http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/}.
-\newblock accessed May 26\textsuperscript{th}, 2015.
 
 \bibitem[welfare.ie(2015)]{irishregistration}
 welfare.ie.
@@ -211,5 +191,32 @@ Rails.
 \newblock 2015.
 \newblock URL \url{https://github.com/rails/jbuilder}.
 \newblock accessed May 22\textsuperscript{nd}, 2015.
+
+\bibitem[Freeman et~al.(2004)Freeman, Freeman, Bates, and Sierra]{hf}
+Elisabeth Freeman, Eric Freeman, Bert Bates, and Kathy Sierra.
+\newblock \emph{Head First Design Patterns}.
+\newblock 2004.
+
+\bibitem[railstips.org(2009)]{classmethod}
+railstips.org.
+\newblock \emph{Class and Instance Methods in Ruby}.
+\newblock May 2009.
+\newblock URL
+  \url{http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/}.
+\newblock accessed May 26\textsuperscript{th}, 2015.
+
+\bibitem[Thottingal(2009)]{indiansoundex}
+Santhosh Thottingal.
+\newblock \emph{Phonetic Comparison Algorithm for Indian Languages}.
+\newblock July 2009.
+\newblock URL \url{http://thottingal.in/blog/2009/07/26/indicsoundex/}.
+\newblock accessed May 26\textsuperscript{th}, 2015.
+
+\bibitem[on~Rails(2015)]{perftest}
+Ruby on~Rails.
+\newblock \emph{rails-perftest -- Performance Testing Rails Applications}.
+\newblock 2015.
+\newblock URL \url{https://github.com/rails/rails-perftest}.
+\newblock accessed May 27\textsuperscript{th}, 2015.
 
 \end{thebibliography}

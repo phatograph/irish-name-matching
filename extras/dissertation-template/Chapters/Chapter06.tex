@@ -105,6 +105,107 @@ Results' detailed scores are truncated for readability.
 \end{lstlisting}
 \end{minipage}
 
+\section{Test environment setup}
+
+We run, test, and profile our system locally, using these following
+environmental setup.
+
+\begin{description}
+  \item[Test machine:] MacBook Pro (Retina, 13-inch, Mid 2014).
+    \begin{itemize}
+      \item Processor -- 2.6 GHz Intel Core i5
+      \item Memory -- 8 GB 1600 MHz DDR3
+      \item Hard disk -- APPLE SSD SM0256F
+    \end{itemize}
+  \item[Ruby:] 1.9.3p125 (2012-02-16 revision 34643) with
+    GC-Patched MRI\footnote{Installing GC-Patched MRI \cite[]{perftest}.}.
+  \item[Ruby on Rails:] version 4.2.0.
+  \item[Database:] PostgreSQL version 9.3.5.
+  \item[Profiling tools:] rails-perftest \cite[]{perftest} 0.0.6.
+\end{description}
+
 \section{Response speed}
 
+We test response speed of our system by matching \emph{base name} `SMITH'
+with the standard name list of total 12,944 names. Each matching algorithm
+is tested separately first and then altogether at last.
+
+Listing \ref{lst:resp_json} is our \texttt{JSON} setup for response speed
+testing. Matching algorithms are varies between each scenario
+and all use default weights.
+
+\begin{minipage}{\linewidth}
+  \begin{lstlisting}[label={lst:resp_json}, caption={\texttt{JSON} setup for performance testing.}]
+{
+  "base_names":"Smith",
+  "to_match_names":"",
+  "matching_algorithms":{
+    ..
+  },
+  "threshold":"0",
+  "standard_list":"1"
+}
+\end{lstlisting}
+\end{minipage}
+
+To conduct testing, we use \emph{rails-perftest} \cite[]{perftest} to
+run our test cases. Table \ref{table:speed_res} shows the test result in response speed aspect.
+
+From the results, Levenshtein distance is the fastest matching algorithm
+because it has the simplest logic among the four. Soundex and Irish soundex
+are second and third because they involve more string converting logic,
+and Irish soundex has more steps. Lastly, lookup table involves many
+database queries so that makes it much more slower than the rest.
+
+\begin{table}
+  \myfloatalign
+  \setlength{\tabcolsep}{0.3cm}
+  \begin{tabular}{r c}
+    \toprule
+    \tableheadline{Matching algorithms} & \tableheadline{Response speed (ms)} \\
+    \midrule
+    Levenshtein distance & 1337 \\
+    Soundex & 2024 \\
+    Irish soundex & 2456 \\
+    Lookup table & 24293 \\
+    \midrule
+    All 4 algorithms & 28786 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Response speed for each matching algorithms.}
+  \label{table:speed_res}
+\end{table}
+
 \section{Memory usage}
+
+We also test memory usage of our system by matching \emph{base name} `SMITH'
+with the standard name list of total 12,944 names. Each matching algorithm
+is tested separately first and then altogether at last.
+
+Listing \ref{lst:resp_json} is still our \texttt{JSON} setup for response speed
+testing. Matching algorithms are varies between each scenario
+and all are using default weights. Table \ref{table:mem_res} shows
+the test result in memory usage aspect.
+
+From the results, memory usage for each algorithm follows response speed fashion.
+Levenshtein distance and two soundexes use much less memory
+compared to lookup table.
+
+\begin{table}
+  \myfloatalign
+  \setlength{\tabcolsep}{0.3cm}
+  \begin{tabular}{r c}
+    \toprule
+    \tableheadline{Matching algorithms} & \tableheadline{Memory usage (bytes)} \\
+    \midrule
+    Levenshtein distance & 48,518,621 \\
+    Soundex & 53,066,150 \\
+    Irish soundex & 69,534,598 \\
+    Lookup table & 244,302,744 \\
+    \midrule
+    All 4 algorithms & 373,544,727 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Memory usage for each matching algorithms.}
+  \label{table:mem_res}
+\end{table}
