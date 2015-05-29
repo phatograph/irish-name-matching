@@ -1,6 +1,64 @@
 \chapter{Conclusion}
 \label{ch:conclusion}
 
+We successfully developed an extensible web service system to match names.
+The system is initially encoded with 4 matching algorithms,
+Levenshtein distance, soundex, Irish soundex, and lookup table.
+We also present a web interface for a client to use the system
+from the web browser.
+
+The system is designed to be extended with simple inheritance, thus developer
+can understand and develop further algorithm easily. In early state
+simple design is enough to serve the purpose, so we follow the
+\emph{Kiss principle} \cite[]{kiss}.
+
+However, we have encountered some problem, also there are still many rooms
+for future works. We will describe these in following sections.
+
 \section{Encountered problem}
 
+The major problem is that the current system takes too long to process
+and also use too much memory. It has not been properly optimised
+in term of performance. These following techniques might improve
+our system furthermore.
+
+\subsection{Memoization}
+
+Memoization is the process of storing a computed value to avoid
+duplicated work by repetitive calls. While each algorithm calculats
+\emph{similarity score}, there might be many repetitive calculations
+or database queries.
+
+Ruby has a conditional assignment operator \texttt{\textbar \textbar =} \cite[]{cao}
+which is commonly used for memoization. By doing so, it can improve
+performance of the system and reduce the number of database calls \cite[]{memoization},
+thus shorten response time and lower memory usage.
+
+\subsection{find\_in\_batches}
+Matching large amount of name causes high memory consumption and may lead to
+out of memory situlation, especially in environment which memory are crucial
+and expensive such as remote server.
+
+Rails provides \texttt{find\_in\_batches} which operates an array in batches,
+thus greatly reducing memory consumption \cite[]{fib}. We can apply
+the same principle to our \emph{base name} and \emph{to-match name},
+also to the \emph{controller} (section \ref{sec:mvc}).
+
+\subsection{Replace RDBMS with NoSQL}
+
+Current database system (section \ref{sec:testenv}) is a
+\emph{Relational database management system (RDBMS)} \cite[]{rdbms} and the system
+relies on traditional database queries. By replacing this with high speed
+NoSQL database such as Redis \cite[]{redis}, which is one of the fastest
+NoSQL \cite[]{redis2}, we can obtain better performance while using
+lookup table algorithm.
+
 \section{Future works}
+
+\subsection{More soundexes}
+
+\subsection{Lookup table for other languagues}
+
+\subsection{Improve web interface result}
+
+% overwhelm
