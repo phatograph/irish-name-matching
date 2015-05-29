@@ -18,6 +18,10 @@ Warning--empty publisher in fib
 Warning--empty publisher in rdbms
 Warning--empty publisher in redis
 Warning--empty publisher in redis2
+Warning--empty publisher in phonea
+Warning--empty publisher in kolner
+Warning--empty publisher in dms
+Warning--empty publisher in chart
 Warning--empty publisher in irishregistration
 Warning--empty publisher in adamw
 Warning--empty publisher in morpeth
@@ -48,45 +52,45 @@ Warning--empty publisher in hf
 Warning--empty publisher in classmethod
 Warning--empty publisher in indiansoundex
 Warning--empty publisher in perftest
-You've used 37 entries,
+You've used 41 entries,
             2481 wiz_defined-function locations,
-            726 strings with 9049 characters,
-and the built_in function-call counts, 10613 in all, are:
-= -- 883
-> -- 295
-< -- 36
-+ -- 163
-- -- 84
-* -- 615
-:= -- 1727
-add.period$ -- 180
-call.type$ -- 37
-change.case$ -- 37
-chr.to.int$ -- 32
-cite$ -- 74
-duplicate$ -- 703
-empty$ -- 1111
-format.name$ -- 125
-if$ -- 2241
-int.to.chr$ -- 6
-int.to.str$ -- 38
-missing$ -- 74
-newline$ -- 262
-num.names$ -- 111
-pop$ -- 412
+            739 strings with 9354 characters,
+and the built_in function-call counts, 11747 in all, are:
+= -- 979
+> -- 323
+< -- 40
++ -- 182
+- -- 92
+* -- 681
+:= -- 1908
+add.period$ -- 200
+call.type$ -- 41
+change.case$ -- 41
+chr.to.int$ -- 33
+cite$ -- 82
+duplicate$ -- 779
+empty$ -- 1231
+format.name$ -- 137
+if$ -- 2481
+int.to.chr$ -- 9
+int.to.str$ -- 42
+missing$ -- 82
+newline$ -- 290
+num.names$ -- 123
+pop$ -- 456
 preamble$ -- 1
-purify$ -- 37
+purify$ -- 41
 quote$ -- 0
-skip$ -- 352
+skip$ -- 389
 stack$ -- 0
-substring$ -- 74
-swap$ -- 92
+substring$ -- 82
+swap$ -- 103
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 148
-warning$ -- 37
-while$ -- 74
+type$ -- 164
+warning$ -- 41
+while$ -- 82
 width$ -- 0
-write$ -- 552
-(There were 37 warnings)
+write$ -- 612
+(There were 41 warnings)

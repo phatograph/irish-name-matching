@@ -55,10 +55,73 @@ lookup table algorithm.
 
 \section{Future works}
 
-\subsection{More soundexes}
+Our system can be further enhanced in many mays. Here are sample ideas
+for upcoming features of the system.
 
-\subsection{Lookup table for other languagues}
+\subsection{More phonetic algorithms}
+
+A phonetic algorithm \cite[]{phonea} indexes words by their pronunciation.
+Soundex is also one of them. We can implement more matching algorithms
+based on them. For example, Kolner Phonetik \cite[]{kolner} is similar to
+soundex and works well on German words. Daitch-Mokotoff soundex \cite[]{dms}
+is an improved soundex working well to match surnames of Slavic and Germanic origin.
+
+\subsection{Inheritance for similar matching algorithms}
+
+Currently all matching algorithms inherit \texttt{MatchingAlgorithm} class.
+In future, if there are many similar ones or can be categorised in the
+same group, we can create another level of inheritance so they can share
+common methods. For example, consider the soundex case, with Kolner Phonetik
+and Daitch-Mokotoff soundex we can create inheritance with \texttt{Soundex} class
+as in listing \ref{lst:sd_in}.
+
+\begin{minipage}{\linewidth}
+  \begin{lstlisting}[label={lst:sd_in}, caption={\texttt{Soundex} inheritance.}]
+class Soundex < MatchingAlgorithm
+  WEIGHT = 3
+
+  def self.soundex(name)
+  ..
+  end
+
+  private
+
+  def self.category(c)
+  ..
+  end
+
+  def cal_score
+  ..
+  end
+
+  # Moved from MatchingAlgorithm class to be more specific to soundexes.
+  def soundex_distance_score(s1, s2)
+  ..
+  end
+end
+
+class IrishSoundex < Soundex
+..
+end
+
+class KolnerPhonetik < Soundex
+..
+end
+
+class DaitchMokotoffSoundex < Soundex
+..
+end
+\end{lstlisting}
+\end{minipage}
 
 \subsection{Improve web interface result}
 
-% overwhelm
+Current web interface result is as in figure \ref{fig:wi_res}, just
+a list of boxes detailed with matching algorithm scores. When it
+comes to large number of inputs, thousands of boxes will be generated
+and could overwhelm both browser and client themselves.
+
+We can improve result display by implement a visualised graph base on
+the results, there are many libraries \cite[]{chart} that are capable
+if generating interactive graph. d3js is another well option for
+starting from scratch.
