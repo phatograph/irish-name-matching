@@ -5,29 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Wikipedia(2015{\natexlab{a}})]{vps}
-Wikipedia.
-\newblock \emph{Virtual private server}.
-\newblock 2015{\natexlab{a}}.
-\newblock URL \url{http://en.wikipedia.org/wiki/Virtual_private_server}.
-\newblock accessed June 2\textsuperscript{nd}, 2015.
-
-\bibitem[Ellingwood and Anicas(2014)]{ubuntu}
-Justin Ellingwood and Mitchell Anicas.
-\newblock \emph{New Ubuntu 14.04 Server Checklist}.
-\newblock 2014.
-\newblock URL
-  \url{https://www.digitalocean.com/community/tutorial_series/new-ubuntu-14-04-server-checklist}.
-\newblock accessed June 2\textsuperscript{nd}, 2015.
-
-\bibitem[Anicas(2015)]{ubuntu2}
-Mitchell Anicas.
-\newblock \emph{How To Deploy a Rails App with Puma and Nginx on Ubuntu 14.04}.
-\newblock April 2015.
-\newblock URL
-  \url{https://www.digitalocean.com/community/tutorials/how-to-deploy-a-rails-app-with-puma-and-nginx-on-ubuntu-14-04}.
-\newblock accessed June 2\textsuperscript{nd}, 2015.
-
 \bibitem[welfare.ie(2015)]{irishregistration}
 welfare.ie.
 \newblock \emph{History of Registration in Ireland}.
@@ -47,17 +24,17 @@ Christopher Ridgway.
 \newblock \emph{The Morpeth Roll: Ireland identified in 1841}.
 \newblock 2013.
 
-\bibitem[Wikipedia(2015{\natexlab{b}})]{editdistance}
+\bibitem[Wikipedia(2015{\natexlab{a}})]{editdistance}
 Wikipedia.
 \newblock \emph{Edit distance}.
-\newblock 2015{\natexlab{b}}.
+\newblock 2015{\natexlab{a}}.
 \newblock URL \url{http://en.wikipedia.org/wiki/Edit_distance}.
 \newblock accessed May 4\textsuperscript{th}, 2015.
 
-\bibitem[Wikipedia(2015{\natexlab{c}})]{levenshteindistance}
+\bibitem[Wikipedia(2015{\natexlab{b}})]{levenshteindistance}
 Wikipedia.
 \newblock \emph{Levenshtein distance}.
-\newblock 2015{\natexlab{c}}.
+\newblock 2015{\natexlab{b}}.
 \newblock URL \url{http://en.wikipedia.org/wiki/Levenshtein_distance}.
 \newblock accessed May 4\textsuperscript{th}, 2015.
 
@@ -186,10 +163,10 @@ postgresql.org.
 \newblock URL \url{http://www.postgresql.org}.
 \newblock accessed May 11\textsuperscript{th}, 2015.
 
-\bibitem[Wikipedia(2015{\natexlab{d}})]{mvc}
+\bibitem[Wikipedia(2015{\natexlab{c}})]{mvc}
 Wikipedia.
 \newblock \emph{Model-view-controller}.
-\newblock 2015{\natexlab{d}}.
+\newblock 2015{\natexlab{c}}.
 \newblock URL \url{http://en.wikipedia.org/wiki/Model-view-controller}.
 \newblock accessed May 13\textsuperscript{th}, 2015.
 
@@ -201,10 +178,10 @@ curl.haxx.se.
 \newblock URL \url{http://curl.haxx.se}.
 \newblock accessed May 22\textsuperscript{nd}, 2015.
 
-\bibitem[Wikipedia(2015{\natexlab{e}})]{post}
+\bibitem[Wikipedia(2015{\natexlab{d}})]{post}
 Wikipedia.
 \newblock \emph{POST (HTTP)}.
-\newblock 2015{\natexlab{e}}.
+\newblock 2015{\natexlab{d}}.
 \newblock URL \url{http://en.wikipedia.org/wiki/POST_(HTTP)}.
 \newblock accessed May 22\textsuperscript{nd}, 2015.
 
@@ -274,10 +251,10 @@ Arne Hartherz.
   \url{http://makandracards.com/makandra/1181-use-find_in_batches-to-process-many-records-without-tearing-down-the-server}.
 \newblock accessed May 29\textsuperscript{th}, 2015.
 
-\bibitem[Wikipedia(2015{\natexlab{f}})]{rdbms}
+\bibitem[Wikipedia(2015{\natexlab{e}})]{rdbms}
 Wikipedia.
 \newblock \emph{Relational database management system}.
-\newblock 2015{\natexlab{f}}.
+\newblock 2015{\natexlab{e}}.
 \newblock URL
   \url{http://en.wikipedia.org/wiki/Relational_database_management_system}.
 \newblock accessed May 29\textsuperscript{th}, 2015.
@@ -297,24 +274,24 @@ Conor Branagan and Patrick Crosby.
   \url{https://www.datadoghq.com/wp-content/uploads/2013/09/Understanding-the-Top-5-Redis-Performance-Metrics.pdf}.
 \newblock accessed May 29\textsuperscript{th}, 2015.
 
-\bibitem[Wikipedia(2015{\natexlab{g}})]{phonea}
+\bibitem[Wikipedia(2015{\natexlab{f}})]{phonea}
 Wikipedia.
 \newblock \emph{Phonetic algorithm}.
-\newblock 2015{\natexlab{g}}.
+\newblock 2015{\natexlab{f}}.
 \newblock URL \url{http://en.wikipedia.org/wiki/Phonetic_algorithm}.
 \newblock accessed May 29\textsuperscript{th}, 2015.
 
-\bibitem[Wikipedia(2015{\natexlab{h}})]{kolner}
+\bibitem[Wikipedia(2015{\natexlab{g}})]{kolner}
 Wikipedia.
 \newblock \emph{Kolner Phonetik}.
-\newblock 2015{\natexlab{h}}.
+\newblock 2015{\natexlab{g}}.
 \newblock URL \url{http://de.wikipedia.org/wiki/Kolner_Phonetik}.
 \newblock accessed May 29\textsuperscript{th}, 2015.
 
-\bibitem[Wikipedia(2015{\natexlab{i}})]{dms}
+\bibitem[Wikipedia(2015{\natexlab{h}})]{dms}
 Wikipedia.
 \newblock \emph{Daitch-Mokotoff soundex}.
-\newblock 2015{\natexlab{i}}.
+\newblock 2015{\natexlab{h}}.
 \newblock URL \url{http://en.wikipedia.org/wiki/Daitch-Mokotoff_Soundex}.
 \newblock accessed May 29\textsuperscript{th}, 2015.
 
@@ -324,5 +301,28 @@ Phattara Wangrungarun.
 \newblock 2015.
 \newblock URL \url{https://delicious.com/phatograph/Chart%20%2F%20Graph}.
 \newblock accessed May 29\textsuperscript{th}, 2015.
+
+\bibitem[Wikipedia(2015{\natexlab{i}})]{vps}
+Wikipedia.
+\newblock \emph{Virtual private server}.
+\newblock 2015{\natexlab{i}}.
+\newblock URL \url{http://en.wikipedia.org/wiki/Virtual_private_server}.
+\newblock accessed June 2\textsuperscript{nd}, 2015.
+
+\bibitem[Ellingwood and Anicas(2014)]{ubuntu}
+Justin Ellingwood and Mitchell Anicas.
+\newblock \emph{New Ubuntu 14.04 Server Checklist}.
+\newblock 2014.
+\newblock URL
+  \url{https://www.digitalocean.com/community/tutorial_series/new-ubuntu-14-04-server-checklist}.
+\newblock accessed June 2\textsuperscript{nd}, 2015.
+
+\bibitem[Anicas(2015)]{ubuntu2}
+Mitchell Anicas.
+\newblock \emph{How To Deploy a Rails App with Puma and Nginx on Ubuntu 14.04}.
+\newblock April 2015.
+\newblock URL
+  \url{https://www.digitalocean.com/community/tutorials/how-to-deploy-a-rails-app-with-puma-and-nginx-on-ubuntu-14-04}.
+\newblock accessed June 2\textsuperscript{nd}, 2015.
 
 \end{thebibliography}

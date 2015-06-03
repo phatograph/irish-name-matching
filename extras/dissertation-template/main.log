@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  3 JUN 2015 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  3 JUN 2015 15:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -831,10 +831,13 @@ Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 \etb@tempcnta=\count147
 )))
-(./main.aux (./Chapters/Chapter0A.aux) (./Chapters/Chapter01.aux)
-(./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux) (./Chapters/Chapter04.aux
-) (./Chapters/Chapter05.aux) (./Chapters/Chapter06.aux)
-(./Chapters/Chapter07.aux) (./FrontBackMatter/Bibliography.aux))
+(./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux)
+(./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux)
+(./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux)
+(./Chapters/Chapter01.aux) (./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux
+) (./Chapters/Chapter04.aux) (./Chapters/Chapter05.aux)
+(./Chapters/Chapter06.aux) (./Chapters/Chapter07.aux) (./Chapters/Chapter0A.aux
+) (./FrontBackMatter/Bibliography.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -930,9 +933,160 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
-\openout2 = `Chapters/Chapter0A.aux'.
+\openout2 = `FrontBackMatter/Titlepage.aux'.
 
- (./Chapters/Chapter0A.tex
+ (./FrontBackMatter/Titlepage.tex
+LaTeX Font Info:    Try loading font information for U+zeur on input line 14.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeur.fd
+File: uzeur.fd 2005/01/11 v4.0 (WaS)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eur.cfg
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+)
+LaTeX Font Info:    Try loading font information for U+zeus on input line 14.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeus.fd
+File: uzeus.fd 2005/01/11 v4.0 (WaS)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eus.cfg
+File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
+)
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 14.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeuex.fd
+File: uzeuex.fd 2005/01/11 v4.0 (WaS)
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 14.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+<gfx/mu_em.jpg, id=301, 529.98pt x 150.5625pt>
+File: gfx/mu_em.jpg Graphic file (type jpg)
+ <use gfx/mu_em.jpg>
+Package pdftex.def Info: gfx/mu_em.jpg used on input line 21.
+(pdftex.def)             Requested size: 284.52756pt x 80.83156pt.
+ [1
+
+
+
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./gfx/m
+u_em.jpg>])
+\openout2 = `FrontBackMatter/Titleback.aux'.
+
+ (./FrontBackMatter/Titleback.tex
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 10.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+)) [2
+
+
+]
+\openout2 = `FrontBackMatter/Dedication.aux'.
+
+
+(./FrontBackMatter/Dedication.tex
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 14.
+) [3
+
+
+]
+\openout2 = `FrontBackMatter/Abstract.aux'.
+
+ (./FrontBackMatter/Abstract.tex)
+[4
+
+
+]
+\openout2 = `FrontBackMatter/Acknowledgments.aux'.
+
+ (./FrontBackMatter/Acknowledgments.tex) [5
+
+
+]
+\openout2 = `FrontBackMatter/Contents.aux'.
+
+ (./FrontBackMatter/Contents.tex
+Package tocbasic Info: character protrusion at toc deactivated on input line 13
+.
+(./main.toc
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 4.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 5.
+ [6
+
+
+
+
+
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [7]
+Package tocbasic Info: character protrusion at lof deactivated on input line 33
+.
+ (./main.lof)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+Package tocbasic Info: character protrusion at lot deactivated on input line 45
+.
+ (./main.lot)
+\tf@lot=\write7
+\openout7 = `main.lot'.
+
+ [8
+
+] (./main.lol
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 12.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 12.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fvm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
+\tf@lol=\write8
+\openout8 = `main.lol'.
+
+ [9]) [1
+
+
+
+
+
+
+]
+\openout2 = `Chapters/Chapter01.aux'.
+
+
+(./Chapters/Chapter01.tex
 Chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -949,282 +1103,9 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-LaTeX Font Info:    Try loading font information for U+zeur on input line 4.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeur.fd
-File: uzeur.fd 2005/01/11 v4.0 (WaS)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eur.cfg
-File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
-)
-LaTeX Font Info:    Try loading font information for U+zeus on input line 4.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeus.fd
-File: uzeus.fd 2005/01/11 v4.0 (WaS)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eus.cfg
-File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
-)
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 4.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeuex.fd
-File: uzeuex.fd 2005/01/11 v4.0 (WaS)
-)
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 4.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `zplm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Try loading font information for TS1+pplj on input line 9.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ts1pplj.fd
-File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-)
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplj/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 24.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 24.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `fvm' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 30.
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 29--34
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 42--47
-[]$[]$ 
- []
-
-[1
-
-
-
-
-
-
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 64--69
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 72--77
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 83--88
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 91--96
-[]$[]$ 
- []
-
-[2]
-LaTeX Font Info:    Try loading font information for TS1+fvm on input line 104.
-
- (/usr/local/texlive/2014/texmf-dist/tex/latex/bera/ts1fvm.fd
-File: ts1fvm.fd 2004/09/07 scalable font definitions for TS1/fvm.
-)
-LaTeX Font Info:    Font shape `TS1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 104.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `fvm' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 100--113
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 123--129
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 136--141
-[]$[]$ 
- []
-
-[3]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 148--153
-[]$[]$ 
- []
-
-
-Overfull \hbox (2.88087pt too wide) in paragraph at lines 156--159
-\T1/pplj/m/n/10.95 A few Rails fea-tures, such as the As-set Pipeline, de-pend 
-on a Javascript
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 163--170
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 175--180
-[]$[]$ 
- []
-
-[4]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 186--191
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 197--204
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 209--214
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 220--227
-[]$[]$ 
- []
-
-[5]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 234--239
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 247--252
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 255--260
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 263--268
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 276--281
-[]$[]$ 
- []
-
-[6]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 284--289
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 292--326
-[]$[]$ 
- []
-
-[7]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 332--337
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 345--354
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 358--363
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 368--374
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 378--383
-[]$[]$ 
- []
-
-[8]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 388--393
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 398--403
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 410--415
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 430--435
-[]$[]$ 
- []
-
-[9]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 438--443
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 448--476
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 482--487
-[]$[]$ 
- []
-
-[10]) [11]
-\openout2 = `Chapters/Chapter01.aux'.
-
- (./Chapters/Chapter01.tex
-Chapter 2.
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 22.
-[12
-
+[2
 
 
 ]
@@ -1263,24 +1144,24 @@ Overfull \hbox (6.55193pt too wide) in paragraph at lines 71--76
 if-fer-ent names
  []
 
-[13]
+[3]
 Overfull \hbox (0.20271pt too wide) in paragraph at lines 129--131
 \T1/pplj/m/n/10.95 out-come of the project. en-coun-tered prob-lems, and fu-tur
 e works
  []
 
-) [14]
+) [4]
 \openout2 = `Chapters/Chapter02.aux'.
 
  (./Chapters/Chapter02.tex
-Chapter 3.
+Chapter 2.
 
 Overfull \hbox (0.27417pt too wide) in paragraph at lines 16--21
 \T1/pplj/m/n/10.95 min-i-mum num-ber of op-er-a-tions re-quired to trans-form o
 ne
  []
 
-[15
+[5
 
 
 
@@ -1311,48 +1192,60 @@ Overfull \hbox (3.24474pt too wide) in paragraph at lines 63--68
 \T1/pplj/m/n/10.95 Mc-Glashan, Mc-Glashin, McIllesher, M'Glashan, M'Glashin,
  []
 
-[16]
+[6]
 Overfull \hbox (3.62923pt too wide) in paragraph at lines 101--105
 \T1/pplj/m/n/10.95 Our sys-tem is im-ple-mented in \T1/pplj/m/it/10.95 Ruby \T1
 /pplj/m/n/10.95 [[]] pro-gram-ming lan-guage. Ruby
  []
 
-<gfx/ruby.png, id=533, 198.9834pt x 244.2726pt>
+<gfx/ruby.png, id=569, 198.9834pt x 244.2726pt>
 File: gfx/ruby.png Graphic file (type png)
  <use gfx/ruby.png>
 Package pdftex.def Info: gfx/ruby.png used on input line 109.
 (pdftex.def)             Requested size: 115.89017pt x 142.26378pt.
 
-<gfx/ror.png, id=534, 793.96625pt x 1027.84pt>
+<gfx/ror.png, id=570, 793.96625pt x 1027.84pt>
 File: gfx/ror.png Graphic file (type png)
  <use gfx/ror.png>
 Package pdftex.def Info: gfx/ror.png used on input line 111.
 (pdftex.def)             Requested size: 109.88245pt x 142.26378pt.
-) [17 <./gfx/ruby.png> <./gfx/ror.png>] [18
+) [7 <./gfx/ruby.png> <./gfx/ror.png>] [8
 
 
 ]
 \openout2 = `Chapters/Chapter03.aux'.
 
  (./Chapters/Chapter03.tex
-Chapter 4.
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 27.
+Chapter 3.
 
 Overfull \hbox (1.12068pt too wide) in paragraph at lines 41--44
 []\T1/pplj/m/n/10.95 For ex-am-ple, Lev-en-shtein dis-tance be-tween `SMYTH' an
 d `SMITHE'
  []
 
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.50006pt on input line 49.
 
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 48--57
 []$[]$ 
  []
 
-[19
+[9
 
 
-] [20]
+] [10]
+LaTeX Font Info:    Try loading font information for TS1+fvm on input line 124.
+
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/bera/ts1fvm.fd
+File: ts1fvm.fd 2004/09/07 scalable font definitions for TS1/fvm.
+)
+LaTeX Font Info:    Font shape `TS1/fvm/m/n' will be
+(Font)              scaled to size 8.50006pt on input line 124.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fvm' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 117--147
 []$[]$ 
  []
@@ -1362,36 +1255,36 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 151--174
 []$[]$ 
  []
 
-[21]
+[11]
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 192--203
 []$[]$ 
  []
 
-[22]
+[12]
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 217--249
 []$[]$ 
  []
 
-[23] [24]
+[13] [14]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 7.65005pt on input line 294.
- [25])
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 321--104
+ [15])
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 321--103
 []$[]$ 
  []
 
-[26]
+[16]
 \openout2 = `Chapters/Chapter04.aux'.
 
  (./Chapters/Chapter04.tex
-Chapter 5.
-<gfx/base_tmn.jpg, id=748, 269.0853pt x 151.2852pt>
+Chapter 4.
+<gfx/base_tmn.jpg, id=776, 269.0853pt x 151.2852pt>
 File: gfx/base_tmn.jpg Graphic file (type jpg)
  <use gfx/base_tmn.jpg>
 Package pdftex.def Info: gfx/base_tmn.jpg used on input line 30.
 (pdftex.def)             Requested size: 312.9803pt x 175.97801pt.
 
-[27
+[17
 
 
 
@@ -1401,7 +1294,7 @@ Overfull \hbox (7.29451pt too wide) in paragraph at lines 55--59
 -rithms should
  []
 
-[28] <gfx/overall.jpg, id=768, 725.109pt x 546.1203pt>
+[18] <gfx/overall.jpg, id=794, 725.109pt x 546.1203pt>
 File: gfx/overall.jpg Graphic file (type jpg)
  <use gfx/overall.jpg>
 Package pdftex.def Info: gfx/overall.jpg used on input line 125.
@@ -1413,17 +1306,17 @@ Overfull \hbox (12.15399pt too wide) in paragraph at lines 133--134
 EETH' 
  []
 
-[29 <./gfx/overall.jpg>] [30]
+[19 <./gfx/overall.jpg>] [20]
 Underfull \hbox (badness 10000) in paragraph at lines 230--230
 []|\T1/pplj/m/n/10.95 Web/mobile/desktop
  []
 
-[31] <gfx/mvc.jpg, id=803, 1147.8885pt x 662.2341pt>
+[21] <gfx/mvc.jpg, id=825, 1147.8885pt x 662.2341pt>
 File: gfx/mvc.jpg Graphic file (type jpg)
  <use gfx/mvc.jpg>
 Package pdftex.def Info: gfx/mvc.jpg used on input line 284.
 (pdftex.def)             Requested size: 512.1496pt x 295.46626pt.
- [32 <./gfx/mvc.jpg>]
+ [22 <./gfx/mvc.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 299--299
 [][]\T1/fvm/m/n/9 Preferably \n \T1/pplj/m/n/9 or \T1/fvm/m/n/9 \r\T1/pplj/m/n/
 9 , see [][]$\T1/fvm/m/n/9 http : / / stackoverflow . com / questions / 1761051
@@ -1435,12 +1328,17 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 311--327
 []$[]$ 
  []
 
-
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 333--338
 []$[]$ 
  []
 
-[33] [34]
+[23] [24]
 Overfull \hbox (14.27151pt too wide) in paragraph at lines 390--393
 []\T1/pplj/m/n/10.95 From the re-sults, \T1/pplj/m/it/10.95 over-all weighted s
 core \T1/pplj/m/n/10.95 be-tween `SMITH' and `SMYTHE'
@@ -1451,24 +1349,24 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 398--422
 []$[]$ 
  []
 
-[35] <gfx/web_interface.png, id=928, 1397.22pt x 888.31876pt>
+[25] <gfx/web_interface.png, id=948, 1397.22pt x 888.31876pt>
 File: gfx/web_interface.png Graphic file (type png)
 
 <use gfx/web_interface.png>
 Package pdftex.def Info: gfx/web_interface.png used on input line 447.
 (pdftex.def)             Requested size: 455.24408pt x 289.43213pt.
 
-<gfx/web_interface_result.png, id=930, 1209.51875pt x 888.31876pt>
+<gfx/web_interface_result.png, id=950, 1209.51875pt x 888.31876pt>
 File: gfx/web_interface_result.png Graphic file (type png)
 
 <use gfx/web_interface_result.png>
 Package pdftex.def Info: gfx/web_interface_result.png used on input line 460.
 (pdftex.def)             Requested size: 455.24408pt x 334.35219pt.
- [36 <./gfx/web_interface.png>]) [37 <./gfx/web_interface_result.png>]
+ [26 <./gfx/web_interface.png>]) [27 <./gfx/web_interface_result.png>]
 \openout2 = `Chapters/Chapter05.aux'.
 
  (./Chapters/Chapter05.tex
-Chapter 6.
+Chapter 5.
 
 Overfull \hbox (13.83742pt too wide) in paragraph at lines 15--23
 []\T1/pplj/m/n/10.95 We use \T1/pplj/m/it/10.95 The Strat-egy Pat-tern[] \T1/pp
@@ -1480,7 +1378,7 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 30--69
 []$[]$ 
  []
 
-[38
+[28
 
 
 
@@ -1489,7 +1387,7 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 76--89
 []$[]$ 
  []
 
-[39]
+[29]
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 96--109
 []$[]$ 
  []
@@ -1506,7 +1404,7 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 119--125
 []$[]$ 
  []
 
-[40]
+[30]
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 130--155
 []$[]$ 
  []
@@ -1526,7 +1424,7 @@ vm/m/n/10.95 Soundex.soundex\T1/pplj/m/n/10.95 .
 
 
 Overfull \hbox (11.95383pt too wide) in paragraph at lines 163--167
-\T1/pplj/m/n/10.95 nal soundex code, as in list-ing [][]16[][] (ex-tracted from
+\T1/pplj/m/n/10.95 nal soundex code, as in list-ing [][]15[][] (ex-tracted from
  \T1/fvm/m/n/10.95 IrishSoundex.soundex
  []
 
@@ -1535,7 +1433,7 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 168--177
 []$[]$ 
  []
 
-[41]
+[31]
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 181--203
 []$[]$ 
  []
@@ -1560,7 +1458,7 @@ Overfull \hbox (30.74738pt too wide) in paragraph at lines 213--215
 T1/fvm/m/n/10.95 MatchingAlgorithm\T1/pplj/m/n/10.95 . 
  []
 
-[42]
+[32]
 Overfull \hbox (7.4894pt too wide) in paragraph at lines 223--227
 \T1/fvm/m/n/10.95 app/models/matching_algorithm.rb\T1/pplj/m/n/10.95 . The stru
 c-ture of this file is shown
@@ -1571,23 +1469,23 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 228--251
 []$[]$ 
  []
 
-[43]
+[33]
 Overfull \hbox (14.56694pt too wide) in paragraph at lines 289--293
 []\T1/pplj/m/n/10.95 You may con-sider adding more shared meth-ods to \T1/fvm/m
 /n/10.95 MatchingAlgorithm
  []
 
-) [44] [45
+) [34] [35
 
 
 ]
 \openout2 = `Chapters/Chapter06.aux'.
 
  (./Chapters/Chapter06.tex
-Chapter 7.
+Chapter 6.
 
 Overfull \hbox (12.23512pt too wide) in paragraph at lines 25--29
-\T1/pplj/m/n/10.95 use the stan-dard list. For ex-am-ple in list-ing [][]19[][]
+\T1/pplj/m/n/10.95 use the stan-dard list. For ex-am-ple in list-ing [][]18[][]
 , note that \T1/fvm/m/n/10.95 to_match_names
  []
 
@@ -1596,13 +1494,13 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 30--46
 []$[]$ 
  []
 
-<gfx/wi_std.png, id=1158, 1397.22pt x 888.31876pt>
+<gfx/wi_std.png, id=1168, 1397.22pt x 888.31876pt>
 File: gfx/wi_std.png Graphic file (type png)
  <use gfx/wi_std.png>
 Package pdftex.def Info: gfx/wi_std.png used on input line 53.
 (pdftex.def)             Requested size: 455.24408pt x 289.43213pt.
 
-[46
+[36
 
 
 ]
@@ -1610,17 +1508,17 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 66--107
 []$[]$ 
  []
 
-[47 <./gfx/wi_std.png>] [48]
+[37 <./gfx/wi_std.png>] [38]
 Overfull \hbox (10.88788pt too wide) in paragraph at lines 138--151
 []$[]$ 
  []
 
-[49]) [50]
+[39]) [40]
 \openout2 = `Chapters/Chapter07.aux'.
 
  (./Chapters/Chapter07.tex
-Chapter 8.
-[51
+Chapter 7.
+[41
 
 
 
@@ -1641,245 +1539,430 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 78--116
 []$[]$ 
  []
 
-[52]) [53] [54] [55
+[42]) [43] [44] [45
 
 
 ]
+\openout2 = `Chapters/Chapter0A.aux'.
+
+ (./Chapters/Chapter0A.tex
+Appendix A.
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 29--34
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 42--47
+[]$[]$ 
+ []
+
+[46
+
+
+]
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 64--69
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 72--77
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 83--88
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 91--96
+[]$[]$ 
+ []
+
+[47]
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 100--113
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 123--129
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 136--141
+[]$[]$ 
+ []
+
+[48]
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 148--153
+[]$[]$ 
+ []
+
+
+Overfull \hbox (2.88087pt too wide) in paragraph at lines 156--159
+\T1/pplj/m/n/10.95 A few Rails fea-tures, such as the As-set Pipeline, de-pend 
+on a Javascript
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 163--170
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 175--180
+[]$[]$ 
+ []
+
+[49]
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 186--191
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 197--204
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 209--214
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 220--227
+[]$[]$ 
+ []
+
+[50]
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 234--239
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 247--252
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 255--260
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 263--268
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 276--281
+[]$[]$ 
+ []
+
+[51]
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 284--289
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 292--326
+[]$[]$ 
+ []
+
+[52]
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 332--337
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 345--354
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 358--363
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 368--374
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 378--383
+[]$[]$ 
+ []
+
+[53]
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 388--393
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 398--403
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 410--415
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 430--435
+[]$[]$ 
+ []
+
+[54]
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 438--443
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 448--476
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 482--487
+[]$[]$ 
+ []
+
+[55]) [56]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
  (./FrontBackMatter/Bibliography.tex (./main.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 16--22
-[]\T1/pplj/m/n/10.95 Justin Elling-wood and Mitchell An-i-cas.  \T1/pplj/m/it/1
-0.95 New
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--22
-\T1/pplj/m/it/10.95 Ubuntu 14.04 Server Check-list\T1/pplj/m/n/10.95 .  2014.  
-URL [][]$\T1/fvm/m/n/10.95 https :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--22
-\T1/fvm/m/n/10.95 / / www . digitalocean . com / community / tutorial _ series 
-/
- []
-
-
-Underfull \hbox (badness 3612) in paragraph at lines 16--22
-\T1/fvm/m/n/10.95 new-[]ubuntu-[]14-[]04-[]server-[]checklist$[][]\T1/pplj/m/n/
-10.95 .  ac-cessed June 2$[]$,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--30
-[]\T1/pplj/m/n/10.95 Mitchell An-i-cas.  \T1/pplj/m/it/10.95 How To De-ploy a R
-ails App with
- []
-
-
-Underfull \hbox (badness 2875) in paragraph at lines 24--30
-\T1/pplj/m/it/10.95 Puma and Ng-inx on Ubuntu 14.04\T1/pplj/m/n/10.95 .  April 
-2015.  URL
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--30
-[][]$\T1/fvm/m/n/10.95 https : / / www . digitalocean . com / community / tutor
-ials /
- []
-
-
-Overfull \hbox (36.83104pt too wide) in paragraph at lines 24--30
-\T1/fvm/m/n/10.95 how-[]to-[]deploy-[]a-[]rails-[]app-[]with-[]puma-[]and-[]ngi
-nx-[]on-[]ubuntu-[]14-[]04$[][]\T1/pplj/m/n/10.95 .
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 58--63
+Underfull \hbox (badness 1406) in paragraph at lines 35--40
 []\T1/pplj/m/n/10.95 Wikipedia.  \T1/pplj/m/it/10.95 Lev-en-shtein dis-tance\T1
 /pplj/m/n/10.95 .  2015.  URL [][]$\T1/fvm/m/n/10.95 http : / / en .
  []
 
-[56
 
-
-
-
-]
-Underfull \hbox (badness 1418) in paragraph at lines 94--99
+Underfull \hbox (badness 1418) in paragraph at lines 71--76
 \T1/fvm/m/n/10.95 / / docs . oracle . com / javaee / 6 / tutorial / doc / giqsx
  . html$[][]\T1/pplj/m/n/10.95 .  ac-
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 101--107
+Underfull \hbox (badness 7308) in paragraph at lines 78--84
 []\T1/pplj/m/n/10.95 John Mueller.  \T1/pplj/m/it/10.95 Un-der-stand-ing SOAP a
 nd REST Ba-sics\T1/pplj/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--107
+Underfull \hbox (badness 10000) in paragraph at lines 78--84
 \T1/pplj/m/n/10.95 Jan-uary 2013.  URL [][]$\T1/fvm/m/n/10.95 http : / / blog .
  smartbear . com / apis /
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 101--107
+Underfull \hbox (badness 1460) in paragraph at lines 78--84
 \T1/fvm/m/n/10.95 understanding-[]soap-[]and-[]rest-[]basics/$[][]\T1/pplj/m/n/
 10.95 .  ac-cessed May 5$[]$,
  []
 
+[57
 
-Overfull \hbox (1.21214pt too wide) in paragraph at lines 123--129
+
+
+
+
+]
+Overfull \hbox (1.21214pt too wide) in paragraph at lines 100--106
 \T1/fvm/m/n/10.95 json-[]or-[]xml-[]which-[]data-[]format-[]is-[]better-[]for-[
 ]developers/$[][]\T1/pplj/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--174
+Underfull \hbox (badness 10000) in paragraph at lines 144--151
 []\T1/pplj/m/n/10.95 Kresimir Bo-j-cic.  \T1/pplj/m/it/10.95 What are the Ben-e
 -fits of Ruby on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--174
+Underfull \hbox (badness 10000) in paragraph at lines 144--151
 \T1/pplj/m/it/10.95 Rails? Af-ter Two Decades of Pro-gram-ming, I Use Rails\T1/
 pplj/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--174
+Underfull \hbox (badness 10000) in paragraph at lines 144--151
 \T1/pplj/m/n/10.95 2013.  URL [][]$\T1/fvm/m/n/10.95 http : / / www . toptal . 
 com / ruby-[]on-[]rails /
  []
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 167--174
+Underfull \hbox (badness 1436) in paragraph at lines 144--151
 \T1/fvm/m/n/10.95 after-[]two-[]decades-[]of-[]programming-[]i-[]use-[]rails$[]
 []\T1/pplj/m/n/10.95 .  ac-cessed
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 190--195
+Underfull \hbox (badness 1221) in paragraph at lines 167--172
 []\T1/pplj/m/n/10.95 Wikipedia.  \T1/pplj/m/it/10.95 Model-view-controller\T1/p
 plj/m/n/10.95 .  2015.  URL [][]$\T1/fvm/m/n/10.95 http : / / en .
  []
 
-[57]
-Underfull \hbox (badness 2027) in paragraph at lines 224--230
+
+Underfull \hbox (badness 2027) in paragraph at lines 201--207
 []\T1/pplj/m/n/10.95 railstips.org.  \T1/pplj/m/it/10.95 Class and In-stance Me
 th-ods in Ruby\T1/pplj/m/n/10.95 .  May
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 253--260
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 230--237
 \T1/fvm/m/n/10.95 what-[]rubys-[]double-[]pipe-[]or-[]equals-[]really-[]does-[]
 5488 . html$[][]\T1/pplj/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--267
+Underfull \hbox (badness 10000) in paragraph at lines 239--244
 []\T1/pplj/m/n/10.95 Gavin Miller.  \T1/pplj/m/it/10.95 The Ba-sics of Ruby Mem
 -o-iza-tion\T1/pplj/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--267
+Underfull \hbox (badness 10000) in paragraph at lines 239--244
 \T1/pplj/m/n/10.95 Novem-ber 2013.  URL [][]$\T1/fvm/m/n/10.95 http : / / gavin
 miller . io / 2013 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--253
 []\T1/pplj/m/n/10.95 Arne Hartherz.  \T1/pplj/m/it/10.95 Use find_in_batches to
  pro-cess many
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 269--276
+Underfull \hbox (badness 5374) in paragraph at lines 246--253
 \T1/pplj/m/it/10.95 records with-out tear-ing down the server\T1/pplj/m/n/10.95
  .  2011.  URL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--276
+Underfull \hbox (badness 10000) in paragraph at lines 246--253
 [][]$\T1/fvm/m/n/10.95 http : / / makandracards . com / makandra / 1181-[]use-[
 ]find _ in _
  []
 
 
-Overfull \hbox (46.03734pt too wide) in paragraph at lines 269--276
+Overfull \hbox (46.03734pt too wide) in paragraph at lines 246--253
 \T1/fvm/m/n/10.95 batches-[]to-[]process-[]many-[]records-[]without-[]tearing-[
 ]down-[]the-[]server$[][]\T1/pplj/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 278--284
+Underfull \hbox (badness 2269) in paragraph at lines 255--261
 []\T1/pplj/m/n/10.95 Wikipedia.  \T1/pplj/m/it/10.95 Re-la-tional database man-
 age-ment sys-tem\T1/pplj/m/n/10.95 .  2015.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--284
+Underfull \hbox (badness 10000) in paragraph at lines 255--261
 \T1/pplj/m/n/10.95 URL [][]$\T1/fvm/m/n/10.95 http : / / en . wikipedia . org /
  wiki / Relational _ database _
  []
 
-[58]
-Underfull \hbox (badness 10000) in paragraph at lines 293--299
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--276
 []\T1/pplj/m/n/10.95 Conor Brana-gan and Patrick Crosby.  \T1/pplj/m/it/10.95 U
 n-der-stand-
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 293--299
+Underfull \hbox (badness 3514) in paragraph at lines 270--276
 \T1/pplj/m/it/10.95 ing the Top 5 Re-dis Per-for-mance Met-rics\T1/pplj/m/n/10.
 95 .  2013.  URL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--299
+Underfull \hbox (badness 10000) in paragraph at lines 270--276
 [][]$\T1/fvm/m/n/10.95 https : / / www . datadoghq . com / wp-[]content / uploa
 ds / 2013 / 09 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--299
+Underfull \hbox (badness 10000) in paragraph at lines 270--276
 \T1/fvm/m/n/10.95 Understanding-[]the-[]Top-[]5-[]Redis-[]Performance-[]Metrics
  . pdf$[][]\T1/pplj/m/n/10.95 .
  []
 
-)) [59]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
- (./main.aux (./Chapters/Chapter0A.aux) (./Chapters/Chapter01.aux)
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 313--319
+[]\T1/pplj/m/n/10.95 Justin Elling-wood and Mitchell An-i-cas.  \T1/pplj/m/it/1
+0.95 New
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--319
+\T1/pplj/m/it/10.95 Ubuntu 14.04 Server Check-list\T1/pplj/m/n/10.95 .  2014.  
+URL [][]$\T1/fvm/m/n/10.95 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--319
+\T1/fvm/m/n/10.95 / / www . digitalocean . com / community / tutorial _ series 
+/
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 313--319
+\T1/fvm/m/n/10.95 new-[]ubuntu-[]14-[]04-[]server-[]checklist$[][]\T1/pplj/m/n/
+10.95 .  ac-cessed June 2$[]$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--327
+[]\T1/pplj/m/n/10.95 Mitchell An-i-cas.  \T1/pplj/m/it/10.95 How To De-ploy a R
+ails App with
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 321--327
+\T1/pplj/m/it/10.95 Puma and Ng-inx on Ubuntu 14.04\T1/pplj/m/n/10.95 .  April 
+2015.  URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--327
+[][]$\T1/fvm/m/n/10.95 https : / / www . digitalocean . com / community / tutor
+ials /
+ []
+
+
+Overfull \hbox (36.83104pt too wide) in paragraph at lines 321--327
+\T1/fvm/m/n/10.95 how-[]to-[]deploy-[]a-[]rails-[]app-[]with-[]puma-[]and-[]ngi
+nx-[]on-[]ubuntu-[]14-[]04$[][]\T1/pplj/m/n/10.95 .
+ []
+
+)) [60]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
+ (./main.aux (./FrontBackMatter/Titlepage.aux)
+(./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux)
+(./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Acknowledgments.aux)
+(./FrontBackMatter/Contents.aux) (./Chapters/Chapter01.aux)
 (./Chapters/Chapter02.aux) (./Chapters/Chapter03.aux) (./Chapters/Chapter04.aux
 ) (./Chapters/Chapter05.aux) (./Chapters/Chapter06.aux)
-(./Chapters/Chapter07.aux) (./FrontBackMatter/Bibliography.aux)
-
-Package mparhack Warning: Marginpars may have changed.
-(mparhack)                Rerun to get them right.
-
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
+(./Chapters/Chapter07.aux) (./Chapters/Chapter0A.aux)
+(./FrontBackMatter/Bibliography.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8F4E56CC357DC2F00A534B392A6ADECB;4450.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
+(rerunfilecheck)             Checksum: 1E7E14A14408F2FB8F11941CD7EE4421;4873.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
  ) 
 Here is how much of TeX's memory you used:
- 18484 strings out of 493117
- 276607 string characters out of 6135432
- 585243 words of memory out of 5000000
- 20686 multiletter control sequences out of 15000+600000
- 79952 words of font info for 137 fonts, out of 8000000 for 9000
+ 18784 strings out of 493117
+ 282612 string characters out of 6135432
+ 590578 words of memory out of 5000000
+ 20874 multiletter control sequences out of 15000+600000
+ 105457 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,14n,49p,916b,1410s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,14n,49p,916b,1466s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb></usr/local/
@@ -1895,10 +1978,10 @@ xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/201
 4/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf
 -dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/f
 onts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (59 pages, 3297134 bytes).
+Output written on main.pdf (69 pages, 3366651 bytes).
 PDF statistics:
- 1646 PDF objects out of 1728 (max. 8388607)
- 1541 compressed objects within 16 object streams
- 800 named destinations out of 1000 (max. 500000)
- 17465 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 1846 PDF objects out of 2073 (max. 8388607)
+ 1728 compressed objects within 18 object streams
+ 829 named destinations out of 1000 (max. 500000)
+ 30846 words of extra memory for PDF output out of 35830 (max. 10000000)
 

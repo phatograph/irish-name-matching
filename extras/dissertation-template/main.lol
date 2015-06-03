@@ -27,3 +27,10 @@
 \contentsline {lstlisting}{\numberline {20}\texttt {JSON} setup for performance testing.}{39}{lstlisting.20}
 \addvspace {10\p@ }
 \contentsline {lstlisting}{\numberline {21}\texttt {Soundex} inheritance.}{43}{lstlisting.21}
+\addvspace {10\p@ }
+\contentsline {lstlisting}{\numberline {22}config/database.yml}{50}{lstlisting.22}
+\contentsline {lstlisting}{\numberline {23}Gemfile}{51}{lstlisting.23}
+\contentsline {lstlisting}{\numberline {24}config/puma.rb}{52}{lstlisting.24}
+\contentsline {lstlisting}{\numberline {25}puma.conf}{53}{lstlisting.25}
+\contentsline {lstlisting}{\numberline {26}/etc/puma.conf}{54}{lstlisting.26}
+\contentsline {lstlisting}{\numberline {27}/etc/nginx/sites-available/default}{55}{lstlisting.27}

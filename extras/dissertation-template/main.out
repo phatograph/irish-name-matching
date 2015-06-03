@@ -1,66 +1,74 @@
-\BOOKMARK [0][]{chapter.1}{1 How to deploy the system on Ubuntu server}{}% 1
-\BOOKMARK [1][-]{section.1.1}{1.1 Root Login}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{1.2 Create a new user}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{1.3 Root Privileges}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.4}{1.4 Install rbenv}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.5}{1.5 Install Ruby}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.6}{1.6 Install Rails}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.7}{1.7 Install Javascript Runtime}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.8}{1.8 Install PostgreSQL}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.9}{1.9 Create Database User}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.10}{1.10 Get the system code}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.11}{1.11 Configure Database Connection}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.12}{1.12 Create Application Databases}{chapter.1}% 13
-\BOOKMARK [1][-]{section.1.13}{1.13 Install Puma}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.14}{1.14 Configure Puma}{chapter.1}% 15
-\BOOKMARK [1][-]{section.1.15}{1.15 Create Puma Upstart Script}{chapter.1}% 16
-\BOOKMARK [1][-]{section.1.16}{1.16 Install and Configure Nginx}{chapter.1}% 17
-\BOOKMARK [1][-]{section.1.17}{1.17 Finish}{chapter.1}% 18
-\BOOKMARK [0][]{chapter.2}{2 Introduction}{}% 19
-\BOOKMARK [1][-]{section.2.1}{2.1 Motivation}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.2}{2.2 Research Questions}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.3}{2.3 Objective and Aims}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.4}{2.4 Report Structure}{chapter.2}% 23
-\BOOKMARK [0][]{chapter.3}{3 Related Work}{}% 24
-\BOOKMARK [1][-]{section.3.1}{3.1 Name matching}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Edit distance}{section.3.1}% 26
-\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Soundex}{section.3.1}% 27
-\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 Lookup Table}{section.3.1}% 28
-\BOOKMARK [1][-]{section.3.2}{3.2 Web service}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.3}{3.3 Extensible framework}{chapter.3}% 30
-\BOOKMARK [-1][]{part.1}{The Solution}{}% 31
-\BOOKMARK [0][]{chapter.4}{4 Name matching algorithms}{part.1}% 32
-\BOOKMARK [1][-]{section.4.1}{4.1 Levenshtein distance}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.2}{4.2 Soundex}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.3}{4.3 Irish soundex}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.4}{4.4 Lookup table}{chapter.4}% 36
-\BOOKMARK [0][]{chapter.5}{5 Architecture}{part.1}% 37
-\BOOKMARK [1][-]{section.5.1}{5.1 Initial idea}{chapter.5}% 38
-\BOOKMARK [1][-]{section.5.2}{5.2 Weighting matching algorithms}{chapter.5}% 39
-\BOOKMARK [1][-]{section.5.3}{5.3 Actual system}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.4}{5.4 Thresholding the results}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.5}{5.5 Data flow}{chapter.5}% 42
-\BOOKMARK [1][-]{section.5.6}{5.6 MVC}{chapter.5}% 43
-\BOOKMARK [1][-]{section.5.7}{5.7 Web Service}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.8}{5.8 Web Interface}{chapter.5}% 45
-\BOOKMARK [0][]{chapter.6}{6 Extending the system}{part.1}% 46
-\BOOKMARK [1][-]{section.6.1}{6.1 Matching algorithms inheritance}{chapter.6}% 47
-\BOOKMARK [1][-]{section.6.2}{6.2 Exporting a class method}{chapter.6}% 48
-\BOOKMARK [1][-]{section.6.3}{6.3 Implementing new matching algorithms}{chapter.6}% 49
-\BOOKMARK [-1][]{part.2}{The Outcome}{}% 50
-\BOOKMARK [0][]{chapter.7}{7 Evaluation}{part.2}% 51
-\BOOKMARK [1][-]{section.7.1}{7.1 Introducing standard name list}{chapter.7}% 52
-\BOOKMARK [1][-]{section.7.2}{7.2 Test environment setup}{chapter.7}% 53
-\BOOKMARK [1][-]{section.7.3}{7.3 Response speed}{chapter.7}% 54
-\BOOKMARK [1][-]{section.7.4}{7.4 Memory usage}{chapter.7}% 55
-\BOOKMARK [0][]{chapter.8}{8 Conclusion}{part.2}% 56
-\BOOKMARK [1][-]{section.8.1}{8.1 Encountered problem}{chapter.8}% 57
-\BOOKMARK [2][-]{subsection.8.1.1}{8.1.1 Memoization}{section.8.1}% 58
-\BOOKMARK [2][-]{subsection.8.1.2}{8.1.2 find\137in\137batches}{section.8.1}% 59
-\BOOKMARK [2][-]{subsection.8.1.3}{8.1.3 Replace RDBMS with NoSQL}{section.8.1}% 60
-\BOOKMARK [1][-]{section.8.2}{8.2 Future works}{chapter.8}% 61
-\BOOKMARK [2][-]{subsection.8.2.1}{8.2.1 More phonetic algorithms}{section.8.2}% 62
-\BOOKMARK [2][-]{subsection.8.2.2}{8.2.2 Inheritance for similar matching algorithms}{section.8.2}% 63
-\BOOKMARK [2][-]{subsection.8.2.3}{8.2.3 Improve web interface result}{section.8.2}% 64
-\BOOKMARK [-1][]{part.3}{Appendix}{}% 65
-\BOOKMARK [0][]{dummy.1}{Bibliography}{part.3}% 66
+\BOOKMARK [1][-]{Dedication.1}{Dedication}{}% 1
+\BOOKMARK [1][-]{Abstract.1}{Abstract}{}% 2
+\BOOKMARK [1][-]{Acknowledgements.1}{Acknowledgements}{}% 3
+\BOOKMARK [1][-]{tableofcontents.1}{Contents}{}% 4
+\BOOKMARK [1][-]{lof.1}{List of Figures}{}% 5
+\BOOKMARK [1][-]{lot.1}{List of Tables}{}% 6
+\BOOKMARK [1][-]{lol.1}{Listings}{}% 7
+\BOOKMARK [-1][]{part.1}{The Background}{}% 8
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{part.1}% 9
+\BOOKMARK [1][-]{section.1.1}{1.1 Motivation}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.2}{1.2 Research Questions}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.3}{1.3 Objective and Aims}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.4}{1.4 Report Structure}{chapter.1}% 13
+\BOOKMARK [0][]{chapter.2}{2 Related Work}{part.1}% 14
+\BOOKMARK [1][-]{section.2.1}{2.1 Name matching}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Edit distance}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Soundex}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Lookup Table}{section.2.1}% 18
+\BOOKMARK [1][-]{section.2.2}{2.2 Web service}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.3}{2.3 Extensible framework}{chapter.2}% 20
+\BOOKMARK [-1][]{part.2}{The Solution}{}% 21
+\BOOKMARK [0][]{chapter.3}{3 Name matching algorithms}{part.2}% 22
+\BOOKMARK [1][-]{section.3.1}{3.1 Levenshtein distance}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{3.2 Soundex}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.3}{3.3 Irish soundex}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.4}{3.4 Lookup table}{chapter.3}% 26
+\BOOKMARK [0][]{chapter.4}{4 Architecture}{part.2}% 27
+\BOOKMARK [1][-]{section.4.1}{4.1 Initial idea}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.2}{4.2 Weighting matching algorithms}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.3}{4.3 Actual system}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.4}{4.4 Thresholding the results}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.5}{4.5 Data flow}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.6}{4.6 MVC}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.7}{4.7 Web Service}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.8}{4.8 Web Interface}{chapter.4}% 35
+\BOOKMARK [0][]{chapter.5}{5 Extending the system}{part.2}% 36
+\BOOKMARK [1][-]{section.5.1}{5.1 Matching algorithms inheritance}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.2}{5.2 Exporting a class method}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.3}{5.3 Implementing new matching algorithms}{chapter.5}% 39
+\BOOKMARK [-1][]{part.3}{The Outcome}{}% 40
+\BOOKMARK [0][]{chapter.6}{6 Evaluation}{part.3}% 41
+\BOOKMARK [1][-]{section.6.1}{6.1 Introducing standard name list}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.2}{6.2 Test environment setup}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.3}{6.3 Response speed}{chapter.6}% 44
+\BOOKMARK [1][-]{section.6.4}{6.4 Memory usage}{chapter.6}% 45
+\BOOKMARK [0][]{chapter.7}{7 Conclusion}{part.3}% 46
+\BOOKMARK [1][-]{section.7.1}{7.1 Encountered problem}{chapter.7}% 47
+\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Memoization}{section.7.1}% 48
+\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 find\137in\137batches}{section.7.1}% 49
+\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 Replace RDBMS with NoSQL}{section.7.1}% 50
+\BOOKMARK [1][-]{section.7.2}{7.2 Future works}{chapter.7}% 51
+\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 More phonetic algorithms}{section.7.2}% 52
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Inheritance for similar matching algorithms}{section.7.2}% 53
+\BOOKMARK [2][-]{subsection.7.2.3}{7.2.3 Improve web interface result}{section.7.2}% 54
+\BOOKMARK [-1][]{part.4}{Appendix}{}% 55
+\BOOKMARK [0][]{appendix.A}{A How to deploy the system on Ubuntu server}{part.4}% 56
+\BOOKMARK [1][-]{section.A.1}{A.1 Root Login}{appendix.A}% 57
+\BOOKMARK [1][-]{section.A.2}{A.2 Create a new user}{appendix.A}% 58
+\BOOKMARK [1][-]{section.A.3}{A.3 Root Privileges}{appendix.A}% 59
+\BOOKMARK [1][-]{section.A.4}{A.4 Install rbenv}{appendix.A}% 60
+\BOOKMARK [1][-]{section.A.5}{A.5 Install Ruby}{appendix.A}% 61
+\BOOKMARK [1][-]{section.A.6}{A.6 Install Rails}{appendix.A}% 62
+\BOOKMARK [1][-]{section.A.7}{A.7 Install Javascript Runtime}{appendix.A}% 63
+\BOOKMARK [1][-]{section.A.8}{A.8 Install PostgreSQL}{appendix.A}% 64
+\BOOKMARK [1][-]{section.A.9}{A.9 Create Database User}{appendix.A}% 65
+\BOOKMARK [1][-]{section.A.10}{A.10 Get the system code}{appendix.A}% 66
+\BOOKMARK [1][-]{section.A.11}{A.11 Configure Database Connection}{appendix.A}% 67
+\BOOKMARK [1][-]{section.A.12}{A.12 Create Application Databases}{appendix.A}% 68
+\BOOKMARK [1][-]{section.A.13}{A.13 Install Puma}{appendix.A}% 69
+\BOOKMARK [1][-]{section.A.14}{A.14 Configure Puma}{appendix.A}% 70
+\BOOKMARK [1][-]{section.A.15}{A.15 Create Puma Upstart Script}{appendix.A}% 71
+\BOOKMARK [1][-]{section.A.16}{A.16 Install and Configure Nginx}{appendix.A}% 72
+\BOOKMARK [1][-]{section.A.17}{A.17 Finish}{appendix.A}% 73
+\BOOKMARK [0][]{dummy.6}{Bibliography}{part.4}% 74

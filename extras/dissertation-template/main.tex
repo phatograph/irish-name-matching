@@ -56,23 +56,23 @@
 % PRE-CONTENT THESIS PAGES
 %----------------------------------------------------------------------------------------
 
-% \include{FrontBackMatter/Titlepage} % Main title page
+\include{FrontBackMatter/Titlepage} % Main title page
 
-% \include{FrontBackMatter/Titleback} % Back of the title page
+\include{FrontBackMatter/Titleback} % Back of the title page
 
-% \include{FrontBackMatter/Dedication} % Dedication page
+\include{FrontBackMatter/Dedication} % Dedication page
 
 %\cleardoublepage\include{FrontBackMatter/Foreword} % Uncomment and create a Foreword.tex to include a foreword
 
-% \include{FrontBackMatter/Abstract} % Abstract page
+\include{FrontBackMatter/Abstract} % Abstract page
 
 % \cleardoublepage\include{FrontBackMatter/Publication} % Publications from the thesis page
 
-% \include{FrontBackMatter/Acknowledgments} % Acknowledgements page
+\include{FrontBackMatter/Acknowledgments} % Acknowledgements page
 
 \pagestyle{scrheadings} % Show chapter titles as headings
 
-% \cleardoublepage\include{FrontBackMatter/Contents} % Contents, list of figures/tables/listings and acronyms
+\cleardoublepage\include{FrontBackMatter/Contents} % Contents, list of figures/tables/listings and acronyms
 
 \cleardoublepage
 
@@ -87,9 +87,8 @@
 
 % \ctparttext{Background includes story about the three cores, name matching, web services, and extending ruby on rails.}
 
-% \part{The Background} % First part of the thesis
+\part{The Background} % First part of the thesis
 
-\include{Chapters/Chapter0A} % Appendix A
 \include{Chapters/Chapter01}
 \include{Chapters/Chapter02}
 
@@ -137,6 +136,8 @@
 \appendix
 
 \part{Appendix} % New part of the thesis for the appendix
+
+\include{Chapters/Chapter0A} % Appendix A
 
 %----------------------------------------------------------------------------------------
 % POST-CONTENT THESIS PAGES

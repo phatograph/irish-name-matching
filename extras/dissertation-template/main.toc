@@ -48,5 +48,24 @@
 \contentsline {subsection}{\numberline {7.2.1}More phonetic algorithms}{42}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Inheritance for similar matching algorithms}{42}{subsection.7.2.2}
 \contentsline {subsection}{\numberline {7.2.3}Improve web interface result}{43}{subsection.7.2.3}
+\contentsline {part}{iv\hspace {1em}\spacedlowsmallcaps {Appendix}}{45}{part.4}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {How to deploy the system on Ubuntu server}}{46}{appendix.A}
+\contentsline {section}{\numberline {A.1}Root Login}{46}{section.A.1}
+\contentsline {section}{\numberline {A.2}Create a new user}{46}{section.A.2}
+\contentsline {section}{\numberline {A.3}Root Privileges}{47}{section.A.3}
+\contentsline {section}{\numberline {A.4}Install rbenv}{47}{section.A.4}
+\contentsline {section}{\numberline {A.5}Install Ruby}{48}{section.A.5}
+\contentsline {section}{\numberline {A.6}Install Rails}{49}{section.A.6}
+\contentsline {section}{\numberline {A.7}Install Javascript Runtime}{49}{section.A.7}
+\contentsline {section}{\numberline {A.8}Install PostgreSQL}{49}{section.A.8}
+\contentsline {section}{\numberline {A.9}Create Database User}{50}{section.A.9}
+\contentsline {section}{\numberline {A.10}Get the system code}{50}{section.A.10}
+\contentsline {section}{\numberline {A.11}Configure Database Connection}{50}{section.A.11}
+\contentsline {section}{\numberline {A.12}Create Application Databases}{51}{section.A.12}
+\contentsline {section}{\numberline {A.13}Install Puma}{51}{section.A.13}
+\contentsline {section}{\numberline {A.14}Configure Puma}{51}{section.A.14}
+\contentsline {section}{\numberline {A.15}Create Puma Upstart Script}{53}{section.A.15}
+\contentsline {section}{\numberline {A.16}Install and Configure Nginx}{54}{section.A.16}
+\contentsline {section}{\numberline {A.17}Finish}{56}{section.A.17}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{45}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{57}{dummy.6}
