@@ -1,48 +1,205 @@
-% Appendix A
+\chapter{How to deploy the system on Ubuntu server}
 
-\chapter{Appendix Test}
+Here is the list of steps we performed to deploy the system on one rental
+VPS\footnote{Virtual private server \cite[]{vps}} from Digital Ocean\footnote{https://www.digitalocean.com}.
+The sample machine was Ubuntu 14.04 x64, but these setup steps should work
+on any recent Ubutu build as well.
 
-%----------------------------------------------------------------------------------------
+This machine was setup from scratch, from creating a deployment user, up to
+installing PostgreSQL, Ruby, and Ruby on Rails. We\textquotesingle re using the following
+machine specifications.
 
-\lipsum[13-14]
+\begin{itemize}
+  \item Ubuntu 14.04 x64
+  \item 1 core processor
+  \item 512MB Ram
+  \item 20GB SSD Disk
+\end{itemize}
 
-%----------------------------------------------------------------------------------------
+Most of these steps and wordings are taken directly from Digital Ocean\textquotesingle s
+tutorials \cite[]{ubuntu} \cite[]{ubuntu2}. The setup steps are as follow.
 
-\section{Appendix Section Test}
-\lipsum[15]
+\section{Root Login}
 
-\graffito{More dummy text}
+From your local machine, use \texttt{ssh} to connect to the remote server.
+As for sample code from now, we will use \texttt{local\$} when referring
+to running a code from local machine, and \texttt{remote\$} when referring
+to running a code from remote machine.
 
-%----------------------------------------------------------------------------------------
-
-
-\begin{table}
-\myfloatalign
-\begin{tabularx}{\textwidth}{Xll}
-\toprule
-\tableheadline{labitur bonorum pri no} & \tableheadline{que vista} & \tableheadline{human} \\
-\midrule
-fastidii ea ius & germano &  demonstratea \\
-suscipit instructior & titulo & personas \\
-\midrule
-quaestio philosophia & facto & demonstrated \\
-\bottomrule
-\end{tabularx}
-\caption[Autem usu id]{Autem usu id.}
-\label{tab:moreexample}
-\end{table}
-
-\section{Another Appendix Section Test}
-
-Your own text.
-
-\begin{lstlisting}[float,caption=A floating example]
-for i:=maxint to 0 do
-begin
-{ do nothing }
-end;
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+local$ ssh root@SERVER_IP_ADDRESS
 \end{lstlisting}
+\end{minipage}
 
-\subsection{Sub}
+Substitute \texttt{SERVER\_IP\_ADDRESS} with your IP address or hostname.
 
-\lipsum[11]
+\section{Create a new user}
+
+Root access is not recommend since it has very powerful privileges.
+We will create a new user for deployment and other day-to-day work.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ adduser demo
+\end{lstlisting}
+\end{minipage}
+
+Substitute \texttt{demo} with your prefer new user name.
+You will be asked a few questions, starting with the account password
+and fill in any of the additional information if you would like.
+
+\section{Root Privileges}
+
+Now, we have a new user account with regular account privileges.
+However, we may sometimes need to do administrative tasks.
+
+To add these privileges to our new user, we need to add the new user
+to the \texttt{sudo} group. By default, on Ubuntu 14.04,
+users who belong to the \texttt{sudo} group are allowed to use the sudo command.
+
+As root, run this command to add your new user to the sudo group
+(substitute \texttt{demo} with your new user).
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ gpasswd -a demo sudo
+\end{lstlisting}
+\end{minipage}
+
+Now you can log out and log in again with your newly created user.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+local$ ssh demo@SERVER_IP_ADDRESS
+\end{lstlisting}
+\end{minipage}
+
+\section{Install rbenv}
+
+We will install \texttt{rbenv}, which we will use to install and manage our
+Ruby installation. First, update \texttt{apt-get}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ sudo apt-get update
+\end{lstlisting}
+\end{minipage}
+
+Then install the \texttt{rbenv} and Ruby dependencies with \texttt{apt-get}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+\end{lstlisting}
+\end{minipage}
+
+Now we are ready to install \texttt{rbenv}. The easiest way to do that is to run
+these commands.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ cd
+remote$ git clone git://github.com/sstephenson/rbenv.git .rbenv
+remote$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+remote$ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+remote$ exec $SHELL
+
+remote$ git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+remote$ echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profile
+remote$ exec $SHELL
+\end{lstlisting}
+\end{minipage}
+
+This installs \texttt{rbenv} into your home directory, and sets the appropriate
+environment variables that will allow \texttt{rbenv} to the active version of Ruby.
+
+Next is to use \texttt{rbenv} to install Ruby.
+
+\section{Install Ruby}
+
+We will install the latest version of this time, Ruby 2.2.1.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ rbenv install -v 2.2.1
+remote$ rbenv global 2.2.1
+\end{lstlisting}
+\end{minipage}
+
+The \texttt{global} sub-command sets the default version of Ruby
+that all of your shells will use.
+
+You will also want to install the \texttt{bundler} gem,
+to manage your application dependencies.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ gem install bundler
+\end{lstlisting}
+\end{minipage}
+
+Now that Ruby is installed, next is to install Rails.
+
+\section{Install Rails}
+
+Install Rails 4.2.0 with this command.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ gem install rails -v 4.2.0
+\end{lstlisting}
+\end{minipage}
+
+\section{Install Javascript Runtime}
+
+A few Rails features, such as the Asset Pipeline,
+depend on a Javascript runtime. We will install Node.js
+to provide this functionality.
+
+Add the Node.js PPA to \texttt{apt-get}, then update \texttt{apt-get}
+and install the Node.js package.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ sudo add-apt-repository ppa:chris-lea/node.js
+remote$ sudo apt-get update
+remote$ sudo apt-get install nodejs
+\end{lstlisting}
+\end{minipage}
+
+\section{Install PostgreSQL}
+
+Install PostgreSQL and its development libraries.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ sudo apt-get install postgresql postgresql-contrib libpq-dev
+\end{lstlisting}
+\end{minipage}
+
+\section{Create Database User}
+
+Create a PostgreSQL superuser user with this command
+(substitute the \texttt{pguser} with your own username).
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ sudo -u postgres createuser -s pguser
+\end{lstlisting}
+\end{minipage}
+
+\section{Get the system code}
+
+The system code is stored at \url{git.cs.nuim.ie/repos/desem/dmsc1407},
+we will get the code by using \texttt{git}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ cd
+remote$ git clone ssh://git.cs.nuim.ie/repos/desem/dmsc1407
+remote$ cd dmsc1407
+\end{lstlisting}
+\end{minipage}
+
+\section{Configure Database Connection}
