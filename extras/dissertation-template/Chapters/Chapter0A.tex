@@ -204,7 +204,7 @@ remote$ cd dmsc1407
 
 \section{Configure Database Connection}
 
-Open your application's database configuration file.
+Open your application\textquotesingle s database configuration file.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -229,7 +229,7 @@ Save and exit.
 
 \section{Create Application Databases}
 
-Create your application's development and test databases by using this \texttt{rake} command.
+Create your application\textquotesingle s development and test databases by using this \texttt{rake} command.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -242,7 +242,7 @@ remote$ rake db:create
 Puma is an application server that enables your Rails application
 to process requests concurrently.
 
-An easy way to do this is to add it to your application's \texttt{Gemfile}.
+An easy way to do this is to add it to your application\textquotesingle s \texttt{Gemfile}.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -279,7 +279,7 @@ remote$ grep -c processor /proc/cpuinfo
 \end{lstlisting}
 \end{minipage}
 
-Now, let's add our Puma configuration to \texttt{config/puma.rb}.
+Now, let\textquotesingle s add our Puma configuration to \texttt{config/puma.rb}.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -413,8 +413,8 @@ remote$ sudo start puma-manager
 \end{lstlisting}
 \end{minipage}
 
-Now your Rails application's production environment is running under Puma,
-and it's listening on the \texttt{shared/sockets/puma.sock} socket.
+Now your Rails application\textquotesingle s production environment is running under Puma,
+and it\textquotesingle s listening on the \texttt{shared/sockets/puma.sock} socket.
 Before your application will be accessible to an outside user,
 you must set up the Nginx reverse proxy.
 
@@ -488,5 +488,5 @@ remote$ sudo service nginx restart
 \section{Finish}
 
 You have deployed the production environment of your Ruby on Rails application using Nginx and Puma.
-Now the your Rails application is accessible via your server's public IP address
+Now the your Rails application is accessible via your server\textquotesingle s public IP address
 or domain name.
