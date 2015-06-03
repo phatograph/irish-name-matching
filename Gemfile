@@ -7,6 +7,8 @@ gem 'pg'
 gem 'text'
 gem 'jbuilder'
 
+gem 'puma'
+
 # Assets
 gem 'font-awesome-rails'
 gem 'sass-rails', '~> 5.0'
