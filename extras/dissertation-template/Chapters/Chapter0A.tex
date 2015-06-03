@@ -203,3 +203,290 @@ remote$ cd dmsc1407
 \end{minipage}
 
 \section{Configure Database Connection}
+
+Open your application's database configuration file.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ vim config/database.yml
+\end{lstlisting}
+\end{minipage}
+
+Under the default section, find the line that says \texttt{pool: 5}
+and add the following lines under it. It should look something like this
+(replace the \texttt{pguser} and \texttt{pguser\_password}
+parts with your PostgreSQL user and password):
+
+\begin{minipage}{\linewidth}
+  \begin{lstlisting}[language=ruby, caption={config/database.yml}]
+host: localhost
+username: pguser
+password: pguser_password
+\end{lstlisting}
+\end{minipage}
+
+Save and exit.
+
+\section{Create Application Databases}
+
+Create your application's development and test databases by using this \texttt{rake} command.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ rake db:create
+\end{lstlisting}
+\end{minipage}
+
+\section{Install Puma}
+
+Puma is an application server that enables your Rails application
+to process requests concurrently.
+
+An easy way to do this is to add it to your application's \texttt{Gemfile}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ vim Gemfile
+\end{lstlisting}
+\end{minipage}
+
+At the end of the file, add the Puma gem with this line.
+
+\begin{minipage}{\linewidth}
+  \begin{lstlisting}[language=ruby, caption={Gemfile}]
+gem 'puma'
+\end{lstlisting}
+\end{minipage}
+
+Save and exit. To install Puma, and any outstanding dependencies, run Bundler.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ bundle
+\end{lstlisting}
+\end{minipage}
+
+Puma is now installed, but we need to configure it.
+
+\section{Configure Puma}
+
+Before configuring Puma, you should look up the number of CPU cores
+your server has. You can easily to that with this command.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ grep -c processor /proc/cpuinfo
+\end{lstlisting}
+\end{minipage}
+
+Now, let's add our Puma configuration to \texttt{config/puma.rb}.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ vim config/puma.rb
+\end{lstlisting}
+\end{minipage}
+
+Use this Puma configuration.
+
+\begin{minipage}{\linewidth}
+  \begin{lstlisting}[language=ruby, caption={config/puma.rb}]
+# Change to match your CPU core count
+workers 2
+
+# Min and Max threads per worker
+threads 1, 6
+
+app_dir = File.expand_path("../..", __FILE__)
+shared_dir = "#{app_dir}/shared"
+
+# Default to production
+rails_env = ENV['RAILS_ENV'] || "production"
+environment rails_env
+
+# Set up socket location
+bind "unix://#{shared_dir}/sockets/puma.sock"
+
+# Logging
+stdout_redirect "#{shared_dir}/log/puma.stdout.log", "#{shared_dir}/log/puma.stderr.log", true
+
+# Set master PID and state locations
+pidfile "#{shared_dir}/pids/puma.pid"
+state_path "#{shared_dir}/pids/puma.state"
+activate_control_app
+
+on_worker_boot do
+  require "active_record"
+  ActiveRecord::Base.connection.disconnect! rescue ActiveRecord::ConnectionNotEstablished
+  ActiveRecord::Base.establish_connection(
+    YAML.load_file("#{app_dir}/config/database.yml")[rails_env])
+end
+\end{lstlisting}
+\end{minipage}
+
+Change the number of workers to the number of CPU cores of your server.
+Then save and exit.
+
+Now create the directories that were referred to in the configuration file.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ mkdir -p shared/pids shared/sockets shared/log
+\end{lstlisting}
+\end{minipage}
+
+\section{Create Puma Upstart Script}
+
+Create an Upstart init script so we can easily start and stop Puma,
+and ensure that it will start on boot.
+Download the Jungle Upstart tool from the Puma GitHub repository
+to your home directory
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ cd ~
+remote$ wget https://raw.githubusercontent.com/puma/puma/master/
+  tools/jungle/upstart/puma-manager.conf
+remote$ wget https://raw.githubusercontent.com/puma/puma/master/
+  tools/jungle/upstart/puma.conf
+\end{lstlisting}
+\end{minipage}
+
+Now open the provided \texttt{puma.conf} file,
+so we can configure the Puma deployment user.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ vim puma.conf
+\end{lstlisting}
+\end{minipage}
+
+Look for the two lines that specify setuid and setgid, and replace \texttt{apps}
+with the name of your deployment user and group. For example,
+if your deployment user is called \texttt{demo}, the lines should look like this.
+
+\begin{minipage}{\linewidth}
+  \begin{lstlisting}[language=bash, caption={puma.conf}]
+setuid demo
+setgid demo
+\end{lstlisting}
+\end{minipage}
+
+Save and exit.
+Now copy the scripts to the Upstart services directory:
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ sudo cp puma.conf puma-manager.conf /etc/init
+\end{lstlisting}
+\end{minipage}
+
+The \texttt{puma-manager.conf} script references \texttt{/etc/puma.conf}
+for the applications that it should manage.
+Let's create and edit that inventory file now.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ sudo vim /etc/puma.conf
+\end{lstlisting}
+\end{minipage}
+
+Each line in this file should be the path to an application that you
+want \texttt{puma-manager} to manage.
+Add the path to your application now.
+
+\begin{minipage}{\linewidth}
+  \begin{lstlisting}[language=bash, caption={/etc/puma.conf}]
+/home/demo/dmsc1407
+\end{lstlisting}
+\end{minipage}
+
+Save and exit. Now your application is configured to start at boot time,
+through Upstart. This means that your application will start even after
+your server is rebooted.
+
+To start all of your managed Puma apps now, run this command.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ sudo start puma-manager
+\end{lstlisting}
+\end{minipage}
+
+Now your Rails application's production environment is running under Puma,
+and it's listening on the \texttt{shared/sockets/puma.sock} socket.
+Before your application will be accessible to an outside user,
+you must set up the Nginx reverse proxy.
+
+\section{Install and Configure Nginx}
+
+As Puma is not designed to be accessed by users directly,
+we will use Nginx as a reverse proxy
+that will buffer requests and responses between
+users and your Rails application.
+
+Install Nginx using apt-get.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ sudo apt-get install nginx
+\end{lstlisting}
+\end{minipage}
+
+Now open the default server block.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ sudo vim /etc/nginx/sites-available/default
+\end{lstlisting}
+\end{minipage}
+
+Replace the contents of the file with the following code block.
+Be sure to replace the the \texttt{demo} and \texttt{dmsc1407} parts
+with the appropriate username and application name.
+
+\begin{minipage}{\linewidth}
+  \begin{lstlisting}[language=bash, caption={/etc/nginx/sites-available/default}]
+upstream app {
+  # Path to Puma SOCK file, as defined previously
+  server unix:/home/demo/dmsc1407/shared/sockets/puma.sock fail_timeout=0;
+}
+
+server {
+  listen 80;
+  server_name localhost;
+
+  root /home/demo/dmsc1407/public;
+
+  try_files $uri/index.html $uri @app;
+
+  location @app {
+    proxy_pass http://app;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_redirect off;
+  }
+
+  error_page 500 502 503 504 /500.html;
+  client_max_body_size 4G;
+  keepalive_timeout 10;
+}
+\end{lstlisting}
+\end{minipage}
+
+Save and exit. This configures Nginx as a reverse proxy, so HTTP requests
+get forwarded to the Puma application server via a Unix socket.
+
+Restart Nginx to put the changes into effect.
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[language=bash]
+remote$ sudo service nginx restart
+\end{lstlisting}
+\end{minipage}
+
+\section{Finish}
+
+You have deployed the production environment of your Ruby on Rails application using Nginx and Puma.
+Now the your Rails application is accessible via your server's public IP address
+or domain name.
