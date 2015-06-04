@@ -25,12 +25,12 @@ Consider these following examples.
 
 \begin{itemize}
   \item SM\textbf{I}TH $\rightarrow$ SM\textbf{Y}TH \\
-    the minimum operation to change is 1, which is to substitute \emph{I} to
-    \emph{Y}, therefore Levenshtein distance for these two strings is 1.
+    the minimum operation to change is 1, which is to substitute `I' to
+    `Y', therefore Levenshtein distance for these two strings is 1.
   \item GOWAN $\rightarrow$ \textbf{MC}GOWAN \\
-    2 insertions of \emph{M} and \emph{C} is required.
+    2 insertions of `M' and `C' is required.
   \item SM\textbf{I}TH\textbf{E} $\rightarrow$ SM\textbf{Y}TH \\
-    1 deletion of \emph{e} and 1 substitution of \emph{i} to \emph{y} are required.
+    1 deletion of `E' and 1 substitution of `I' to `Y' are required.
 \end{itemize}
 
 The implementation used in the project is done by \citet{textgem}\footnote{levenshtein.rb}.
@@ -185,7 +185,7 @@ these steps.
 
 For example, \emph{similarity score} between `SMITH' and `SPEED',
 which soundexes are \texttt{S530} and \texttt{S130} respectively,
-is 0.75 (1 substitution from \emph{5} to \emph{1}, so 1 difference of length 4).
+is 0.75 (1 substitution from `5' to `1', so 1 difference of length 4).
 
 The code of this soundex \emph{similarity score} is as in listing \ref{lst:sds}.
 
@@ -208,10 +208,10 @@ characteristics of Irish names and normalised them to modern names.
 This algorithm also follows \citeauthor{adamw}\textquotesingle s
 \emph{Irish soundex}\footnote{\cite{adamw} Appendix 3.}.
 
-Irish names might contain some prefix, e.g. \emph{Mc} or \emph{O},
+Irish names might contain some prefix, e.g. `Mc' or `O',
 which are obstructive to soundex result. These prefixes are to be
-discarded. Moreover, there is no initial soft \emph{C} in Irish names,
-instead \emph{K} is used. So the first letter \emph{C} is changed to \emph{K}.
+discarded. Moreover, there is no initial soft `C' in Irish names,
+instead `K' is used. So the first letter `C' is changed to `K'.
 It is implemented as in listing \ref{lst:irishsoundex}.
 
 \begin{minipage}{\linewidth}
@@ -268,8 +268,8 @@ In this section, we will consider the names as strings input.
 So the term \emph{string} will be used in consistent with
 previous sections.
 
-For example, considering the string \emph{ACHESON}, this string
-belongs to two groups, 4 and 42. So \emph{ACHESON} will have
+For example, considering the string `ACHESON', this string
+belongs to two groups, 4 and 42. So `ACHESON' will have
 2 records in the database. One with reference to group 4
 and another with reference to group 42.
 
@@ -281,13 +281,13 @@ Next, let us consider group 4 and 42.
 \end{quotation}
 
 By combining two groups together, these are all possible strings
-that match \emph{ACHESON} according to Matheson\textquotesingle s classification.
+that match `ACHESON' according to Matheson\textquotesingle s classification.
 
 Now is the process to match two strings using Lookup table,
-suppose two strings are \emph{ACHESON} and \emph{ATKINS}.
+suppose two strings are `ACHESON' and `ATKINS'.
 
 \begin{enumerate}
-  \item Find references of \emph{ACHESON}. We get references for group 4 and 42.
+  \item Find references of `ACHESON'. We get references for group 4 and 42.
     Note the use of \texttt{pluck} method to select reference attribute (\texttt{ref})
     here\footnote{Use pluck as a shortcut to select one or more attributes
       without loading a bunch of records just to grab the attributes you want.
@@ -296,7 +296,7 @@ suppose two strings are \emph{ACHESON} and \emph{ATKINS}.
     LookupTableRecord.where(:name => 'ACHESON').pluck(:ref)
     => [4, 42]
     \end{lstlisting}
-  \item Find reference to matching string \emph{ATKINS} and also specify
+  \item Find reference to matching string `ATKINS' and also specify
     the reference groups from step 1. If there is no match \texttt{where} method
     will return empty array. \texttt{present?} method is used to
     check the result if it is not empty\footnote{\url{http://api.rubyonrails.org/classes/Object.html\#method-i-present-3F}}.
@@ -307,8 +307,8 @@ suppose two strings are \emph{ACHESON} and \emph{ATKINS}.
     By specifying both matching string and references group, we can ensure
     the matching name is also in the one of the same reference group
     of the base name. In this case, we conclude that there is a match
-    between \emph{ACHESON} and \emph{ATKINS} via group 4 or 42
-    (or more specifically, 42, because \emph{ATKINS} belongs to group 41 and 42).
+    between `ACHESON' and `ATKINS' via group 4 or 42
+    (or more specifically, 42, because `ATKINS' belongs to group 41 and 42).
 \end{enumerate}
 
 If a reference is found on both steps, \emph{similarity score} for lookup table
