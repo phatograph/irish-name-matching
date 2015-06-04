@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '2.2.1'
-gem 'rails', '4.2.0'
+ruby '2.1.5'
+gem 'rails', '4.1.8'
 gem 'pg'
 
 gem 'text'
@@ -21,7 +21,7 @@ gem 'autoprefixer-rails'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
-  gem 'spring'
+  # gem 'spring'
 end
 
 group :development do
