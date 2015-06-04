@@ -21,41 +21,26 @@ It uses a person\textquotesingle s name as a reference to link that
 person\textquotesingle s information between many documents. With patience,
 a more complete information about that person can be obtained.
 
-% Apparently linking or matching person\textquotesingle s name is important in the process.
-% Unfortunately, in the 19\textsuperscript{th} century, in Ireland, there was no standard
-% of the spelling of names, handwriting could be difficult to read
-% and contractions or abbreviations were often used. Many people were not literate,
-% so they asked literate people to write their names.
-% This way even names with the same pronounciation and for the same individual
-% could be written in many different ways, depending on who wrote them.
-%
-% In addition to the various ways of spelling one\textquotesingle s name,
-% people from this time also often use Irish names which equivalent to modern names,
-% for example, Irish version of `Smith' could be `Gowan'.
-% There are also some Irish prefixes like `O\textquotesingle', `M\textquotesingle', `Mac',
-% etc. When combined together this would result in `O\textquotesingle Gowan' or
-% `M\textquotesingle Gowen', and so on.
-%
-% At present time, when historical researchers try to trace people back
-% using historical records, they would encounter this problem of
-% name variations.
-%
-% Various solutions have been created to find
-% matching different names that refer to the same person. However,
-% for our extent knowledge, there is yet no public system which encodes
-% those solutions together and provides a service of name matching.
-% This project is to create one system to archieve this.
-%
-% We successfully developed an extensible web service system to match names.
-% The system is initially encoded with 4 matching algorithms,
-% Levenshtein distance, soundex, Irish soundex, and lookup table.
-% We also present a web interface for a client to use the system
-% from the web browser.
-%
-% The system is designed to be extended with simple inheritance, thus developer
-% can understand and develop further algorithm easily. In early state
-% simple design is enough to serve the purpose, so we follow the
-% \emph{Kiss principle}.
+Apparently linking or matching person\textquotesingle s name is important in the process.
+Unfortunately, in the 19\textsuperscript{th} century, in Ireland, there was no standard
+of the spelling of names, handwriting could be difficult to read
+and contractions or abbreviations were often used. The names with the same
+pronounciation and for the same individual could be written in many different ways.
+Moreover, Irish names which equivalent to modern names
+were used, for example, Irish version of `Smith' could be `Gowan'.
+
+To handle these name variations, various solutions have been created to find
+matching different names that refer to the same person. However,
+for our extent knowledge, there is yet no public system which encodes
+those solutions together and provides a service of name matching.
+This project is to create one system to archieve this.
+
+We developed a web service system using Ruby on Rails framework
+to archieve our goal. The system is initially encoded with 4 matching algorithms,
+Levenshtein distance, soundex, Irish soundex, and lookup table.
+We also present a web interface for a client to use the system
+from the web browser. It is designed to be simple and extensible from using
+inheritance.
 
 \endgroup
 \vfill
