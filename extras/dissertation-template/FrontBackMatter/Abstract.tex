@@ -29,19 +29,28 @@ and contractions or abbreviations were often used. The names with the same
 pronunciation and for the same individual could be written in many different ways.
 Moreover, names in the Irish language which are equivalent to English names
 were used, for example, Irish version of `Smith' could be `Gowan'.
+A further complication is that historical  and genealogical research often
+requires large quantities of names to be matched.
 
 To handle these name variations, various solutions have been created to find
 matching different names that refer to the same person. However,
 for our extent knowledge, there is yet no public system which encodes
-those solutions together and provides a service of name matching.
-This project is to create one system to achieve this.
-
-We developed a web service system using Ruby on Rails framework
+those solutions together and provides a service of bulk name matching.
+Thus, we developed a web service system using Ruby on Rails framework
 to achieve our goal. The system is initially encoded with 4 matching algorithms,
 Levenshtein distance, soundex, Irish soundex, and lookup table.
 We also present a web interface for a client to use the system
 from the web browser. It is designed to be simple and extensible from using
 inheritance.
+
+The system performs matchings on large quantities of names in a reasonable time.
+We test our system with 12,944 name matchings and the result were completed
+in no more than half a minute (28,786 milliseconds, to be precise).
+However, the system consumes a large amount of memory (around 373 megabytes).
+We believe that, with proper optimisation, we would reduce the memory usage
+along with a shortened processing time. Further matching algorithms could also
+be implemented for names in other languages, so that it can handle
+a broader domain of names.
 
 \endgroup
 \vfill

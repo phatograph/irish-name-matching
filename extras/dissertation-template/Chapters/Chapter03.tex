@@ -1,7 +1,8 @@
 \chapter{Name matching algorithms}
 \label{ch:nma}
 
-This chapter describes the details how the project is implemented.
+This chapter describes the details how matching algorithms
+in the project are implemented.
 Note that algorithms and codes listed here are written in Ruby programming language,
 which is the main language of the project.
 
@@ -43,7 +44,7 @@ is 2, compare 2 to length of the longer string, `SMITHE', which is 6.
 So the \emph{similarity score} of these two strings are $6 - (2 / 6) = 0.667$.
 
 The code of this algorithm is as in listing \ref{lst:leven}, note that
-\texttt{\@name} and \texttt{@base\_name.name} are two strings to be matched.
+\texttt{@name} and \texttt{@base\_name.name} are two strings to be matched.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[label={lst:leven}, caption={Levenshtein distance implementation.}]

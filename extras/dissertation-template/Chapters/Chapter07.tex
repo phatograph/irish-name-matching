@@ -7,19 +7,19 @@ Levenshtein distance, soundex, Irish soundex, and lookup table.
 We also present a web interface for a client to use the system
 from the web browser.
 
-The system is designed to be extended with simple inheritance, thus developer
+The system is designed to be extended with simple inheritance, thus a developer
 can understand and develop further algorithm easily. In early state
 simple design is enough to serve the purpose, so we follow the
 \emph{Kiss principle} \cite[]{kiss}.
 
-However, we have encountered some problem, also there are still many rooms
-for future works. We will describe these in following sections.
+However, we have encountered some problem, also there are still much room
+for future works. We will describe these in the following sections.
 
 \section{Encountered problem}
 
 The major problem is that the current system takes too long to process
-and also use too much memory. It has not been properly optimised
-in term of performance. These following techniques might improve
+and also uses too much memory. It has not been properly optimised
+in terms of performance. These following techniques might improve
 our system furthermore.
 
 \subsection{Memoization}
@@ -37,7 +37,7 @@ thus shorten response time and lower memory usage.
 \subsection{find\_in\_batches}
 Matching large amount of name causes high memory consumption and may lead to
 out of memory situlation, especially in environment which memory are crucial
-and expensive such as remote server.
+and expensive such as on a remote server.
 
 Rails provides \texttt{find\_in\_batches} which operates an array in batches,
 thus greatly reducing memory consumption \cite[]{fib}. We can apply
@@ -61,7 +61,7 @@ for upcoming features of the system.
 \subsection{More phonetic algorithms}
 
 A phonetic algorithm \cite[]{phonea} indexes words by their pronunciation.
-Soundex is also one of them. We can implement more matching algorithms
+Soundex is one of them. We can implement more matching algorithms
 based on them. For example, Kolner Phonetik \cite[]{kolner} is similar to
 soundex and works well on German words. Daitch-Mokotoff soundex \cite[]{dms}
 is an improved soundex working well to match surnames of Slavic and Germanic origin.

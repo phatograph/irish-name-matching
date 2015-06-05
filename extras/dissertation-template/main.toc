@@ -4,68 +4,68 @@
 \contentsline {part}{i\hspace {1em}\spacedlowsmallcaps {The Background}}{1}{part.1}
 \contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{2}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Research Questions}{3}{section.1.2}
+\contentsline {section}{\numberline {1.2}Research Questions}{4}{section.1.2}
 \contentsline {section}{\numberline {1.3}Objective and Aims}{4}{section.1.3}
 \contentsline {section}{\numberline {1.4}Report Structure}{4}{section.1.4}
-\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Related Work}}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Name matching}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Edit distance}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Soundex}{5}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Lookup Table}{6}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Web service}{6}{section.2.2}
-\contentsline {section}{\numberline {2.3}Extensible framework}{7}{section.2.3}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Solution}}{8}{part.2}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Name matching algorithms}}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Levenshtein distance}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Soundex}{10}{section.3.2}
-\contentsline {section}{\numberline {3.3}Irish soundex}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}Lookup table}{14}{section.3.4}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Architecture}}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Initial idea}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Weighting matching algorithms}{18}{section.4.2}
-\contentsline {section}{\numberline {4.3}Actual system}{19}{section.4.3}
-\contentsline {section}{\numberline {4.4}Thresholding the results}{20}{section.4.4}
-\contentsline {section}{\numberline {4.5}Data flow}{21}{section.4.5}
-\contentsline {section}{\numberline {4.6}MVC}{21}{section.4.6}
-\contentsline {section}{\numberline {4.7}Web Service}{23}{section.4.7}
-\contentsline {section}{\numberline {4.8}Web Interface}{25}{section.4.8}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Extending the system}}{28}{chapter.5}
-\contentsline {section}{\numberline {5.1}Matching algorithms inheritance}{28}{section.5.1}
-\contentsline {section}{\numberline {5.2}Exporting a class method}{30}{section.5.2}
-\contentsline {section}{\numberline {5.3}Implementing new matching algorithms}{32}{section.5.3}
-\contentsline {part}{iii\hspace {1em}\spacedlowsmallcaps {The Outcome}}{35}{part.3}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Evaluation}}{36}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introducing standard name list}{36}{section.6.1}
-\contentsline {section}{\numberline {6.2}Test environment setup}{38}{section.6.2}
-\contentsline {section}{\numberline {6.3}Response speed}{39}{section.6.3}
-\contentsline {section}{\numberline {6.4}Memory usage}{40}{section.6.4}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Conclusion}}{41}{chapter.7}
-\contentsline {section}{\numberline {7.1}Encountered problem}{41}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Memoization}{41}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}find\_in\_batches}{41}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Replace RDBMS with NoSQL}{42}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Future works}{42}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}More phonetic algorithms}{42}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Inheritance for similar matching algorithms}{42}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Improve web interface result}{43}{subsection.7.2.3}
-\contentsline {part}{iv\hspace {1em}\spacedlowsmallcaps {Appendix}}{45}{part.4}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {How to deploy the system on Ubuntu server}}{46}{appendix.A}
-\contentsline {section}{\numberline {A.1}Root Login}{46}{section.A.1}
-\contentsline {section}{\numberline {A.2}Create a new user}{46}{section.A.2}
-\contentsline {section}{\numberline {A.3}Root Privileges}{47}{section.A.3}
-\contentsline {section}{\numberline {A.4}Install rbenv}{47}{section.A.4}
-\contentsline {section}{\numberline {A.5}Install Ruby}{48}{section.A.5}
-\contentsline {section}{\numberline {A.6}Install Rails}{49}{section.A.6}
-\contentsline {section}{\numberline {A.7}Install Javascript Runtime}{49}{section.A.7}
-\contentsline {section}{\numberline {A.8}Install PostgreSQL}{49}{section.A.8}
-\contentsline {section}{\numberline {A.9}Create Database User}{50}{section.A.9}
-\contentsline {section}{\numberline {A.10}Get the system code}{50}{section.A.10}
-\contentsline {section}{\numberline {A.11}Configure Database Connection}{50}{section.A.11}
-\contentsline {section}{\numberline {A.12}Create Application Databases}{51}{section.A.12}
-\contentsline {section}{\numberline {A.13}Install Puma}{51}{section.A.13}
-\contentsline {section}{\numberline {A.14}Configure Puma}{51}{section.A.14}
-\contentsline {section}{\numberline {A.15}Create Puma Upstart Script}{53}{section.A.15}
-\contentsline {section}{\numberline {A.16}Install and Configure Nginx}{54}{section.A.16}
-\contentsline {section}{\numberline {A.17}Finish}{56}{section.A.17}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Related Work}}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Name matching}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Edit distance}{6}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Soundex}{6}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Lookup Table}{7}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Web service}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Extensible framework}{8}{section.2.3}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Solution}}{9}{part.2}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Name matching algorithms}}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Levenshtein distance}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Soundex}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Irish soundex}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}Lookup table}{15}{section.3.4}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Architecture}}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}Initial idea}{18}{section.4.1}
+\contentsline {section}{\numberline {4.2}Weighting matching algorithms}{19}{section.4.2}
+\contentsline {section}{\numberline {4.3}Actual system}{20}{section.4.3}
+\contentsline {section}{\numberline {4.4}Thresholding the results}{21}{section.4.4}
+\contentsline {section}{\numberline {4.5}Data flow}{22}{section.4.5}
+\contentsline {section}{\numberline {4.6}MVC}{22}{section.4.6}
+\contentsline {section}{\numberline {4.7}Web Service}{24}{section.4.7}
+\contentsline {section}{\numberline {4.8}Web Interface}{26}{section.4.8}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Extending the system}}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Matching algorithms inheritance}{29}{section.5.1}
+\contentsline {section}{\numberline {5.2}Exporting a class method}{31}{section.5.2}
+\contentsline {section}{\numberline {5.3}Implementing new matching algorithms}{33}{section.5.3}
+\contentsline {part}{iii\hspace {1em}\spacedlowsmallcaps {The Outcome}}{36}{part.3}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Evaluation}}{37}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introducing standard name list}{37}{section.6.1}
+\contentsline {section}{\numberline {6.2}Test environment setup}{39}{section.6.2}
+\contentsline {section}{\numberline {6.3}Response speed}{40}{section.6.3}
+\contentsline {section}{\numberline {6.4}Memory usage}{41}{section.6.4}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Conclusion}}{42}{chapter.7}
+\contentsline {section}{\numberline {7.1}Encountered problem}{42}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Memoization}{42}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}find\_in\_batches}{42}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Replace RDBMS with NoSQL}{43}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Future works}{43}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}More phonetic algorithms}{43}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Inheritance for similar matching algorithms}{43}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Improve web interface result}{44}{subsection.7.2.3}
+\contentsline {part}{iv\hspace {1em}\spacedlowsmallcaps {Appendix}}{46}{part.4}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {How to deploy the system on Ubuntu server}}{47}{appendix.A}
+\contentsline {section}{\numberline {A.1}Root Login}{47}{section.A.1}
+\contentsline {section}{\numberline {A.2}Create a new user}{47}{section.A.2}
+\contentsline {section}{\numberline {A.3}Root Privileges}{48}{section.A.3}
+\contentsline {section}{\numberline {A.4}Install rbenv}{48}{section.A.4}
+\contentsline {section}{\numberline {A.5}Install Ruby}{49}{section.A.5}
+\contentsline {section}{\numberline {A.6}Install Rails}{50}{section.A.6}
+\contentsline {section}{\numberline {A.7}Install Javascript Runtime}{50}{section.A.7}
+\contentsline {section}{\numberline {A.8}Install PostgreSQL}{50}{section.A.8}
+\contentsline {section}{\numberline {A.9}Create Database User}{51}{section.A.9}
+\contentsline {section}{\numberline {A.10}Get the system code}{51}{section.A.10}
+\contentsline {section}{\numberline {A.11}Configure Database Connection}{51}{section.A.11}
+\contentsline {section}{\numberline {A.12}Create Application Databases}{52}{section.A.12}
+\contentsline {section}{\numberline {A.13}Install Puma}{52}{section.A.13}
+\contentsline {section}{\numberline {A.14}Configure Puma}{52}{section.A.14}
+\contentsline {section}{\numberline {A.15}Create Puma Upstart Script}{54}{section.A.15}
+\contentsline {section}{\numberline {A.16}Install and Configure Nginx}{55}{section.A.16}
+\contentsline {section}{\numberline {A.17}Finish}{57}{section.A.17}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{57}{dummy.7}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{58}{dummy.7}

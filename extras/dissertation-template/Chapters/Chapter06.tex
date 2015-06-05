@@ -1,9 +1,9 @@
 \chapter{Evaluation}
 \label{ch:evaluation}
 
-After we finished implementing our system, we began to evaluate our system
-in terms of performances of response speed and memory usage. To evaluate
-the system, we need some decent amount of sample data, so here we
+After finishing implementing our system, we began to evaluate it
+in terms of performance of response speed and memory usage. To evaluate
+the system, we need a large amount of sample data, so here we
 introduce the standard name list.
 
 \section{Introducing standard name list}
@@ -56,12 +56,12 @@ to use the standard list, as shown in figure \ref{fig:wi_std}.
 \end{figure}
 
 Using a standard name list option generates many results.
-Client is suggested also specify a proper threshold (section \ref{sec:threshold})
+Clients are allowed to specify a threshold (section \ref{sec:threshold})
 to discard irreverent results.
 
 In listing \ref{lst:json_std_out} is a result of matching between
 \emph{base name} `MONAHAN' and the standard name list, using threshold as 0.9.
-Results' detailed scores are truncated for readability.
+The results' detailed scores are truncated for readability.
 
 \begin{minipage}{\linewidth}
   \begin{lstlisting}[language={json}, label={lst:json_std_out}, caption={Results of matching \emph{base name} `MONAHAN' with a standard name list.}]
@@ -186,7 +186,7 @@ is tested separately first and then altogether at last.
 Listing \ref{lst:resp_json} is still our \texttt{JSON} setup for response speed
 testing. Matching algorithms are varies between each scenario
 and all are using default weights. Table \ref{table:mem_res} shows
-the test result in memory usage aspect.
+the test results regarding memory usage.
 
 \begin{table}[H]
   \myfloatalign
@@ -208,5 +208,5 @@ the test result in memory usage aspect.
 \end{table}
 
 From the results, memory usage for each algorithm follows response speed fashion.
-Levenshtein distance and two soundexes use much less memory
-compared to lookup table.
+Levenshtein distance and two soundexes use much less memory hungry
+compared to the lookup table.
