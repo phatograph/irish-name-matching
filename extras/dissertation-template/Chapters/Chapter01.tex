@@ -2,20 +2,20 @@
 \label{ch:introduction}
 
 This project contains some backgrounds which are not part of computer science.
-Here introduces adequate information in order to help getting start.
+Here we introduce adequate information in order to introduce the area.
 
 \section{Motivation}
 
 The first civil registration in Ireland was performed on 1864 \cite[]{irishregistration}.
-Before that time census meterials were mostly lost or incomplete. So genealogical researches
-need to rely on parish records and also some `census substitute' documents,
+Before that time census meterials were mostly lost or incomplete. So genealogical research
+needs to rely on parish records and also some `census substitute' documents,
 such as land ownership and tenancy records\footnote{\cite[]{adamw} section 1.1}.
 
 However, for these documents, each of them usually does not contain enough
-information to identify individuals. Some of them contains name and address,
-whereas others might contain only name. In order to fulfil missing information
-of one individual that scattered among many documents, \emph{Record linkage}
-is one method to do so.
+information to identify individuals. Some of them contains a name and address,
+whereas others might contain only a name. In order to find missing information
+about one individual scattered among many documents, \emph{Record linkage}
+is one method used.
 
 \graffito{``Record linkage is used in historical research, social studies,
 marketing, administration and government as well as in genealogy'' \\
@@ -26,24 +26,25 @@ person\textquotesingle s information between many documents.
 Together with other coherant attributes to ensure the link is correct, a
 more complete information about that person can be obtained.
 
-In addition, this is not only just for one person. We can assume the relationship
+In addition, this is not only just for one person in isolation. We can find the relationship
 of the person to others that might be close to, and apply the information
 to those people as well. For example, if we know that there is a record
 that is believed to consist of people from the same area in each page \cite[]{morpeth}
-(but no area or address is mentioned, or some is missing in the page). And we can find
+(but no area or address is mentioned, or some is missing in the page), and we can find
 one or more person\textquotesingle s addresses in that page by using record linkage.
 We might be able to apply those addresses to all people in that page as well.
 
-Apparently linking or matching person\textquotesingle s name is important in the process.
+Therefore linking or matching a person\textquotesingle s name is important in the process.
 Unfortunately, in the 19\textsuperscript{th} century, in Ireland, there was no standard
-of the spelling of names, handwriting could be difficult to read
+spelling of most names, handwriting could be difficult to read
 and contractions or abbreviations were often used. Many people were not literate,
 so they asked literate people to write their names.
-This way even names with the same pronounciation and for the same individual
+So even names with the same pronounciation and for the same individual
 could be written in many different ways, depending on who wrote them.
 
 In addition to the various ways of spelling one\textquotesingle s name,
-people from this time also often use Irish names which equivalent to modern names,
+people from this time also often use names in the Irish language
+which are equivalent to English names,
 for example, Irish version of `Smith' could be `Gowan'.
 There are also some Irish prefixes like `O\textquotesingle', `M\textquotesingle', `Mac',
 etc. When combined together this would result in `O\textquotesingle Gowan' or
@@ -68,11 +69,15 @@ At present time, when historical researchers try to trace people back
 using historical records, they would encounter this problem of
 name variations.
 
+Also historic sources contain large quantities of names and
+matching the names from these sources to link records is
+very time consuming.
+
 Various solutions have been created to find
 matching different names that refer to the same person. However,
 for our extent knowledge, there is yet no public system which encodes
 those solutions together and provides a service of name matching.
-This project is to create one system to archieve this.
+This project is to create one system to achieve this.
 
 \section{Research Questions}
 \label{sec:rq}
