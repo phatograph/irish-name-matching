@@ -210,3 +210,23 @@ the test results regarding memory usage.
 From the results, memory usage for each algorithm follows response speed fashion.
 Levenshtein distance and two soundexes use much less memory hungry
 compared to the lookup table.
+
+\section{Dependability}
+
+We consider 5 software dependability attributes \cite[]{dependability}
+of our system as follow.
+
+\begin{description}
+  \item[Availability:] The system is available 24x7 on a virtual private server.
+  \item[Reliability:] We ensure that the result from web service and
+    web interface are always exactly the same. From our evaluation
+    the system generates the results in a reasonable time. Memory
+    consumption is acceptable but also needs to be monitor further.
+  \item[Safety:] Current state of the system does not consider on heavy
+    security aspect. We would leave this attribute for the future works.
+  \item[Integrity:] We have a solid backup of the standard name list
+    (section \ref{sec:stdname}) which can be regenerated anytime.
+    In future work we also consider a proper database backup solution.
+  \item[Maintainability:] The system welcomes maintenance and extension
+    as we describe in detail in chapter \ref{ch:extending}.
+\end{description}

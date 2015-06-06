@@ -44,32 +44,33 @@
 \BOOKMARK [1][-]{section.6.2}{6.2 Test environment setup}{chapter.6}% 44
 \BOOKMARK [1][-]{section.6.3}{6.3 Response speed}{chapter.6}% 45
 \BOOKMARK [1][-]{section.6.4}{6.4 Memory usage}{chapter.6}% 46
-\BOOKMARK [0][]{chapter.7}{7 Conclusion}{part.3}% 47
-\BOOKMARK [1][-]{section.7.1}{7.1 Encountered problem}{chapter.7}% 48
-\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Memoization}{section.7.1}% 49
-\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 find\137in\137batches}{section.7.1}% 50
-\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 Replace RDBMS with NoSQL}{section.7.1}% 51
-\BOOKMARK [1][-]{section.7.2}{7.2 Future works}{chapter.7}% 52
-\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 More phonetic algorithms}{section.7.2}% 53
-\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Inheritance for similar matching algorithms}{section.7.2}% 54
-\BOOKMARK [2][-]{subsection.7.2.3}{7.2.3 Improve web interface result}{section.7.2}% 55
-\BOOKMARK [-1][]{part.4}{Appendix}{}% 56
-\BOOKMARK [0][]{appendix.A}{A How to deploy the system on Ubuntu server}{part.4}% 57
-\BOOKMARK [1][-]{section.A.1}{A.1 Root Login}{appendix.A}% 58
-\BOOKMARK [1][-]{section.A.2}{A.2 Create a new user}{appendix.A}% 59
-\BOOKMARK [1][-]{section.A.3}{A.3 Root Privileges}{appendix.A}% 60
-\BOOKMARK [1][-]{section.A.4}{A.4 Install rbenv}{appendix.A}% 61
-\BOOKMARK [1][-]{section.A.5}{A.5 Install Ruby}{appendix.A}% 62
-\BOOKMARK [1][-]{section.A.6}{A.6 Install Rails}{appendix.A}% 63
-\BOOKMARK [1][-]{section.A.7}{A.7 Install Javascript Runtime}{appendix.A}% 64
-\BOOKMARK [1][-]{section.A.8}{A.8 Install PostgreSQL}{appendix.A}% 65
-\BOOKMARK [1][-]{section.A.9}{A.9 Create Database User}{appendix.A}% 66
-\BOOKMARK [1][-]{section.A.10}{A.10 Get the system code}{appendix.A}% 67
-\BOOKMARK [1][-]{section.A.11}{A.11 Configure Database Connection}{appendix.A}% 68
-\BOOKMARK [1][-]{section.A.12}{A.12 Create Application Databases}{appendix.A}% 69
-\BOOKMARK [1][-]{section.A.13}{A.13 Install Puma}{appendix.A}% 70
-\BOOKMARK [1][-]{section.A.14}{A.14 Configure Puma}{appendix.A}% 71
-\BOOKMARK [1][-]{section.A.15}{A.15 Create Puma Upstart Script}{appendix.A}% 72
-\BOOKMARK [1][-]{section.A.16}{A.16 Install and Configure Nginx}{appendix.A}% 73
-\BOOKMARK [1][-]{section.A.17}{A.17 Finish}{appendix.A}% 74
-\BOOKMARK [0][]{dummy.7}{Bibliography}{part.4}% 75
+\BOOKMARK [1][-]{section.6.5}{6.5 Dependability}{chapter.6}% 47
+\BOOKMARK [0][]{chapter.7}{7 Conclusion}{part.3}% 48
+\BOOKMARK [1][-]{section.7.1}{7.1 Encountered problem}{chapter.7}% 49
+\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Memoization}{section.7.1}% 50
+\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 find\137in\137batches}{section.7.1}% 51
+\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 Replace RDBMS with NoSQL}{section.7.1}% 52
+\BOOKMARK [1][-]{section.7.2}{7.2 Future works}{chapter.7}% 53
+\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 More phonetic algorithms}{section.7.2}% 54
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Inheritance for similar matching algorithms}{section.7.2}% 55
+\BOOKMARK [2][-]{subsection.7.2.3}{7.2.3 Improve web interface result}{section.7.2}% 56
+\BOOKMARK [-1][]{part.4}{Appendix}{}% 57
+\BOOKMARK [0][]{appendix.A}{A How to deploy the system on Ubuntu server}{part.4}% 58
+\BOOKMARK [1][-]{section.A.1}{A.1 Root Login}{appendix.A}% 59
+\BOOKMARK [1][-]{section.A.2}{A.2 Create a new user}{appendix.A}% 60
+\BOOKMARK [1][-]{section.A.3}{A.3 Root Privileges}{appendix.A}% 61
+\BOOKMARK [1][-]{section.A.4}{A.4 Install rbenv}{appendix.A}% 62
+\BOOKMARK [1][-]{section.A.5}{A.5 Install Ruby}{appendix.A}% 63
+\BOOKMARK [1][-]{section.A.6}{A.6 Install Rails}{appendix.A}% 64
+\BOOKMARK [1][-]{section.A.7}{A.7 Install Javascript Runtime}{appendix.A}% 65
+\BOOKMARK [1][-]{section.A.8}{A.8 Install PostgreSQL}{appendix.A}% 66
+\BOOKMARK [1][-]{section.A.9}{A.9 Create Database User}{appendix.A}% 67
+\BOOKMARK [1][-]{section.A.10}{A.10 Get the system code}{appendix.A}% 68
+\BOOKMARK [1][-]{section.A.11}{A.11 Configure Database Connection}{appendix.A}% 69
+\BOOKMARK [1][-]{section.A.12}{A.12 Create Application Databases}{appendix.A}% 70
+\BOOKMARK [1][-]{section.A.13}{A.13 Install Puma}{appendix.A}% 71
+\BOOKMARK [1][-]{section.A.14}{A.14 Configure Puma}{appendix.A}% 72
+\BOOKMARK [1][-]{section.A.15}{A.15 Create Puma Upstart Script}{appendix.A}% 73
+\BOOKMARK [1][-]{section.A.16}{A.16 Install and Configure Nginx}{appendix.A}% 74
+\BOOKMARK [1][-]{section.A.17}{A.17 Finish}{appendix.A}% 75
+\BOOKMARK [0][]{dummy.7}{Bibliography}{part.4}% 76

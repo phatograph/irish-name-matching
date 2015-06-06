@@ -4,6 +4,7 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: FrontBackMatter/Titlepage.aux
 A level-1 auxiliary file: FrontBackMatter/Titleback.aux
 A level-1 auxiliary file: FrontBackMatter/Dedication.aux
+A level-1 auxiliary file: FrontBackMatter/Declaration.aux
 A level-1 auxiliary file: FrontBackMatter/Abstract.aux
 A level-1 auxiliary file: FrontBackMatter/Acknowledgments.aux
 A level-1 auxiliary file: FrontBackMatter/Contents.aux
@@ -18,7 +19,6 @@ A level-1 auxiliary file: Chapters/Chapter0A.aux
 A level-1 auxiliary file: FrontBackMatter/Bibliography.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
-Warning--I didn't find a database entry for "knuth:1974"
 Warning--empty publisher in irishregistration
 Warning--empty publisher in adamw
 Warning--empty publisher in morpeth
@@ -49,6 +49,7 @@ Warning--empty publisher in hf
 Warning--empty publisher in classmethod
 Warning--empty publisher in indiansoundex
 Warning--empty publisher in perftest
+Warning--empty publisher in dependability
 Warning--empty publisher in kiss
 Warning--empty publisher in cao
 Warning--empty publisher in memoization
@@ -63,45 +64,45 @@ Warning--empty publisher in chart
 Warning--empty publisher in vps
 Warning--empty publisher in ubuntu
 Warning--empty publisher in ubuntu2
-You've used 44 entries,
+You've used 45 entries,
             2481 wiz_defined-function locations,
-            759 strings with 10039 characters,
-and the built_in function-call counts, 12638 in all, are:
-= -- 1054
-> -- 352
+            765 strings with 10329 characters,
+and the built_in function-call counts, 13009 in all, are:
+= -- 1080
+> -- 379
 < -- 43
-+ -- 197
-- -- 100
-* -- 736
-:= -- 2051
-add.period$ -- 215
-call.type$ -- 44
-change.case$ -- 44
-chr.to.int$ -- 35
-cite$ -- 88
-duplicate$ -- 836
-empty$ -- 1321
-format.name$ -- 150
-if$ -- 2670
++ -- 207
+- -- 108
+* -- 769
+:= -- 2115
+add.period$ -- 220
+call.type$ -- 45
+change.case$ -- 45
+chr.to.int$ -- 36
+cite$ -- 90
+duplicate$ -- 855
+empty$ -- 1351
+format.name$ -- 159
+if$ -- 2745
 int.to.chr$ -- 10
-int.to.str$ -- 45
-missing$ -- 88
-newline$ -- 311
-num.names$ -- 132
-pop$ -- 489
+int.to.str$ -- 46
+missing$ -- 90
+newline$ -- 318
+num.names$ -- 135
+pop$ -- 500
 preamble$ -- 1
-purify$ -- 44
+purify$ -- 45
 quote$ -- 0
-skip$ -- 418
+skip$ -- 426
 stack$ -- 0
-substring$ -- 88
-swap$ -- 111
+substring$ -- 90
+swap$ -- 114
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 176
-warning$ -- 44
-while$ -- 88
+type$ -- 180
+warning$ -- 45
+while$ -- 90
 width$ -- 0
-write$ -- 657
+write$ -- 672
 (There were 45 warnings)
