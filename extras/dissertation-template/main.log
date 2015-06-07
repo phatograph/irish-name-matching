@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  6 JUN 2015 12:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.17)  6 JUN 2015 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1601,7 +1601,7 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 91--96
  []
 
 [49]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 100--113
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 99--112
 []$[]$ 
  []
 
@@ -1642,123 +1642,116 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 186--191
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 197--204
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 201--208
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 209--214
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 213--218
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 220--227
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 224--231
 []$[]$ 
  []
 
 [52]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 234--239
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 238--243
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 247--252
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 252--257
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 255--260
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 260--265
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 263--268
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 268--273
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 276--281
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 281--286
 []$[]$ 
  []
 
 [53]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 284--289
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 289--294
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 292--326
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 297--331
 []$[]$ 
  []
 
 [54]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 332--337
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 337--342
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 345--354
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 352--361
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 358--363
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 365--370
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 368--374
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 376--382
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 378--383
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 386--391
 []$[]$ 
  []
 
 [55]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 388--393
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 396--401
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 398--403
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 405--410
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 410--415
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 417--422
 []$[]$ 
  []
 
 
-Overfull \hbox (10.9827pt too wide) in paragraph at lines 416--420
-\T1/pplj/m/n/10.95 un-der Puma, and it\TS1/pplj/m/n/10.95 '\T1/pplj/m/n/10.95 s
- lis-ten-ing on the \T1/fvm/m/n/10.95 shared/sockets/puma.sock \T1/pplj/m/n/10.
-95 socket.
- []
-
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 430--435
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 437--442
 []$[]$ 
  []
 
 [56]
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 438--443
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 445--450
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 448--476
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 455--483
 []$[]$ 
  []
 
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 482--487
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 489--494
 []$[]$ 
  []
 
-[57]) [58]
+) [57] [58]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
  (./FrontBackMatter/Bibliography.tex (./main.bbl
@@ -2005,7 +1998,7 @@ xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/201
 4/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf
 -dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/f
 onts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (72 pages, 3383881 bytes).
+Output written on main.pdf (72 pages, 3383780 bytes).
 PDF statistics:
  1877 PDF objects out of 2073 (max. 8388607)
  1755 compressed objects within 18 object streams

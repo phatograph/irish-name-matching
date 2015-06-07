@@ -94,8 +94,7 @@ remote$ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev
 \end{lstlisting}
 \end{minipage}
 
-Now we are ready to install \texttt{rbenv}. The easiest way to do that is to run
-these commands.
+Now we are ready to install \texttt{rbenv} by running these commands.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -112,7 +111,8 @@ remote$ exec $SHELL
 \end{minipage}
 
 This installs \texttt{rbenv} into your home directory, and sets the appropriate
-environment variables that will allow \texttt{rbenv} to the active version of Ruby.
+environment variables that will allow \texttt{rbenv} to work over any
+machine-installed Ruby.
 
 Next is to use \texttt{rbenv} to install Ruby.
 
@@ -130,8 +130,8 @@ remote$ rbenv global 2.2.1
 The \texttt{global} sub-command sets the default version of Ruby
 that all of your shells will use.
 
-You will also want to install the \texttt{bundler} gem,
-to manage your application dependencies.
+We will also need to install the \texttt{bundler} gem
+to manage Rails dependencies.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -155,7 +155,7 @@ remote$ gem install rails -v 4.2.0
 
 A few Rails features, such as the Asset Pipeline,
 depend on a Javascript runtime. We will install Node.js
-to provide this functionality.
+to cover this functionality.
 
 Add the Node.js PPA to \texttt{apt-get}, then update \texttt{apt-get}
 and install the Node.js package.
@@ -170,7 +170,7 @@ remote$ sudo apt-get install nodejs
 
 \section{Install PostgreSQL}
 
-Install PostgreSQL and its development libraries.
+Next is the database. We will install PostgreSQL and its development libraries.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -189,6 +189,10 @@ remote$ sudo -u postgres createuser -s pguser
 \end{lstlisting}
 \end{minipage}
 
+Now that we have the language (Ruby), framework (Rails),
+dependencies manager (bundler), and database (PostgreSQL),
+we are ready to setup our system.
+
 \section{Get the system code}
 
 The system code is stored at \url{git.cs.nuim.ie/repos/desem/dmsc1407},
@@ -204,7 +208,7 @@ remote$ cd dmsc1407
 
 \section{Configure Database Connection}
 
-Open your application\textquotesingle s database configuration file.
+Open the system database configuration file.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -213,9 +217,9 @@ remote$ vim config/database.yml
 \end{minipage}
 
 Under the default section, find the line that says \texttt{pool: 5}
-and add the following lines under it. It should look something like this
+and add the following lines under it
 (replace the \texttt{pguser} and \texttt{pguser\_password}
-parts with your PostgreSQL user and password):
+parts with your PostgreSQL user and password).
 
 \begin{minipage}{\linewidth}
   \begin{lstlisting}[language=ruby, caption={config/database.yml}]
@@ -229,7 +233,7 @@ Save and exit.
 
 \section{Create Application Databases}
 
-Create your application\textquotesingle s development and test databases by using this \texttt{rake} command.
+Create development and test databases by using this \texttt{rake} command.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -242,7 +246,8 @@ remote$ rake db:create
 Puma is an application server that enables your Rails application
 to process requests concurrently.
 
-An easy way to do this is to add it to your application\textquotesingle s \texttt{Gemfile}.
+First we need to install the Puma gem, in case the system does not
+already have it.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -292,7 +297,7 @@ Use this Puma configuration.
 \begin{minipage}{\linewidth}
   \begin{lstlisting}[language=ruby, caption={config/puma.rb}]
 # Change to match your CPU core count
-workers 2
+workers 1
 
 # Min and Max threads per worker
 threads 1, 6
@@ -337,10 +342,12 @@ remote$ mkdir -p shared/pids shared/sockets shared/log
 
 \section{Create Puma Upstart Script}
 
-Create an Upstart init script so we can easily start and stop Puma,
-and ensure that it will start on boot.
+Create an Upstart init script so we can easily start and stop Puma
+using \texttt{sudo start} and \texttt{sudo stop} commands.
+and ensure that it will automatically start on boot.
+
 Download the Jungle Upstart tool from the Puma GitHub repository
-to your home directory
+to your home directory.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -352,7 +359,7 @@ remote$ wget https://raw.githubusercontent.com/puma/puma/master/
 \end{lstlisting}
 \end{minipage}
 
-Now open the provided \texttt{puma.conf} file,
+Now open the downloaded \texttt{puma.conf} file,
 so we can configure the Puma deployment user.
 
 \begin{minipage}{\linewidth}
@@ -361,7 +368,8 @@ remote$ vim puma.conf
 \end{lstlisting}
 \end{minipage}
 
-Look for the two lines that specify setuid and setgid, and replace \texttt{apps}
+Look for the two lines that specify \texttt{setuid} and \texttt{setgid},
+and replace \texttt{apps}
 with the name of your deployment user and group. For example,
 if your deployment user is called \texttt{demo}, the lines should look like this.
 
@@ -383,7 +391,7 @@ remote$ sudo cp puma.conf puma-manager.conf /etc/init
 
 The \texttt{puma-manager.conf} script references \texttt{/etc/puma.conf}
 for the applications that it should manage.
-Let's create and edit that inventory file now.
+Let's create and edit that file now.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[language=bash]
@@ -392,8 +400,7 @@ remote$ sudo vim /etc/puma.conf
 \end{minipage}
 
 Each line in this file should be the path to an application that you
-want \texttt{puma-manager} to manage.
-Add the path to your application now.
+want \texttt{puma-manager} to manage. So we add the path to the system.
 
 \begin{minipage}{\linewidth}
   \begin{lstlisting}[language=bash, caption={/etc/puma.conf}]
@@ -401,8 +408,8 @@ Add the path to your application now.
 \end{lstlisting}
 \end{minipage}
 
-Save and exit. Now your application is configured to start at boot time,
-through Upstart. This means that your application will start even after
+Save and exit. Now the system is configured to start at boot time,
+through Upstart. This means that the system will start even after
 your server is rebooted.
 
 To start all of your managed Puma apps now, run this command.
@@ -413,17 +420,17 @@ remote$ sudo start puma-manager
 \end{lstlisting}
 \end{minipage}
 
-Now your Rails application\textquotesingle s production environment is running under Puma,
+Now the system is running under Puma,
 and it\textquotesingle s listening on the \texttt{shared/sockets/puma.sock} socket.
-Before your application will be accessible to an outside user,
-you must set up the Nginx reverse proxy.
+Before the system will be accessible to an outside user,
+we must set up the Nginx reverse proxy.
 
 \section{Install and Configure Nginx}
 
-As Puma is not designed to be accessed by users directly,
+As Puma is not designed to be accessed by outside users directly,
 we will use Nginx as a reverse proxy
 that will buffer requests and responses between
-users and your Rails application.
+outside users and the system.
 
 Install Nginx using apt-get.
 
@@ -443,7 +450,7 @@ remote$ sudo vim /etc/nginx/sites-available/default
 
 Replace the contents of the file with the following code block.
 Be sure to replace the the \texttt{demo} and \texttt{dmsc1407} parts
-with the appropriate username and application name.
+with your username and the system path.
 
 \begin{minipage}{\linewidth}
   \begin{lstlisting}[language=bash, caption={/etc/nginx/sites-available/default}]
@@ -487,6 +494,6 @@ remote$ sudo service nginx restart
 
 \section{Finish}
 
-You have deployed the production environment of your Ruby on Rails application using Nginx and Puma.
-Now the your Rails application is accessible via your server\textquotesingle s public IP address
+You have deployed the production environment of the system using Nginx and Puma.
+Now the system is accessible via your server\textquotesingle s public IP address
 or domain name.
