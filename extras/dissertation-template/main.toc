@@ -49,24 +49,24 @@
 \contentsline {subsection}{\numberline {7.2.1}More phonetic algorithms}{44}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Inheritance for similar matching algorithms}{44}{subsection.7.2.2}
 \contentsline {subsection}{\numberline {7.2.3}Improve web interface result}{45}{subsection.7.2.3}
-\contentsline {part}{iv\hspace {1em}\spacedlowsmallcaps {Appendix}}{47}{part.4}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {How to deploy the system on Ubuntu server}}{48}{appendix.A}
-\contentsline {section}{\numberline {A.1}Root Login}{48}{section.A.1}
-\contentsline {section}{\numberline {A.2}Create a new user}{48}{section.A.2}
-\contentsline {section}{\numberline {A.3}Root Privileges}{49}{section.A.3}
-\contentsline {section}{\numberline {A.4}Install rbenv}{49}{section.A.4}
-\contentsline {section}{\numberline {A.5}Install Ruby}{50}{section.A.5}
-\contentsline {section}{\numberline {A.6}Install Rails}{51}{section.A.6}
-\contentsline {section}{\numberline {A.7}Install Javascript Runtime}{51}{section.A.7}
-\contentsline {section}{\numberline {A.8}Install PostgreSQL}{51}{section.A.8}
-\contentsline {section}{\numberline {A.9}Create Database User}{52}{section.A.9}
-\contentsline {section}{\numberline {A.10}Get the system code}{52}{section.A.10}
-\contentsline {section}{\numberline {A.11}Configure Database Connection}{52}{section.A.11}
-\contentsline {section}{\numberline {A.12}Create Application Databases}{53}{section.A.12}
-\contentsline {section}{\numberline {A.13}Install Puma}{53}{section.A.13}
-\contentsline {section}{\numberline {A.14}Configure Puma}{53}{section.A.14}
-\contentsline {section}{\numberline {A.15}Create Puma Upstart Script}{55}{section.A.15}
-\contentsline {section}{\numberline {A.16}Install and Configure Nginx}{56}{section.A.16}
-\contentsline {section}{\numberline {A.17}Finish}{58}{section.A.17}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{59}{dummy.7}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{47}{dummy.7}
+\contentsline {part}{iv\hspace {1em}\spacedlowsmallcaps {Appendix}}{51}{part.4}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {How to deploy the system on Ubuntu server}}{52}{appendix.A}
+\contentsline {section}{\numberline {A.1}Root Login}{52}{section.A.1}
+\contentsline {section}{\numberline {A.2}Create a new user}{52}{section.A.2}
+\contentsline {section}{\numberline {A.3}Root Privileges}{53}{section.A.3}
+\contentsline {section}{\numberline {A.4}Install rbenv}{53}{section.A.4}
+\contentsline {section}{\numberline {A.5}Install Ruby}{54}{section.A.5}
+\contentsline {section}{\numberline {A.6}Install Rails}{55}{section.A.6}
+\contentsline {section}{\numberline {A.7}Install Javascript Runtime}{55}{section.A.7}
+\contentsline {section}{\numberline {A.8}Install PostgreSQL}{55}{section.A.8}
+\contentsline {section}{\numberline {A.9}Create Database User}{56}{section.A.9}
+\contentsline {section}{\numberline {A.10}Get the system code}{56}{section.A.10}
+\contentsline {section}{\numberline {A.11}Configure Database Connection}{56}{section.A.11}
+\contentsline {section}{\numberline {A.12}Create Application Databases}{57}{section.A.12}
+\contentsline {section}{\numberline {A.13}Install Puma}{57}{section.A.13}
+\contentsline {section}{\numberline {A.14}Configure Puma}{57}{section.A.14}
+\contentsline {section}{\numberline {A.15}Create Puma Upstart Script}{59}{section.A.15}
+\contentsline {section}{\numberline {A.16}Install and Configure Nginx}{60}{section.A.16}
+\contentsline {section}{\numberline {A.17}Finish}{62}{section.A.17}

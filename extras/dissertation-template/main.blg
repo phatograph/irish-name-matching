@@ -4,8 +4,8 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: FrontBackMatter/Titlepage.aux
 A level-1 auxiliary file: FrontBackMatter/Titleback.aux
 A level-1 auxiliary file: FrontBackMatter/Dedication.aux
-A level-1 auxiliary file: FrontBackMatter/Declaration.aux
 A level-1 auxiliary file: FrontBackMatter/Abstract.aux
+A level-1 auxiliary file: FrontBackMatter/Declaration.aux
 A level-1 auxiliary file: FrontBackMatter/Acknowledgments.aux
 A level-1 auxiliary file: FrontBackMatter/Contents.aux
 A level-1 auxiliary file: Chapters/Chapter01.aux
@@ -15,9 +15,9 @@ A level-1 auxiliary file: Chapters/Chapter04.aux
 A level-1 auxiliary file: Chapters/Chapter05.aux
 A level-1 auxiliary file: Chapters/Chapter06.aux
 A level-1 auxiliary file: Chapters/Chapter07.aux
-A level-1 auxiliary file: Chapters/Chapter0A.aux
 A level-1 auxiliary file: FrontBackMatter/Bibliography.aux
 The style file: unsrtnat.bst
+A level-1 auxiliary file: Chapters/Chapter0A.aux
 Database file #1: Bibliography.bib
 Warning--empty publisher in irishregistration
 Warning--empty publisher in adamw

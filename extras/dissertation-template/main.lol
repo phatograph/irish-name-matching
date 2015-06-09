@@ -16,7 +16,7 @@
 \contentsline {lstlisting}{\numberline {10}\texttt {MatchingAlgorithm} class.}{30}{lstlisting.10}
 \contentsline {lstlisting}{\numberline {11}\texttt {LevenshteinDistance} class.}{31}{lstlisting.11}
 \contentsline {lstlisting}{\numberline {12}\texttt {LookupTable} class.}{31}{lstlisting.12}
-\contentsline {lstlisting}{\numberline {13}Calling class method \emph {Soundex.soundex}.}{31}{lstlisting.13}
+\contentsline {lstlisting}{\numberline {13}Calling class method \emph {Soundex.soundex}.}{32}{lstlisting.13}
 \contentsline {lstlisting}{\numberline {14}\texttt {Soundex} class.}{32}{lstlisting.14}
 \contentsline {lstlisting}{\numberline {15}\texttt {IrishSoundex.soundex} calls to \texttt {Soundex.soundex}.}{33}{lstlisting.15}
 \contentsline {lstlisting}{\numberline {16}\texttt {IrishSoundex} class.}{33}{lstlisting.16}
@@ -28,9 +28,9 @@
 \addvspace {10\p@ }
 \contentsline {lstlisting}{\numberline {21}\texttt {Soundex} inheritance.}{45}{lstlisting.21}
 \addvspace {10\p@ }
-\contentsline {lstlisting}{\numberline {22}config/database.yml}{52}{lstlisting.22}
-\contentsline {lstlisting}{\numberline {23}Gemfile}{53}{lstlisting.23}
-\contentsline {lstlisting}{\numberline {24}config/puma.rb}{54}{lstlisting.24}
-\contentsline {lstlisting}{\numberline {25}puma.conf}{55}{lstlisting.25}
-\contentsline {lstlisting}{\numberline {26}/etc/puma.conf}{56}{lstlisting.26}
-\contentsline {lstlisting}{\numberline {27}/etc/nginx/sites-available/default}{57}{lstlisting.27}
+\contentsline {lstlisting}{\numberline {22}config/database.yml}{56}{lstlisting.22}
+\contentsline {lstlisting}{\numberline {23}Gemfile}{57}{lstlisting.23}
+\contentsline {lstlisting}{\numberline {24}config/puma.rb}{58}{lstlisting.24}
+\contentsline {lstlisting}{\numberline {25}puma.conf}{59}{lstlisting.25}
+\contentsline {lstlisting}{\numberline {26}/etc/puma.conf}{60}{lstlisting.26}
+\contentsline {lstlisting}{\numberline {27}/etc/nginx/sites-available/default}{61}{lstlisting.27}
